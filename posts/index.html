@@ -98,11 +98,17 @@
     <span class="f6 db">Posts</span>
     <h1 class="f3 near-black">
       <a href="http://maqunchao.xyz/posts/%E7%AC%AC2%E7%AF%87blog/" class="link black dim">
-        第2篇博客
+        Hugo配合GitHub搭建博客
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-       测试第2片 
+      Hugo配合GitHub搭建博客 下载hugo  首先安装hugo 地址 配置环境变量,将存放hugo.exe的文件目录,示例:D:\SoftWare\hugo, 编辑到Path中,点击确定 验证hugo是否配置成功, 打开终端,执行hugo version, 成功如下:
+hugo version Hugo Static Site Generator v0.59.1-D5DAB232 windows/amd64 BuildDate: 2019-10-31T15:22:43Z  创建GitHub仓库 github&ndash;&gt;右上角的new repository, 名称:你的github用户名.github.io; (记住仓库名称, 最好用英文)
+ 在本地硬盘, 创建一个文件夹, 选中文件夹,执行
+hugo new site xxxx(GitHub仓库名称)  创建完成后, 本地文件生成一个 xxxx目录, 目录介绍: 创建完成之后的目录介绍： |- archetypes 存放default.md ,头文件格式 |-content content 目录存放博客文章（.markdown/.md文件） |-data 存放自定义模板，导入的toml文件（或json、yaml） |-layouts layouts目录存放网站的网站模板文件 |-static 存放js/css/img 等静态资源 |-config.toml config.toml 是网站的配置文件
+ 然后 cd xxxx(目录下)
+ 执行 git init; 初始化本地仓库
+ 添加一个默认的主题 命令行执行
     </div>
   </div>
 </div>
