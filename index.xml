@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mark的博客</title>
-    <link>http://example.org/</link>
+    <link>http://maqunchao.xyz/</link>
     <description>Recent content on Mark的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
     <lastBuildDate>Mon, 18 Nov 2019 06:15:34 +0800</lastBuildDate>
     
-	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://maqunchao.xyz/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>第2篇博客</title>
-      <link>http://example.org/posts/%E7%AC%AC2%E7%AF%87blog/</link>
+      <link>http://maqunchao.xyz/posts/%E7%AC%AC2%E7%AF%87blog/</link>
       <pubDate>Mon, 18 Nov 2019 06:15:34 +0800</pubDate>
       
-      <guid>http://example.org/posts/%E7%AC%AC2%E7%AF%87blog/</guid>
+      <guid>http://maqunchao.xyz/posts/%E7%AC%AC2%E7%AF%87blog/</guid>
       <description> 测试第2片 </description>
     </item>
     
     <item>
       <title>开博大吉</title>
-      <link>http://example.org/posts/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/</link>
+      <link>http://maqunchao.xyz/posts/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/</link>
       <pubDate>Mon, 18 Nov 2019 00:15:34 +0800</pubDate>
       
-      <guid>http://example.org/posts/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/</guid>
+      <guid>http://maqunchao.xyz/posts/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/</guid>
       <description>git基本使用  git init ; 初始化 创建一个.git目录 当本地仓库 git add 文件路径; 选择变化的文件进行提交 .gitignore; 描述那些文件是不需要提交的 git commit -v; 提交已经添加的文件, 并打开编辑器编写日志; 也可git commit -m 字符串; 在命令行中说明理由并提交, 如果字符串中有空格需要用引号括起来 git log; 打印出已经提交的各个版本信息(带有版本号); git reset &amp;ndash;hard 版本号(git log查询出来的); 回退到某个版本 git reflog; 打印历史变更的所以版本,以及版本号 git branch x(分支名称); 基于当前commit创建一个新的分支,我在那个分支提交,代码就在那个分支 git checkout x(分支名称); 用于切换分支 合并分支:首先进入要保留的分支; 运行 git merge x(需要合并的名称) 进行合并, 合并完成后删除无用分支 git branch -d x(分支名称) git add . 提交当前目录所以文件 git branch; 可显示当前在那个分支 git status -sb; 显示冲突文件  git与github远程仓库配合使用 生成ssh key  运行ssh-keygen -t rsa -b 4096 -C 自己的邮箱 cat ~/.</description>
     </item>
     

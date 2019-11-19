@@ -3,31 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://example.org/</loc>
+    <loc>http://maqunchao.xyz/</loc>
     <lastmod>2019-11-18T06:15:34+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/posts/</loc>
+    <loc>http://maqunchao.xyz/posts/</loc>
     <lastmod>2019-11-18T06:15:34+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/posts/%E7%AC%AC2%E7%AF%87blog/</loc>
+    <loc>http://maqunchao.xyz/posts/%E7%AC%AC2%E7%AF%87blog/</loc>
     <lastmod>2019-11-18T06:15:34+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/posts/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/</loc>
+    <loc>http://maqunchao.xyz/posts/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/</loc>
     <lastmod>2019-11-18T00:15:34+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/categories/</loc>
+    <loc>http://maqunchao.xyz/categories/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/tags/</loc>
+    <loc>http://maqunchao.xyz/tags/</loc>
   </url>
   
 </urlset>
