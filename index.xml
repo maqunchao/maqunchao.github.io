@@ -6,10 +6,19 @@
     <description>Recent content on Mark的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Mon, 18 Nov 2019 06:15:34 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 27 Nov 2019 06:15:34 +0800</lastBuildDate>
     
 	<atom:link href="http://maqunchao.xyz/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>HTML入门笔记</title>
+      <link>http://maqunchao.xyz/posts/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Wed, 27 Nov 2019 06:15:34 +0800</pubDate>
+      
+      <guid>http://maqunchao.xyz/posts/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0/</guid>
+      <description>历史简介  1990年, Tim Berners-Lee发明了HTML, 自己编写了一个浏览器和服务器, 然后通过自己的浏览器访问了自己写的服务器.  HTML 起手式 &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;!-- 文档类型 --&amp;gt; &amp;lt;html lang=&amp;quot;zh-CN&amp;quot;&amp;gt; &amp;lt;!-- html标签, 改成中文 --&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot; /&amp;gt; &amp;lt;!-- 文件的字符编码 --&amp;gt; &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1.0&amp;quot; /&amp;gt; &amp;lt;!-- 禁用缩放, 兼容手机 --&amp;gt; &amp;lt;meta http-equiv=&amp;quot;X-UA-Compatible&amp;quot; content=&amp;quot;ie=edge&amp;quot; /&amp;gt; &amp;lt;!-- 告诉IE浏览器, 使用最新版本 --&amp;gt; &amp;lt;title&amp;gt;Document&amp;lt;/title&amp;gt; &amp;lt;!-- 网页标题 --&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt;&amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt;  常用的表示章节的标签  h1 ~ h6, 标题标签， 呈现六种不同级别的标题，由大到小 section, 章节标签， 表示一个包含在HTML文档中的独立部分 article, 表示文章 p，段落标签 header， 头部 footer，脚部，一般表示根元素的页脚 main， 主要内容 aside， 旁支内容 div， 块级元素, 可用来划分   全局属性  class, 给标签分类或者标记</description>
+    </item>
     
     <item>
       <title>Hugo配合GitHub搭建博客</title>
@@ -27,7 +36,7 @@ hugo new site xxxx(GitHub仓库名称)  创建完成后, 本地文件生成一�
     </item>
     
     <item>
-      <title>开博大吉</title>
+      <title>git基本操作</title>
       <link>http://maqunchao.xyz/posts/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/</link>
       <pubDate>Mon, 18 Nov 2019 00:15:34 +0800</pubDate>
       

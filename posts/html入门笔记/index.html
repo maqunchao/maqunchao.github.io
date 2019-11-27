@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Mark的博客  | HTML入门笔记</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.59.1" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+    
+
+    
+    
+    <meta property="og:title" content="HTML入门笔记" />
+<meta property="og:description" content="历史简介  1990年, Tim Berners-Lee发明了HTML, 自己编写了一个浏览器和服务器, 然后通过自己的浏览器访问了自己写的服务器.  HTML 起手式 &lt;!DOCTYPE html&gt; &lt;!-- 文档类型 --&gt; &lt;html lang=&quot;zh-CN&quot;&gt; &lt;!-- html标签, 改成中文 --&gt; &lt;head&gt; &lt;meta charset=&quot;UTF-8&quot; /&gt; &lt;!-- 文件的字符编码 --&gt; &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt; &lt;!-- 禁用缩放, 兼容手机 --&gt; &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot; /&gt; &lt;!-- 告诉IE浏览器, 使用最新版本 --&gt; &lt;title&gt;Document&lt;/title&gt; &lt;!-- 网页标题 --&gt; &lt;/head&gt; &lt;body&gt;&lt;/body&gt; &lt;/html&gt;  常用的表示章节的标签  h1 ~ h6, 标题标签， 呈现六种不同级别的标题，由大到小 section, 章节标签， 表示一个包含在HTML文档中的独立部分 article, 表示文章 p，段落标签 header， 头部 footer，脚部，一般表示根元素的页脚 main， 主要内容 aside， 旁支内容 div， 块级元素, 可用来划分   全局属性  class, 给标签分类或者标记" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://maqunchao.xyz/posts/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0/" />
+<meta property="article:published_time" content="2019-11-27T06:15:34+08:00" />
+<meta property="article:modified_time" content="2019-11-27T06:15:34+08:00" />
+<meta itemprop="name" content="HTML入门笔记">
+<meta itemprop="description" content="历史简介  1990年, Tim Berners-Lee发明了HTML, 自己编写了一个浏览器和服务器, 然后通过自己的浏览器访问了自己写的服务器.  HTML 起手式 &lt;!DOCTYPE html&gt; &lt;!-- 文档类型 --&gt; &lt;html lang=&quot;zh-CN&quot;&gt; &lt;!-- html标签, 改成中文 --&gt; &lt;head&gt; &lt;meta charset=&quot;UTF-8&quot; /&gt; &lt;!-- 文件的字符编码 --&gt; &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt; &lt;!-- 禁用缩放, 兼容手机 --&gt; &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot; /&gt; &lt;!-- 告诉IE浏览器, 使用最新版本 --&gt; &lt;title&gt;Document&lt;/title&gt; &lt;!-- 网页标题 --&gt; &lt;/head&gt; &lt;body&gt;&lt;/body&gt; &lt;/html&gt;  常用的表示章节的标签  h1 ~ h6, 标题标签， 呈现六种不同级别的标题，由大到小 section, 章节标签， 表示一个包含在HTML文档中的独立部分 article, 表示文章 p，段落标签 header， 头部 footer，脚部，一般表示根元素的页脚 main， 主要内容 aside， 旁支内容 div， 块级元素, 可用来划分   全局属性  class, 给标签分类或者标记">
+
+
+<meta itemprop="datePublished" content="2019-11-27T06:15:34&#43;08:00" />
+<meta itemprop="dateModified" content="2019-11-27T06:15:34&#43;08:00" />
+<meta itemprop="wordCount" content="170">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="HTML入门笔记"/>
+<meta name="twitter:description" content="历史简介  1990年, Tim Berners-Lee发明了HTML, 自己编写了一个浏览器和服务器, 然后通过自己的浏览器访问了自己写的服务器.  HTML 起手式 &lt;!DOCTYPE html&gt; &lt;!-- 文档类型 --&gt; &lt;html lang=&quot;zh-CN&quot;&gt; &lt;!-- html标签, 改成中文 --&gt; &lt;head&gt; &lt;meta charset=&quot;UTF-8&quot; /&gt; &lt;!-- 文件的字符编码 --&gt; &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt; &lt;!-- 禁用缩放, 兼容手机 --&gt; &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot; /&gt; &lt;!-- 告诉IE浏览器, 使用最新版本 --&gt; &lt;title&gt;Document&lt;/title&gt; &lt;!-- 网页标题 --&gt; &lt;/head&gt; &lt;body&gt;&lt;/body&gt; &lt;/html&gt;  常用的表示章节的标签  h1 ~ h6, 标题标签， 呈现六种不同级别的标题，由大到小 section, 章节标签， 表示一个包含在HTML文档中的独立部分 article, 表示文章 p，段落标签 header， 头部 footer，脚部，一般表示根元素的页脚 main， 主要内容 aside， 旁支内容 div， 块级元素, 可用来划分   全局属性  class, 给标签分类或者标记"/>
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="http://maqunchao.xyz/" class="f3 fw2 hover-white no-underline white-90 dib">
+      Mark的博客
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+
+    <header class="mt4 w-100">
+      <p class="f6 b helvetica tracked">
+          
+        POSTS
+      </p>
+      <h1 class="f1 athelas mb1">HTML入门笔记</h1>
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2019-11-27T06:15:34&#43;08:00">November 27, 2019</time>
+      
+      
+    </header>
+
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
+
+<h2 id="历史简介">历史简介</h2>
+
+<ul>
+<li>1990年, Tim Berners-Lee发明了HTML, 自己编写了一个浏览器和服务器, 然后通过自己的浏览器访问了自己写的服务器.</li>
+</ul>
+
+<h2 id="html-起手式">HTML 起手式</h2>
+
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;  &lt;!-- 文档类型 --&gt;
+&lt;html lang=&quot;zh-CN&quot;&gt; &lt;!-- html标签, 改成中文 --&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    &lt;!-- 文件的字符编码 --&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+    &lt;!-- 禁用缩放, 兼容手机 --&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot; /&gt;
+    &lt;!-- 告诉IE浏览器, 使用最新版本 --&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+    &lt;!-- 网页标题 --&gt;
+  &lt;/head&gt;
+  &lt;body&gt;&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<h2 id="常用的表示章节的标签">常用的表示章节的标签</h2>
+
+<ul>
+<li>h1 ~ h6, 标题标签， 呈现六种不同级别的标题，由大到小</li>
+<li>section, 章节标签， 表示一个包含在HTML文档中的独立部分</li>
+<li>article,  表示文章</li>
+<li>p，段落标签</li>
+<li>header， 头部</li>
+<li>footer，脚部，一般表示根元素的页脚</li>
+<li>main， 主要内容</li>
+<li>aside， 旁支内容</li>
+<li>div， 块级元素, 可用来划分
+<br /></li>
+</ul>
+
+<h2 id="全局属性">全局属性</h2>
+
+<ol>
+<li><p>class, 给标签分类或者标记</p>
+
+<pre><code class="language-javascript">&lt;div  class=&quot;middle open &quot;&gt;  
+   
+&lt;/div&gt;
+</code></pre></li>
+
+<li><p>contenteditable, 表示元素是否被用户编辑</p>
+
+<pre><code class="language-javascript">&lt;div  contenteditable=&quot;true&quot;&gt;  
+&lt;/div&gt;
+</code></pre></li>
+
+<li><p>hiddle, 可用来隐藏页面元素</p></li>
+
+<li><p>id, 定义了全局唯一的标识, 但页面如果存在多个一样的id,并不会报错, 谨慎使用</p></li>
+
+<li><p>style, 行内样式优先级高于外联css样式, 低于JS设置</p></li>
+
+<li><p>tabindex, 页面元素是否聚焦, 可使用Tab键进行选择切换</p>
+
+<pre><code>tabindex = 正值  表示该元素可以被选择，从小到大的进行选取。
+tabindex = 0    表示该该元素最后被选取。
+tabindex = 负值  表示该元素不会被选取，一般赋值'-1'.
+</code></pre></li>
+
+<li><p>title, 表示咨询信息文本，和它术语的属性相关，可显示完整的内容，可与省略号一起使用, 见下面示例。</p>
+
+<pre><code class="language-css">.bg{
+white-space: nowrap; &lt;!-- 内容不换行 --&gt;
+overflow: hidden;   &lt;!-- 超出内容部分隐藏 --&gt;
+text-overflow: ellipsis;&lt;!-- 用省略号结尾 --&gt;
+}
+</code></pre></li>
+</ol>
+
+<h2 id="常用内容标签">常用内容标签</h2>
+
+<ol>
+<li>ol + li 有序列表 ordered list</li>
+<li>ul + li 无序列表 unordered list</li>
+<li>dl + dt + dd   一个词一个描述内容</li>
+<li>pre, 在 HTML 中，多个空格回车或者tab，都只会缩进成一个空格, pre会保留内容的回车和空格</li>
+<li>code，使内容字体等宽</li>
+<li>hr， 水平分割线， 一般使用于页面评论</li>
+<li>br， 使内容换行（break）</li>
+<li>a， 超链接标签，配合target= &ldquo;_blank&rdquo;,点击链接后在新窗口打开，否则在当前窗口打开</li>
+<li>em, 强调,侧重于语气</li>
+<li>strong, 强调重要, 侧重于内容</li>
+<li>quote, 内联的引用</li>
+<li>blockquote, 块级的引用</li>
+</ol>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6">
+      
+      
+      </div>
+    </section>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://maqunchao.xyz/" >
+    &copy; 2019 Mark的博客
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>
