@@ -35,7 +35,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://maqunchao.xyz/" />
 
-<meta property="og:updated_time" content="2019-11-27T06:15:34+08:00" />
+<meta property="og:updated_time" content="2019-11-29T13:48:51+08:00" />
 <meta itemprop="name" content="Mark的博客">
 <meta itemprop="description" content="">
 
@@ -123,6 +123,38 @@
       
       <div class="blah w-100">
         <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="http://maqunchao.xyz/posts/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/" class="color-inherit dim link">
+            HTML常用标签
+            </a>
+        </h1>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          HTML常用标签 a标签包含href, target, download, rel=noopener属性  href(hypertext reference)属性:   href后面的url,以http/https开头的，则点击a标签后,会链接该url的页面 href后是#, 点击后回到页面顶部
+&lt;a href=&quot;#&quot;&gt;点击回到顶部&lt;/a&gt;  如果href后面是//baidu.com, 浏览器先去http://www.baidu.com寻找, 找不到再去https://www.baidu.com/寻找
+&lt;a href=&quot;//qq.com&quot;&gt;QQ&lt;/a&gt;  href后面可以跟文件路径, 如果我们http-server开启本地服务的方式打开文件, 则会根据本地服务的协议,决定使用http/https打开该文件,  如果直接双击打开,则使用file://协议打开该文件
+  href做伪协议,
+&lt;a href=&quot;javascript:&quot;&gt;点击后不会跳转, 无反应&lt;/a&gt; 如果javascript:代码,执行该代码 &lt;a href=&quot;mailto:邮箱&quot;&gt;发邮件&lt;/a&gt; &lt;a href=&quot;tel:手机号&quot;&gt;打打电话&lt;/a&gt;  href来做锚点,跳转到当前页面中某标签的id为xxx的页面元素
+&lt;a href=&quot;#xxx&quot;&gt;xxx&lt;/a&gt;  target属性
+在新页面打开：&lt;a href=&quot;url/相对路径&quot; target=&quot;_blank&quot;&gt;xxx&lt;/a&gt; &lt;hr&gt; 在当前页面打开：&lt;a href=&quot;url/相对路径&quot; target=&quot;_self&quot;&gt;xxx&lt;/a&gt;&lt;hr&gt; 在父页面打开（有两个页面时）：&lt;a href=&quot;url/相对路径&quot; target=&quot;_parent&quot;&gt;xxx&lt;/a&gt;&lt;hr&gt; 在最顶层页面打开（有多于两个页面）：&lt;a href=&quot;url/相对路径&quot; target=&quot;_top&quot;&gt;xxx&lt;/a&gt;  download 属性
+ 下载页面, 不是所有浏览器都支持
+  iframe标签 iframe标签用于在一个页面当中嵌套页面,但目前已经很少用了，基本都是在一些旧项目才会看到。 可以a标签进行使用,如下, 点击a标签, 则会在iframe标签内打开指定的url页面
+        </div>
+          <a href="http://maqunchao.xyz/posts/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+          </div>
+        
+          <div class="relative w-100 mb4">
+            
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+      <div class="blah w-100">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
           <a href="http://maqunchao.xyz/posts/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0/" class="color-inherit dim link">
             HTML入门笔记
             </a>
@@ -169,32 +201,25 @@ hugo new site xxxx(GitHub仓库名称)  创建完成后, 本地文件生成一�
 
           </div>
         
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-      <div class="blah w-100">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="http://maqunchao.xyz/posts/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/" class="color-inherit dim link">
-            git基本操作
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          git基本使用  git init ; 初始化 创建一个.git目录 当本地仓库 git add 文件路径; 选择变化的文件进行提交 .gitignore; 描述那些文件是不需要提交的 git commit -v; 提交已经添加的文件, 并打开编辑器编写日志; 也可git commit -m 字符串; 在命令行中说明理由并提交, 如果字符串中有空格需要用引号括起来 git log; 打印出已经提交的各个版本信息(带有版本号); git reset &ndash;hard 版本号(git log查询出来的); 回退到某个版本 git reflog; 打印历史变更的所以版本,以及版本号 git branch x(分支名称); 基于当前commit创建一个新的分支,我在那个分支提交,代码就在那个分支 git checkout x(分支名称); 用于切换分支 合并分支:首先进入要保留的分支; 运行 git merge x(需要合并的名称) 进行合并, 合并完成后删除无用分支 git branch -d x(分支名称) git add . 提交当前目录所以文件 git branch; 可显示当前在那个分支 git status -sb; 显示冲突文件  git与github远程仓库配合使用 生成ssh key  运行ssh-keygen -t rsa -b 4096 -C 自己的邮箱 cat ~/.
-        </div>
-          <a href="http://maqunchao.xyz/posts/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
-    </div>
-  </div>
-</article>
-
-          </div>
-        
       </section>
 
+      
+      <section class="w-100">
+        <h1 class="f3">More</h1>
+        
+        
+          <h2 class="f5 fw4 mb4 dib mr3">
+            <a href="http://maqunchao.xyz/posts/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/" class="link black dim">
+              git基本操作
+            </a>
+          </h2>
+        
+
+        
+        
+          <a href="http://maqunchao.xyz/posts/" class="link db f6 pa2 br3 bg-mid-gray white dim w4 tc">All Posts</a>
+        
+        </section>
       
 
       </div>

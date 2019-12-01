@@ -6,10 +6,27 @@
     <description>Recent content in Posts on Mark的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Wed, 27 Nov 2019 06:15:34 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 29 Nov 2019 13:48:51 +0800</lastBuildDate>
     
 	<atom:link href="http://maqunchao.xyz/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>HTML常用标签</title>
+      <link>http://maqunchao.xyz/posts/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</link>
+      <pubDate>Fri, 29 Nov 2019 13:48:51 +0800</pubDate>
+      
+      <guid>http://maqunchao.xyz/posts/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</guid>
+      <description>HTML常用标签 a标签包含href, target, download, rel=noopener属性  href(hypertext reference)属性:   href后面的url,以http/https开头的，则点击a标签后,会链接该url的页面 href后是#, 点击后回到页面顶部
+&amp;lt;a href=&amp;quot;#&amp;quot;&amp;gt;点击回到顶部&amp;lt;/a&amp;gt;  如果href后面是//baidu.com, 浏览器先去http://www.baidu.com寻找, 找不到再去https://www.baidu.com/寻找
+&amp;lt;a href=&amp;quot;//qq.com&amp;quot;&amp;gt;QQ&amp;lt;/a&amp;gt;  href后面可以跟文件路径, 如果我们http-server开启本地服务的方式打开文件, 则会根据本地服务的协议,决定使用http/https打开该文件,  如果直接双击打开,则使用file://协议打开该文件
+  href做伪协议,
+&amp;lt;a href=&amp;quot;javascript:&amp;quot;&amp;gt;点击后不会跳转, 无反应&amp;lt;/a&amp;gt; 如果javascript:代码,执行该代码 &amp;lt;a href=&amp;quot;mailto:邮箱&amp;quot;&amp;gt;发邮件&amp;lt;/a&amp;gt; &amp;lt;a href=&amp;quot;tel:手机号&amp;quot;&amp;gt;打打电话&amp;lt;/a&amp;gt;  href来做锚点,跳转到当前页面中某标签的id为xxx的页面元素
+&amp;lt;a href=&amp;quot;#xxx&amp;quot;&amp;gt;xxx&amp;lt;/a&amp;gt;  target属性
+在新页面打开：&amp;lt;a href=&amp;quot;url/相对路径&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;xxx&amp;lt;/a&amp;gt; &amp;lt;hr&amp;gt; 在当前页面打开：&amp;lt;a href=&amp;quot;url/相对路径&amp;quot; target=&amp;quot;_self&amp;quot;&amp;gt;xxx&amp;lt;/a&amp;gt;&amp;lt;hr&amp;gt; 在父页面打开（有两个页面时）：&amp;lt;a href=&amp;quot;url/相对路径&amp;quot; target=&amp;quot;_parent&amp;quot;&amp;gt;xxx&amp;lt;/a&amp;gt;&amp;lt;hr&amp;gt; 在最顶层页面打开（有多于两个页面）：&amp;lt;a href=&amp;quot;url/相对路径&amp;quot; target=&amp;quot;_top&amp;quot;&amp;gt;xxx&amp;lt;/a&amp;gt;  download 属性
+ 下载页面, 不是所有浏览器都支持
+  iframe标签 iframe标签用于在一个页面当中嵌套页面,但目前已经很少用了，基本都是在一些旧项目才会看到。 可以a标签进行使用,如下, 点击a标签, 则会在iframe标签内打开指定的url页面</description>
+    </item>
     
     <item>
       <title>HTML入门笔记</title>
