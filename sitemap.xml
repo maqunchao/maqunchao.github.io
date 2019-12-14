@@ -3,17 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://maqunchao.xyz/posts/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</loc>
-    <lastmod>2019-11-29T13:48:51+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://maqunchao.xyz/</loc>
-    <lastmod>2019-11-29T13:48:51+08:00</lastmod>
+    <lastmod>2019-12-15T00:15:34+08:00</lastmod>
   </url>
   
   <url>
     <loc>http://maqunchao.xyz/posts/</loc>
+    <lastmod>2019-12-15T00:15:34+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://maqunchao.xyz/posts/%E6%B5%85%E6%9E%90url/</loc>
+    <lastmod>2019-12-15T00:15:34+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://maqunchao.xyz/posts/css%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/</loc>
+    <lastmod>2019-12-14T00:15:34+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://maqunchao.xyz/posts/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</loc>
     <lastmod>2019-11-29T13:48:51+08:00</lastmod>
   </url>
   
@@ -25,11 +35,6 @@
   <url>
     <loc>http://maqunchao.xyz/posts/%E7%AC%AC2%E7%AF%87blog/</loc>
     <lastmod>2019-11-18T06:15:34+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://maqunchao.xyz/posts/css%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/</loc>
-    <lastmod>2019-11-18T00:15:34+08:00</lastmod>
   </url>
   
   <url>

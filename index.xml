@@ -6,10 +6,44 @@
     <description>Recent content on Mark的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Fri, 29 Nov 2019 13:48:51 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 15 Dec 2019 00:15:34 +0800</lastBuildDate>
     
 	<atom:link href="http://maqunchao.xyz/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>浅析URL</title>
+      <link>http://maqunchao.xyz/posts/%E6%B5%85%E6%9E%90url/</link>
+      <pubDate>Sun, 15 Dec 2019 00:15:34 +0800</pubDate>
+      
+      <guid>http://maqunchao.xyz/posts/%E6%B5%85%E6%9E%90url/</guid>
+      <description>浅析URL url包含部分  以下为例子
+https://baike.baidu.com/item/CSS/5457?fr=aladdin#7  传输协议：http，https
+ 域名：baike.baidu.com
+ 端口: http 大部分默认80, https默认443
+ 路径: /item/CSS/5457
+ 查询参数: ?fr=aladdin
+ 锚点: #7
+  一共有65535个端口（基本够用）
+ 要提供HTTP服务最好用80端口
+ 要提供HTTPS服务最好用443端口
+ 要提供FTP服务最好用21端口
+ 端口对应的服务列表
+ 0-1023号端口是留给系统用的，只有拥有了管理员权限之后才能使用，但一般不建议使用
+ 一个端口如果被占用，就只能用另一个端口,总之IP和端口缺一不可，IP定位一台设备，端口定位一个设备的服务
+  DNS作用, nslookup 命令怎么用 1.DNS：域名系统 过程：当你输入一个网址，你的chrome浏览器会向电信提供的DNS服务器询问这个网址对应的IP 电信会回答一个IP 然后chrome才会想对应IP的80/443端口发送请求 请求内容是查看这个网址的网页
+ nslookup可查询IP地址, 命令行输入 nslookup + 域名
+λ nslookup baidu.com 服务器: UnKnown Address: fe80::1 非权威应答: 名称: baidu.com Addresses: 220.181.38.148 39.156.69.79   IP 的作用是什么，ping 命令怎么用  IP：internet protocol IP主要约定两件事：一是如何定位一台设备；二是如何封装数据报文跟其他设备交流</description>
+    </item>
+    
+    <item>
+      <title>CSS知识总结</title>
+      <link>http://maqunchao.xyz/posts/css%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Sat, 14 Dec 2019 00:15:34 +0800</pubDate>
+      
+      <guid>http://maqunchao.xyz/posts/css%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/</guid>
+      <description>CSS知识总结 浏览器渲染原理  浏览器将获取的HTML文档解析成DOM树。 根据CSS，构成层叠样式表模型CSSOM(CSS Object Model),或者说构建css树。 将DOM和CSSOM合并为渲染树(rendering tree)。 渲染树的每个元素包含的内容都是计算过的，它被称之为布局layout(文档流、盒模型、计算大小和位置)。 painting绘制(把边框颜色、文字颜色、阴影等画出来)。 Compose合成(根据层叠关系展示画面)  CSS 动画的两种做法（transition 和 animation） transition 过渡动画 transition：属性名 时长 过渡方式 延迟。 transition：left 200ms linear。 还可以用逗号分隔两个不同属性： transition：left 200ms，top 300ms。 也可以用all来代表所有属性： transition：all 1s； 过渡方式： linear | ease(默认) | ease-in | ease-out | ease-in-out | cubic-bezier | step-start | step-end | steps 注意： 并不是所有属性都可以过渡 display：none --&amp;gt; block 就不能过渡 使用visibility:hidden -&amp;gt; visible 或者opacity来过渡,过渡后宽高仍然存在, 需要手动删除样式  animation animation：时长|过渡方式|延迟|次数|方向|填充模式|是否暂停|动画名 时长：1S或者1000ms 过渡方式：同transition取值相同，如：linear 次数：1或者2.5或者infinite 方向：reverse|alternate|alternate-reverse 填充模式：none|forwards|backwards|both 是否暂停：paused|running  CSS盒模型  centent-box和border-box 内容盒模型的width = contentmaqunchao.</description>
+    </item>
     
     <item>
       <title>HTML常用标签</title>
@@ -50,15 +84,6 @@ hugo new site xxxx(GitHub仓库名称)  创建完成后, 本地文件生成一�
  然后 cd xxxx(目录下)
  执行 git init; 初始化本地仓库
  添加一个默认的主题 命令行执行</description>
-    </item>
-    
-    <item>
-      <title>CSS知识总结</title>
-      <link>http://maqunchao.xyz/posts/css%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/</link>
-      <pubDate>Mon, 18 Nov 2019 00:15:34 +0800</pubDate>
-      
-      <guid>http://maqunchao.xyz/posts/css%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/</guid>
-      <description>CSS知识总结 浏览器渲染原理  浏览器将获取的HTML文档解析成DOM树。 根据CSS，构成层叠样式表模型CSSOM(CSS Object Model),或者说构建css树。 将DOM和CSSOM合并为渲染树(rendering tree)。 渲染树的每个元素包含的内容都是计算过的，它被称之为布局layout(文档流、盒模型、计算大小和位置)。 painting绘制(把边框颜色、文字颜色、阴影等画出来)。 Compose合成(根据层叠关系展示画面)  CSS 动画的两种做法（transition 和 animation） transition 过渡动画 transition：属性名 时长 过渡方式 延迟。 transition：left 200ms linear。 还可以用逗号分隔两个不同属性： transition：left 200ms，top 300ms。 也可以用all来代表所有属性： transition：all 1s； 过渡方式： linear | ease(默认) | ease-in | ease-out | ease-in-out | cubic-bezier | step-start | step-end | steps 注意： 并不是所有属性都可以过渡 display：none --&amp;gt; block 就不能过渡 使用visibility:hidden -&amp;gt; visible 或者opacity来过渡,过渡后宽高仍然存在, 需要手动删除样式  animation animation：时长|过渡方式|延迟|次数|方向|填充模式|是否暂停|动画名 时长：1S或者1000ms 过渡方式：同transition取值相同，如：linear 次数：1或者2.5或者infinite 方向：reverse|alternate|alternate-reverse 填充模式：none|forwards|backwards|both 是否暂停：paused|running  CSS盒模型  centent-box和border-box 内容盒模型的width = content 边框盒模型的width = content + padding*2 + border*2 也就是说，一个div，他的内容宽content为100px，padding为10px，border为1px，margin为10px，那么在内容盒模型的解析下，他的width = 100px，也就是content的宽度 而在边框盒模型的解析下，他的width = 100px + 1px*2 + 10px*2 = 122px.</description>
     </item>
     
     <item>
