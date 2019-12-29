@@ -35,7 +35,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://maqunchao.xyz/" />
 
-<meta property="og:updated_time" content="2019-12-23T00:15:34+08:00" />
+<meta property="og:updated_time" content="2019-12-29T00:15:34+08:00" />
 <meta itemprop="name" content="Mark的博客">
 <meta itemprop="description" content="">
 
@@ -123,6 +123,31 @@
       
       <div class="blah w-100">
         <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="http://maqunchao.xyz/posts/js%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/" class="color-inherit dim link">
+            JS对象基本语法
+            </a>
+        </h1>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          JS对象基本语法 声明对象的两种语法 let obj = {'name':'mark', 'age':26} let obj1 = new Object({'name':'mark', 'gender':'man'})   键名是字符串, 不是标识符, 可以包含任意字符 键名的引号可省略, 省略后只能写标识符 键名的引号省略后, 任然是字符串
+let obj = { 1:'a', 2.6:'b', 1e2:'c', .234:true, 0XFF:true } //属性名都会自动变成字符串 Object.keys(obj) //得到所以key, [&quot;1&quot;, &quot;100&quot;, &quot;255&quot;, &quot;0.234&quot;, &quot;0.26&quot; ]   查看属性两种方法与变量做属性名  中括号语法: obj[&lsquo;key&rsquo;] 点语法: obj.key, key认为是字符串 优先使用中括号语法  使用变量做属性名 let p1 = 'name' let obj = {p1:'mark'}; 属性名是 'p1'; let obj1 = {[p1]:'frank'}; 属性名是 'name';   不加[]的属性名会自动变成字符串 加了[]则会当成变量求值 值如果不是字符串, 则会自动变成字符串
+        </div>
+          <a href="http://maqunchao.xyz/posts/js%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+          </div>
+        
+          <div class="relative w-100 mb4">
+            
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+      <div class="blah w-100">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
           <a href="http://maqunchao.xyz/posts/js%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E4%BB%8B%E7%BB%8D/" class="color-inherit dim link">
             JS基本语法介绍
             </a>
@@ -172,52 +197,18 @@ JavaScript的十个设计缺陷  不适合开发大型程序 非常小的标准�
 
           </div>
         
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-      <div class="blah w-100">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="http://maqunchao.xyz/posts/%E6%B5%85%E6%9E%90url/" class="color-inherit dim link">
-            浅析URL
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          浅析URL url包含部分  以下为例子
-https://baike.baidu.com/item/CSS/5457?fr=aladdin#7  传输协议：http，https
- 域名：baike.baidu.com
- 端口: http 大部分默认80, https默认443
- 路径: /item/CSS/5457
- 查询参数: ?fr=aladdin
- 锚点: #7
-  一共有65535个端口（基本够用）
- 要提供HTTP服务最好用80端口
- 要提供HTTPS服务最好用443端口
- 要提供FTP服务最好用21端口
- 端口对应的服务列表
- 0-1023号端口是留给系统用的，只有拥有了管理员权限之后才能使用，但一般不建议使用
- 一个端口如果被占用，就只能用另一个端口,总之IP和端口缺一不可，IP定位一台设备，端口定位一个设备的服务
-  DNS作用, nslookup 命令怎么用 1.DNS：域名系统 过程：当你输入一个网址，你的chrome浏览器会向电信提供的DNS服务器询问这个网址对应的IP 电信会回答一个IP 然后chrome才会想对应IP的80/443端口发送请求 请求内容是查看这个网址的网页
- nslookup可查询IP地址, 命令行输入 nslookup + 域名
-λ nslookup baidu.com 服务器: UnKnown Address: fe80::1 非权威应答: 名称: baidu.com Addresses: 220.181.38.148 39.156.69.79   IP 的作用是什么，ping 命令怎么用  IP：internet protocol IP主要约定两件事：一是如何定位一台设备；二是如何封装数据报文跟其他设备交流
-        </div>
-          <a href="http://maqunchao.xyz/posts/%E6%B5%85%E6%9E%90url/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
-    </div>
-  </div>
-</article>
-
-          </div>
-        
       </section>
 
       
       <section class="w-100">
         <h1 class="f3">More</h1>
         
+        
+          <h2 class="f5 fw4 mb4 dib mr3">
+            <a href="http://maqunchao.xyz/posts/%E6%B5%85%E6%9E%90url/" class="link black dim">
+              浅析URL
+            </a>
+          </h2>
         
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="http://maqunchao.xyz/posts/css%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/" class="link black dim">
@@ -234,12 +225,6 @@ https://baike.baidu.com/item/CSS/5457?fr=aladdin#7  传输协议：http，https
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="http://maqunchao.xyz/posts/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0/" class="link black dim">
               HTML入门笔记
-            </a>
-          </h2>
-        
-          <h2 class="f5 fw4 mb4 dib mr3">
-            <a href="http://maqunchao.xyz/posts/%E7%AC%AC2%E7%AF%87blog/" class="link black dim">
-              Hugo配合GitHub搭建博客
             </a>
           </h2>
         

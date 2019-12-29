@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Mark的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Mon, 23 Dec 2019 00:15:34 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 29 Dec 2019 00:15:34 +0800</lastBuildDate>
     
 	<atom:link href="http://maqunchao.xyz/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>JS对象基本语法</title>
+      <link>http://maqunchao.xyz/posts/js%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</link>
+      <pubDate>Sun, 29 Dec 2019 00:15:34 +0800</pubDate>
+      
+      <guid>http://maqunchao.xyz/posts/js%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</guid>
+      <description>JS对象基本语法 声明对象的两种语法 let obj = {&#39;name&#39;:&#39;mark&#39;, &#39;age&#39;:26} let obj1 = new Object({&#39;name&#39;:&#39;mark&#39;, &#39;gender&#39;:&#39;man&#39;})   键名是字符串, 不是标识符, 可以包含任意字符 键名的引号可省略, 省略后只能写标识符 键名的引号省略后, 任然是字符串
+let obj = { 1:&#39;a&#39;, 2.6:&#39;b&#39;, 1e2:&#39;c&#39;, .234:true, 0XFF:true } //属性名都会自动变成字符串 Object.keys(obj) //得到所以key, [&amp;quot;1&amp;quot;, &amp;quot;100&amp;quot;, &amp;quot;255&amp;quot;, &amp;quot;0.234&amp;quot;, &amp;quot;0.26&amp;quot; ]   查看属性两种方法与变量做属性名  中括号语法: obj[&amp;lsquo;key&amp;rsquo;] 点语法: obj.key, key认为是字符串 优先使用中括号语法  使用变量做属性名 let p1 = &#39;name&#39; let obj = {p1:&#39;mark&#39;}; 属性名是 &#39;p1&#39;; let obj1 = {[p1]:&#39;frank&#39;}; 属性名是 &#39;name&#39;;   不加[]的属性名会自动变成字符串 加了[]则会当成变量求值 值如果不是字符串, 则会自动变成字符串</description>
+    </item>
     
     <item>
       <title>JS基本语法介绍</title>
