@@ -6,7 +6,7 @@
     
     <title>Mark的博客  | HTML入门笔记</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.59.1" />
+    <meta name="generator" content="Hugo 0.60.0" />
     
     
       <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -26,25 +26,22 @@
     
     
     <meta property="og:title" content="HTML入门笔记" />
-<meta property="og:description" content="历史简介  1990年, Tim Berners-Lee发明了HTML, 自己编写了一个浏览器和服务器, 然后通过自己的浏览器访问了自己写的服务器.  HTML 起手式 &lt;!DOCTYPE html&gt; &lt;!-- 文档类型 --&gt; &lt;html lang=&quot;zh-CN&quot;&gt; &lt;!-- html标签, 改成中文 --&gt; &lt;head&gt; &lt;meta charset=&quot;UTF-8&quot; /&gt; &lt;!-- 文件的字符编码 --&gt; &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt; &lt;!-- 禁用缩放, 兼容手机 --&gt; &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot; /&gt; &lt;!-- 告诉IE浏览器, 使用最新版本 --&gt; &lt;title&gt;Document&lt;/title&gt; &lt;!-- 网页标题 --&gt; &lt;/head&gt; &lt;body&gt;&lt;/body&gt; &lt;/html&gt;  常用的表示章节的标签  h1 ~ h6, 标题标签， 呈现六种不同级别的标题，由大到小 section, 章节标签， 表示一个包含在HTML文档中的独立部分 article, 表示文章 p，段落标签 header， 头部 footer，脚部，一般表示根元素的页脚 main， 主要内容 aside， 旁支内容 div， 块级元素, 可用来划分   全局属性  class, 给标签分类或者标记" />
+<meta property="og:description" content="历史简介  1990年, Tim Berners-Lee发明了HTML, 自己编写了一个浏览器和服务器, 然后通过自己的浏览器访问了自己写的服务器.  HTML 起手式 &lt;!DOCTYPE html&gt; &lt;!--文档类型 --&gt; &lt;html lang=&#34;zh-CN&#34;&gt; &lt;!--html标签, 改成中文 --&gt; &lt;head&gt; &lt;meta charset=&#34;UTF-8&#34; /&gt; &lt;!--文件的字符编码 --&gt; &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0&#34; /&gt; &lt;!--禁用缩放, 兼容手机 --&gt; &lt;meta http-equiv=&#34;X-UA-Compatible&#34; content=&#34;ie=edge&#34; /&gt; &lt;!--告诉IE浏览器, 使用最新版本 --&gt; &lt;title&gt;Document&lt;/title&gt; &lt;!--网页标题 --&gt; &lt;/head&gt; &lt;body&gt;&lt;/body&gt; &lt;/html&gt; 常用的表示章节的标签  h1 ~ h6, 标题标签， 呈现六种不同级别的标题，由大到小 section, 章节标签， 表示一个包含在HTML文档中的独立部分 article, 表示文章 p，段落标签 header， 头部 footer，脚部，一般表示根元素的页脚 main， 主要内容 aside， 旁支内容 div， 块级元素, 可用来划分  全局属性  class, 给标签分类或者标记  &lt;div class=&#34;middle open &#34;&gt; &lt;/div&gt; contenteditable, 表示元素是否被用户编辑  &lt;div contenteditable=&#34;true&#34;&gt; &lt;/div&gt; hiddle, 可用来隐藏页面元素 id, 定义了全局唯一的标识, 但页面如果存在多个一样的id,并不会报错, 谨慎使用 style, 行内样式优先级高于外联css样式, 低于JS设置 tabindex, 页面元素是否聚焦, 可使用Tab键进行选择切换  tabindex = 正值 表示该元素可以被选择，从小到大的进行选取。 tabindex = 0 表示该该元素最后被选取。 tabindex = 负值 表示该元素不会被选取，一般赋值&#39;-1&#39;." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://maqunchao.xyz/posts/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0/" />
 <meta property="article:published_time" content="2019-11-27T06:15:34+08:00" />
 <meta property="article:modified_time" content="2019-11-27T06:15:34+08:00" />
 <meta itemprop="name" content="HTML入门笔记">
-<meta itemprop="description" content="历史简介  1990年, Tim Berners-Lee发明了HTML, 自己编写了一个浏览器和服务器, 然后通过自己的浏览器访问了自己写的服务器.  HTML 起手式 &lt;!DOCTYPE html&gt; &lt;!-- 文档类型 --&gt; &lt;html lang=&quot;zh-CN&quot;&gt; &lt;!-- html标签, 改成中文 --&gt; &lt;head&gt; &lt;meta charset=&quot;UTF-8&quot; /&gt; &lt;!-- 文件的字符编码 --&gt; &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt; &lt;!-- 禁用缩放, 兼容手机 --&gt; &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot; /&gt; &lt;!-- 告诉IE浏览器, 使用最新版本 --&gt; &lt;title&gt;Document&lt;/title&gt; &lt;!-- 网页标题 --&gt; &lt;/head&gt; &lt;body&gt;&lt;/body&gt; &lt;/html&gt;  常用的表示章节的标签  h1 ~ h6, 标题标签， 呈现六种不同级别的标题，由大到小 section, 章节标签， 表示一个包含在HTML文档中的独立部分 article, 表示文章 p，段落标签 header， 头部 footer，脚部，一般表示根元素的页脚 main， 主要内容 aside， 旁支内容 div， 块级元素, 可用来划分   全局属性  class, 给标签分类或者标记">
-
-
+<meta itemprop="description" content="历史简介  1990年, Tim Berners-Lee发明了HTML, 自己编写了一个浏览器和服务器, 然后通过自己的浏览器访问了自己写的服务器.  HTML 起手式 &lt;!DOCTYPE html&gt; &lt;!--文档类型 --&gt; &lt;html lang=&#34;zh-CN&#34;&gt; &lt;!--html标签, 改成中文 --&gt; &lt;head&gt; &lt;meta charset=&#34;UTF-8&#34; /&gt; &lt;!--文件的字符编码 --&gt; &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0&#34; /&gt; &lt;!--禁用缩放, 兼容手机 --&gt; &lt;meta http-equiv=&#34;X-UA-Compatible&#34; content=&#34;ie=edge&#34; /&gt; &lt;!--告诉IE浏览器, 使用最新版本 --&gt; &lt;title&gt;Document&lt;/title&gt; &lt;!--网页标题 --&gt; &lt;/head&gt; &lt;body&gt;&lt;/body&gt; &lt;/html&gt; 常用的表示章节的标签  h1 ~ h6, 标题标签， 呈现六种不同级别的标题，由大到小 section, 章节标签， 表示一个包含在HTML文档中的独立部分 article, 表示文章 p，段落标签 header， 头部 footer，脚部，一般表示根元素的页脚 main， 主要内容 aside， 旁支内容 div， 块级元素, 可用来划分  全局属性  class, 给标签分类或者标记  &lt;div class=&#34;middle open &#34;&gt; &lt;/div&gt; contenteditable, 表示元素是否被用户编辑  &lt;div contenteditable=&#34;true&#34;&gt; &lt;/div&gt; hiddle, 可用来隐藏页面元素 id, 定义了全局唯一的标识, 但页面如果存在多个一样的id,并不会报错, 谨慎使用 style, 行内样式优先级高于外联css样式, 低于JS设置 tabindex, 页面元素是否聚焦, 可使用Tab键进行选择切换  tabindex = 正值 表示该元素可以被选择，从小到大的进行选取。 tabindex = 0 表示该该元素最后被选取。 tabindex = 负值 表示该元素不会被选取，一般赋值&#39;-1&#39;.">
 <meta itemprop="datePublished" content="2019-11-27T06:15:34&#43;08:00" />
 <meta itemprop="dateModified" content="2019-11-27T06:15:34&#43;08:00" />
-<meta itemprop="wordCount" content="170">
+<meta itemprop="wordCount" content="164">
 
 
 
-<meta itemprop="keywords" content="" />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="HTML入门笔记"/>
-<meta name="twitter:description" content="历史简介  1990年, Tim Berners-Lee发明了HTML, 自己编写了一个浏览器和服务器, 然后通过自己的浏览器访问了自己写的服务器.  HTML 起手式 &lt;!DOCTYPE html&gt; &lt;!-- 文档类型 --&gt; &lt;html lang=&quot;zh-CN&quot;&gt; &lt;!-- html标签, 改成中文 --&gt; &lt;head&gt; &lt;meta charset=&quot;UTF-8&quot; /&gt; &lt;!-- 文件的字符编码 --&gt; &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt; &lt;!-- 禁用缩放, 兼容手机 --&gt; &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot; /&gt; &lt;!-- 告诉IE浏览器, 使用最新版本 --&gt; &lt;title&gt;Document&lt;/title&gt; &lt;!-- 网页标题 --&gt; &lt;/head&gt; &lt;body&gt;&lt;/body&gt; &lt;/html&gt;  常用的表示章节的标签  h1 ~ h6, 标题标签， 呈现六种不同级别的标题，由大到小 section, 章节标签， 表示一个包含在HTML文档中的独立部分 article, 表示文章 p，段落标签 header， 头部 footer，脚部，一般表示根元素的页脚 main， 主要内容 aside， 旁支内容 div， 块级元素, 可用来划分   全局属性  class, 给标签分类或者标记"/>
+<meta name="twitter:description" content="历史简介  1990年, Tim Berners-Lee发明了HTML, 自己编写了一个浏览器和服务器, 然后通过自己的浏览器访问了自己写的服务器.  HTML 起手式 &lt;!DOCTYPE html&gt; &lt;!--文档类型 --&gt; &lt;html lang=&#34;zh-CN&#34;&gt; &lt;!--html标签, 改成中文 --&gt; &lt;head&gt; &lt;meta charset=&#34;UTF-8&#34; /&gt; &lt;!--文件的字符编码 --&gt; &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0&#34; /&gt; &lt;!--禁用缩放, 兼容手机 --&gt; &lt;meta http-equiv=&#34;X-UA-Compatible&#34; content=&#34;ie=edge&#34; /&gt; &lt;!--告诉IE浏览器, 使用最新版本 --&gt; &lt;title&gt;Document&lt;/title&gt; &lt;!--网页标题 --&gt; &lt;/head&gt; &lt;body&gt;&lt;/body&gt; &lt;/html&gt; 常用的表示章节的标签  h1 ~ h6, 标题标签， 呈现六种不同级别的标题，由大到小 section, 章节标签， 表示一个包含在HTML文档中的独立部分 article, 表示文章 p，段落标签 header， 头部 footer，脚部，一般表示根元素的页脚 main， 主要内容 aside， 旁支内容 div， 块级元素, 可用来划分  全局属性  class, 给标签分类或者标记  &lt;div class=&#34;middle open &#34;&gt; &lt;/div&gt; contenteditable, 表示元素是否被用户编辑  &lt;div contenteditable=&#34;true&#34;&gt; &lt;/div&gt; hiddle, 可用来隐藏页面元素 id, 定义了全局唯一的标识, 但页面如果存在多个一样的id,并不会报错, 谨慎使用 style, 行内样式优先级高于外联css样式, 低于JS设置 tabindex, 页面元素是否聚焦, 可使用Tab键进行选择切换  tabindex = 正值 表示该元素可以被选择，从小到大的进行选取。 tabindex = 0 表示该该元素最后被选取。 tabindex = 负值 表示该元素不会被选取，一般赋值&#39;-1&#39;."/>
 
   </head>
 
@@ -105,34 +102,26 @@
       
     </header>
 
-    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
-
-<h2 id="历史简介">历史简介</h2>
-
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><h2 id="heading">历史简介</h2>
 <ul>
 <li>1990年, Tim Berners-Lee发明了HTML, 自己编写了一个浏览器和服务器, 然后通过自己的浏览器访问了自己写的服务器.</li>
 </ul>
-
-<h2 id="html-起手式">HTML 起手式</h2>
-
-<pre><code class="language-html">&lt;!DOCTYPE html&gt;  &lt;!-- 文档类型 --&gt;
-&lt;html lang=&quot;zh-CN&quot;&gt; &lt;!-- html标签, 改成中文 --&gt;
-  &lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot; /&gt;
-    &lt;!-- 文件的字符编码 --&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
-    &lt;!-- 禁用缩放, 兼容手机 --&gt;
-    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot; /&gt;
-    &lt;!-- 告诉IE浏览器, 使用最新版本 --&gt;
-    &lt;title&gt;Document&lt;/title&gt;
-    &lt;!-- 网页标题 --&gt;
-  &lt;/head&gt;
-  &lt;body&gt;&lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
-
-<h2 id="常用的表示章节的标签">常用的表示章节的标签</h2>
-
+<h2 id="html-">HTML 起手式</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>  <span style="color:#75715e">&lt;!--</span><span style="color:#75715e"> 文档类型 </span><span style="color:#75715e">--&gt;</span>
+&lt;<span style="color:#f92672">html</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;zh-CN&#34;</span>&gt; <span style="color:#75715e">&lt;!--</span><span style="color:#75715e"> html标签, 改成中文 </span><span style="color:#75715e">--&gt;</span>
+  &lt;<span style="color:#f92672">head</span>&gt;
+    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;UTF-8&#34;</span> /&gt;
+    <span style="color:#75715e">&lt;!--</span><span style="color:#75715e"> 文件的字符编码 </span><span style="color:#75715e">--&gt;</span>
+    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;viewport&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;width=device-width, initial-scale=1.0&#34;</span> /&gt;
+    <span style="color:#75715e">&lt;!--</span><span style="color:#75715e"> 禁用缩放, 兼容手机 </span><span style="color:#75715e">--&gt;</span>
+    &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">http-equiv</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;X-UA-Compatible&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;ie=edge&#34;</span> /&gt;
+    <span style="color:#75715e">&lt;!--</span><span style="color:#75715e"> 告诉IE浏览器, 使用最新版本 </span><span style="color:#75715e">--&gt;</span>
+    &lt;<span style="color:#f92672">title</span>&gt;Document&lt;/<span style="color:#f92672">title</span>&gt;
+    <span style="color:#75715e">&lt;!--</span><span style="color:#75715e"> 网页标题 </span><span style="color:#75715e">--&gt;</span>
+  &lt;/<span style="color:#f92672">head</span>&gt;
+  &lt;<span style="color:#f92672">body</span>&gt;&lt;/<span style="color:#f92672">body</span>&gt;
+&lt;/<span style="color:#f92672">html</span>&gt;
+</code></pre></div><h2 id="heading1">常用的表示章节的标签</h2>
 <ul>
 <li>h1 ~ h6, 标题标签， 呈现六种不同级别的标题，由大到小</li>
 <li>section, 章节标签， 表示一个包含在HTML文档中的独立部分</li>
@@ -142,51 +131,38 @@
 <li>footer，脚部，一般表示根元素的页脚</li>
 <li>main， 主要内容</li>
 <li>aside， 旁支内容</li>
-<li>div， 块级元素, 可用来划分
-<br /></li>
+<li>div， 块级元素, 可用来划分</li>
 </ul>
-
-<h2 id="全局属性">全局属性</h2>
-
+<h2 id="heading2">全局属性</h2>
 <ol>
-<li><p>class, 给标签分类或者标记</p>
-
-<pre><code class="language-javascript">&lt;div  class=&quot;middle open &quot;&gt;  
+<li>class, 给标签分类或者标记</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"> <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">div</span>  <span style="color:#66d9ef">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;middle open &#34;</span><span style="color:#f92672">&gt;</span>  
    
-&lt;/div&gt;
-</code></pre></li>
-
-<li><p>contenteditable, 表示元素是否被用户编辑</p>
-
-<pre><code class="language-javascript">&lt;div  contenteditable=&quot;true&quot;&gt;  
-&lt;/div&gt;
-</code></pre></li>
-
-<li><p>hiddle, 可用来隐藏页面元素</p></li>
-
-<li><p>id, 定义了全局唯一的标识, 但页面如果存在多个一样的id,并不会报错, 谨慎使用</p></li>
-
-<li><p>style, 行内样式优先级高于外联css样式, 低于JS设置</p></li>
-
-<li><p>tabindex, 页面元素是否聚焦, 可使用Tab键进行选择切换</p>
-
+<span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/</span><span style="color:#960050;background-color:#1e0010">d</span><span style="color:#960050;background-color:#1e0010">i</span><span style="color:#960050;background-color:#1e0010">v</span><span style="color:#960050;background-color:#1e0010">&gt;</span>
+</code></pre></div><ol start="2">
+<li>contenteditable, 表示元素是否被用户编辑</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">div</span>  <span style="color:#a6e22e">contenteditable</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;true&#34;</span><span style="color:#f92672">&gt;</span>  
+<span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/</span><span style="color:#960050;background-color:#1e0010">d</span><span style="color:#960050;background-color:#1e0010">i</span><span style="color:#960050;background-color:#1e0010">v</span><span style="color:#960050;background-color:#1e0010">&gt;</span>
+</code></pre></div><ol start="3">
+<li>hiddle, 可用来隐藏页面元素</li>
+<li>id, 定义了全局唯一的标识, 但页面如果存在多个一样的id,并不会报错, 谨慎使用</li>
+<li>style, 行内样式优先级高于外联css样式, 低于JS设置</li>
+<li>tabindex, 页面元素是否聚焦, 可使用Tab键进行选择切换</li>
+</ol>
 <pre><code>tabindex = 正值  表示该元素可以被选择，从小到大的进行选取。
 tabindex = 0    表示该该元素最后被选取。
 tabindex = 负值  表示该元素不会被选取，一般赋值'-1'.
-</code></pre></li>
-
-<li><p>title, 表示咨询信息文本，和它术语的属性相关，可显示完整的内容，可与省略号一起使用, 见下面示例。</p>
-
-<pre><code class="language-css">.bg{
-white-space: nowrap; &lt;!-- 内容不换行 --&gt;
-overflow: hidden;   &lt;!-- 超出内容部分隐藏 --&gt;
-text-overflow: ellipsis;&lt;!-- 用省略号结尾 --&gt;
-}
-</code></pre></li>
+</code></pre><ol start="7">
+<li>title, 表示咨询信息文本，和它术语的属性相关，可显示完整的内容，可与省略号一起使用, 见下面示例。</li>
 </ol>
-
-<h2 id="常用内容标签">常用内容标签</h2>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#a6e22e">bg</span>{
+    <span style="color:#66d9ef">white-space</span>: <span style="color:#66d9ef">nowrap</span>; <span style="color:#960050;background-color:#1e0010">&lt;</span><span style="color:#960050;background-color:#1e0010">!</span><span style="color:#960050;background-color:#1e0010">-</span><span style="color:#960050;background-color:#1e0010">-</span> <span style="color:#960050;background-color:#1e0010">内</span><span style="color:#960050;background-color:#1e0010">容</span><span style="color:#960050;background-color:#1e0010">不</span><span style="color:#960050;background-color:#1e0010">换</span><span style="color:#960050;background-color:#1e0010">行</span> <span style="color:#960050;background-color:#1e0010">-</span><span style="color:#960050;background-color:#1e0010">-</span><span style="color:#960050;background-color:#1e0010">&gt;</span>
+    <span style="color:#66d9ef">overflow</span>: <span style="color:#66d9ef">hidden</span>;   <span style="color:#960050;background-color:#1e0010">&lt;</span><span style="color:#960050;background-color:#1e0010">!</span><span style="color:#960050;background-color:#1e0010">-</span><span style="color:#960050;background-color:#1e0010">-</span> <span style="color:#960050;background-color:#1e0010">超</span><span style="color:#960050;background-color:#1e0010">出</span><span style="color:#960050;background-color:#1e0010">内</span><span style="color:#960050;background-color:#1e0010">容</span><span style="color:#960050;background-color:#1e0010">部</span><span style="color:#960050;background-color:#1e0010">分</span><span style="color:#960050;background-color:#1e0010">隐</span><span style="color:#960050;background-color:#1e0010">藏</span> <span style="color:#960050;background-color:#1e0010">-</span><span style="color:#960050;background-color:#1e0010">-</span><span style="color:#960050;background-color:#1e0010">&gt;</span>
+    <span style="color:#66d9ef">text-overflow</span>: <span style="color:#66d9ef">ellipsis</span>;<span style="color:#960050;background-color:#1e0010">&lt;</span><span style="color:#960050;background-color:#1e0010">!</span><span style="color:#960050;background-color:#1e0010">-</span><span style="color:#960050;background-color:#1e0010">-</span> <span style="color:#960050;background-color:#1e0010">用</span><span style="color:#960050;background-color:#1e0010">省</span><span style="color:#960050;background-color:#1e0010">略</span><span style="color:#960050;background-color:#1e0010">号</span><span style="color:#960050;background-color:#1e0010">结</span><span style="color:#960050;background-color:#1e0010">尾</span> <span style="color:#960050;background-color:#1e0010">-</span><span style="color:#960050;background-color:#1e0010">-</span><span style="color:#960050;background-color:#1e0010">&gt;</span>
+}
+</code></pre></div><h2 id="heading3">常用内容标签</h2>
 <ol>
 <li>ol + li 有序列表 ordered list</li>
 <li>ul + li 无序列表 unordered list</li>
@@ -223,7 +199,7 @@ text-overflow: ellipsis;&lt;!-- 用省略号结尾 --&gt;
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between">
   <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://maqunchao.xyz/" >
-    &copy; 2019 Mark的博客
+    &copy; 2020 Mark的博客
   </a>
     <div>
 
