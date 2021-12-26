@@ -6,7 +6,7 @@
     
     <title>Mark的博客  | git基本操作</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.59.1" />
+    <meta name="generator" content="Hugo 0.60.0" />
     
     
       <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -33,16 +33,13 @@
 <meta property="article:modified_time" content="2019-11-18T00:15:34+08:00" />
 <meta itemprop="name" content="git基本操作">
 <meta itemprop="description" content="git基本使用  git init ; 初始化 创建一个.git目录 当本地仓库 git add 文件路径; 选择变化的文件进行提交 .gitignore; 描述那些文件是不需要提交的 git commit -v; 提交已经添加的文件, 并打开编辑器编写日志; 也可git commit -m 字符串; 在命令行中说明理由并提交, 如果字符串中有空格需要用引号括起来 git log; 打印出已经提交的各个版本信息(带有版本号); git reset &ndash;hard 版本号(git log查询出来的); 回退到某个版本 git reflog; 打印历史变更的所以版本,以及版本号 git branch x(分支名称); 基于当前commit创建一个新的分支,我在那个分支提交,代码就在那个分支 git checkout x(分支名称); 用于切换分支 合并分支:首先进入要保留的分支; 运行 git merge x(需要合并的名称) 进行合并, 合并完成后删除无用分支 git branch -d x(分支名称) git add . 提交当前目录所以文件 git branch; 可显示当前在那个分支 git status -sb; 显示冲突文件  git与github远程仓库配合使用 生成ssh key  运行ssh-keygen -t rsa -b 4096 -C 自己的邮箱 cat ~/.">
-
-
 <meta itemprop="datePublished" content="2019-11-18T00:15:34&#43;08:00" />
 <meta itemprop="dateModified" content="2019-11-18T00:15:34&#43;08:00" />
 <meta itemprop="wordCount" content="105">
 
 
 
-<meta itemprop="keywords" content="" />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="git基本操作"/>
 <meta name="twitter:description" content="git基本使用  git init ; 初始化 创建一个.git目录 当本地仓库 git add 文件路径; 选择变化的文件进行提交 .gitignore; 描述那些文件是不需要提交的 git commit -v; 提交已经添加的文件, 并打开编辑器编写日志; 也可git commit -m 字符串; 在命令行中说明理由并提交, 如果字符串中有空格需要用引号括起来 git log; 打印出已经提交的各个版本信息(带有版本号); git reset &ndash;hard 版本号(git log查询出来的); 回退到某个版本 git reflog; 打印历史变更的所以版本,以及版本号 git branch x(分支名称); 基于当前commit创建一个新的分支,我在那个分支提交,代码就在那个分支 git checkout x(分支名称); 用于切换分支 合并分支:首先进入要保留的分支; 运行 git merge x(需要合并的名称) 进行合并, 合并完成后删除无用分支 git branch -d x(分支名称) git add . 提交当前目录所以文件 git branch; 可显示当前在那个分支 git status -sb; 显示冲突文件  git与github远程仓库配合使用 生成ssh key  运行ssh-keygen -t rsa -b 4096 -C 自己的邮箱 cat ~/."/>
 
@@ -105,10 +102,7 @@
       
     </header>
 
-    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
-
-<h1 id="git基本使用">git基本使用</h1>
-
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><h1 id="git">git基本使用</h1>
 <ol>
 <li>git init ; 初始化 创建一个.git目录 当本地仓库</li>
 <li>git add 文件路径; 选择变化的文件进行提交</li>
@@ -124,15 +118,12 @@
 <li>git branch; 可显示当前在那个分支</li>
 <li>git status -sb; 显示冲突文件</li>
 </ol>
-
-<h1 id="git与github远程仓库配合使用">git与github远程仓库配合使用</h1>
-
-<h2 id="生成ssh-key">生成ssh key</h2>
-
+<h1 id="gitgithub">git与github远程仓库配合使用</h1>
+<h2 id="ssh-key">生成ssh key</h2>
 <ol>
 <li>运行ssh-keygen -t rsa -b 4096 -C 自己的邮箱</li>
 <li>cat ~/.ssh/id_rsa.pub 获取公钥内容, 并粘贴到github上</li>
-<li>ssh -T git@github.com 测试是否配对成功</li>
+<li>ssh -T <a href="mailto:git@github.com">git@github.com</a> 测试是否配对成功</li>
 <li>git remote add origin git@xxxxxxx; 在本地添加远程地址仓库</li>
 <li>git push -u origin master; 把本地master分支推送到远程origin的master分支</li>
 <li>在本地修改与远程代码无冲突的情况下，优先使用:pull-&gt;commit-&gt;push</li>
@@ -160,8 +151,13 @@
     </main>
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between">
+<<<<<<< HEAD
   <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://maqunchao.github.io/" >
     &copy; 2021 Mark的博客
+=======
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://maqunchao.xyz/" >
+    &copy; 2020 Mark的博客
+>>>>>>> 998cf8cea2f8eb124027309c509d0843cb7e733c
   </a>
     <div>
 

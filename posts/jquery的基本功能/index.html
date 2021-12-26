@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Mark的博客  | jQuery的基本功能</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.60.0" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+    
+
+    
+
+    
+      
+    
+
+    
+    
+    <meta property="og:title" content="jQuery的基本功能" />
+<meta property="og:description" content="jQuery的基本功能 1. jQuery 如何获取元素 jQuery的基本设计思想和主要用法，就是获取某个网页元素，然后对其进行某种操作.
+ 使用jQuery,一般就是将一个选择表达式，放进构造函数jQuery()（简写为$），然后得到被选中的元素。选择表达式可以是CSS选择器,也可以是jQuery特有的表达式  //css表达式 $(document) //选择整个文档对象 $(&#39;#myId&#39;) //选择ID为myId的网页元素 $(&#39;div.myClass&#39;) // 选择class为myClass的div元素 $(&#39;input[name=first]&#39;) // 选择name属性等于first的input元素  //jQuery特有的表达式 $(&#39;a:first&#39;) //选择网页中第一个a元素 $(&#39;tr:odd&#39;) //选择表格的奇数行 $(&#39;#myForm :input&#39;) // 选择表单中的input元素 $(&#39;div:visible&#39;) //选择可见的div元素 $(&#39;div:gt(2)&#39;) // 选择所有的div元素，除了前三个 $(&#39;div:animated&#39;) // 选择当前处于动画状态的div元素  2. jQuery的链式操作 链式操作就是最终选中网页元素以后，可以对它进行一系列操作，并且所有操作可以连接在一起，以链条的形式写出来.
+ $(&#39;#xxx&rsquo;)返回的值,并不是元素,是一个api对象  //先找到div元素, 选择其中的h3元素, 选择第3个h3元素, 将这个h3元素的内容改为Hello. $(&#39;div&#39;).find(&#39;h3&#39;).eq(2).html(&#39;Hello&#39;); const api1 = $(&#34;.test&#34;); const api2 = api1.find(&#34;.child&#34;).addClass(&#34;red&#34;); //可写成这样 $(&#34;.test&#34;).find(&#34;.child&#34;).addClass(&#34;red&#34;);  jQuery还提供了.end()方法, 使获取的元素可以返回上级  //退回到选中所有的p元素的那一步 $(&#39;div&#39;) .find(&#39;p&#39;) .eq(1) .html(&#39;Hello&#39;) .end() 3. jQuery如何创建元素 jQuery创建元素, 把新元素直接穿入jQuery的构造函数中" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://maqunchao.xyz/posts/jquery%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%8A%9F%E8%83%BD/" />
+<meta property="article:published_time" content="2020-11-30T00:15:34+08:00" />
+<meta property="article:modified_time" content="2020-11-30T00:15:34+08:00" />
+<meta itemprop="name" content="jQuery的基本功能">
+<meta itemprop="description" content="jQuery的基本功能 1. jQuery 如何获取元素 jQuery的基本设计思想和主要用法，就是获取某个网页元素，然后对其进行某种操作.
+ 使用jQuery,一般就是将一个选择表达式，放进构造函数jQuery()（简写为$），然后得到被选中的元素。选择表达式可以是CSS选择器,也可以是jQuery特有的表达式  //css表达式 $(document) //选择整个文档对象 $(&#39;#myId&#39;) //选择ID为myId的网页元素 $(&#39;div.myClass&#39;) // 选择class为myClass的div元素 $(&#39;input[name=first]&#39;) // 选择name属性等于first的input元素  //jQuery特有的表达式 $(&#39;a:first&#39;) //选择网页中第一个a元素 $(&#39;tr:odd&#39;) //选择表格的奇数行 $(&#39;#myForm :input&#39;) // 选择表单中的input元素 $(&#39;div:visible&#39;) //选择可见的div元素 $(&#39;div:gt(2)&#39;) // 选择所有的div元素，除了前三个 $(&#39;div:animated&#39;) // 选择当前处于动画状态的div元素  2. jQuery的链式操作 链式操作就是最终选中网页元素以后，可以对它进行一系列操作，并且所有操作可以连接在一起，以链条的形式写出来.
+ $(&#39;#xxx&rsquo;)返回的值,并不是元素,是一个api对象  //先找到div元素, 选择其中的h3元素, 选择第3个h3元素, 将这个h3元素的内容改为Hello. $(&#39;div&#39;).find(&#39;h3&#39;).eq(2).html(&#39;Hello&#39;); const api1 = $(&#34;.test&#34;); const api2 = api1.find(&#34;.child&#34;).addClass(&#34;red&#34;); //可写成这样 $(&#34;.test&#34;).find(&#34;.child&#34;).addClass(&#34;red&#34;);  jQuery还提供了.end()方法, 使获取的元素可以返回上级  //退回到选中所有的p元素的那一步 $(&#39;div&#39;) .find(&#39;p&#39;) .eq(1) .html(&#39;Hello&#39;) .end() 3. jQuery如何创建元素 jQuery创建元素, 把新元素直接穿入jQuery的构造函数中">
+<meta itemprop="datePublished" content="2020-11-30T00:15:34&#43;08:00" />
+<meta itemprop="dateModified" content="2020-11-30T00:15:34&#43;08:00" />
+<meta itemprop="wordCount" content="118">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="jQuery的基本功能"/>
+<meta name="twitter:description" content="jQuery的基本功能 1. jQuery 如何获取元素 jQuery的基本设计思想和主要用法，就是获取某个网页元素，然后对其进行某种操作.
+ 使用jQuery,一般就是将一个选择表达式，放进构造函数jQuery()（简写为$），然后得到被选中的元素。选择表达式可以是CSS选择器,也可以是jQuery特有的表达式  //css表达式 $(document) //选择整个文档对象 $(&#39;#myId&#39;) //选择ID为myId的网页元素 $(&#39;div.myClass&#39;) // 选择class为myClass的div元素 $(&#39;input[name=first]&#39;) // 选择name属性等于first的input元素  //jQuery特有的表达式 $(&#39;a:first&#39;) //选择网页中第一个a元素 $(&#39;tr:odd&#39;) //选择表格的奇数行 $(&#39;#myForm :input&#39;) // 选择表单中的input元素 $(&#39;div:visible&#39;) //选择可见的div元素 $(&#39;div:gt(2)&#39;) // 选择所有的div元素，除了前三个 $(&#39;div:animated&#39;) // 选择当前处于动画状态的div元素  2. jQuery的链式操作 链式操作就是最终选中网页元素以后，可以对它进行一系列操作，并且所有操作可以连接在一起，以链条的形式写出来.
+ $(&#39;#xxx&rsquo;)返回的值,并不是元素,是一个api对象  //先找到div元素, 选择其中的h3元素, 选择第3个h3元素, 将这个h3元素的内容改为Hello. $(&#39;div&#39;).find(&#39;h3&#39;).eq(2).html(&#39;Hello&#39;); const api1 = $(&#34;.test&#34;); const api2 = api1.find(&#34;.child&#34;).addClass(&#34;red&#34;); //可写成这样 $(&#34;.test&#34;).find(&#34;.child&#34;).addClass(&#34;red&#34;);  jQuery还提供了.end()方法, 使获取的元素可以返回上级  //退回到选中所有的p元素的那一步 $(&#39;div&#39;) .find(&#39;p&#39;) .eq(1) .html(&#39;Hello&#39;) .end() 3. jQuery如何创建元素 jQuery创建元素, 把新元素直接穿入jQuery的构造函数中"/>
+
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="http://maqunchao.xyz/" class="f3 fw2 hover-white no-underline white-90 dib">
+      Mark的博客
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+
+    <header class="mt4 w-100">
+      <p class="f6 b helvetica tracked">
+          
+        POSTS
+      </p>
+      <h1 class="f1 athelas mb1">jQuery的基本功能</h1>
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2020-11-30T00:15:34&#43;08:00">November 30, 2020</time>
+      
+      
+    </header>
+
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><h1 id="jquery">jQuery的基本功能</h1>
+<h2 id="1-jquery-">1. jQuery 如何获取元素</h2>
+<p>jQuery的基本设计思想和主要用法，就是获取某个网页元素，然后对其进行某种操作.</p>
+<ul>
+<li>使用jQuery,一般就是将一个选择表达式，放进构造函数jQuery()（简写为$），然后得到被选中的元素。选择表达式可以是CSS选择器,也可以是jQuery特有的表达式</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#75715e">//css表达式
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">$</span>(document) <span style="color:#75715e">//选择整个文档对象
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;#myId&#39;</span>) <span style="color:#75715e">//选择ID为myId的网页元素
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;div.myClass&#39;</span>) <span style="color:#75715e">// 选择class为myClass的div元素
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;input[name=first]&#39;</span>) <span style="color:#75715e">// 选择name属性等于first的input元素
+</span><span style="color:#75715e"></span>
+<span style="color:#75715e">//jQuery特有的表达式
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;a:first&#39;</span>) <span style="color:#75715e">//选择网页中第一个a元素
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;tr:odd&#39;</span>) <span style="color:#75715e">//选择表格的奇数行
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;#myForm :input&#39;</span>) <span style="color:#75715e">// 选择表单中的input元素
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;div:visible&#39;</span>) <span style="color:#75715e">//选择可见的div元素
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;div:gt(2)&#39;</span>) <span style="color:#75715e">// 选择所有的div元素，除了前三个
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;div:animated&#39;</span>) <span style="color:#75715e">// 选择当前处于动画状态的div元素
+</span><span style="color:#75715e"></span>
+</code></pre></div><h2 id="2-jquery">2. jQuery的链式操作</h2>
+<p>链式操作就是最终选中网页元素以后，可以对它进行一系列操作，并且所有操作可以连接在一起，以链条的形式写出来.</p>
+<ul>
+<li>$('#xxx&rsquo;)返回的值,并不是元素,是一个api对象</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#75715e">//先找到div元素, 选择其中的h3元素, 选择第3个h3元素, 将这个h3元素的内容改为Hello.
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;div&#39;</span>).<span style="color:#a6e22e">find</span>(<span style="color:#e6db74">&#39;h3&#39;</span>).<span style="color:#a6e22e">eq</span>(<span style="color:#ae81ff">2</span>).<span style="color:#a6e22e">html</span>(<span style="color:#e6db74">&#39;Hello&#39;</span>);
+
+
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">api1</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;.test&#34;</span>);
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">api2</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">api1</span>.<span style="color:#a6e22e">find</span>(<span style="color:#e6db74">&#34;.child&#34;</span>).<span style="color:#a6e22e">addClass</span>(<span style="color:#e6db74">&#34;red&#34;</span>);
+<span style="color:#75715e">//可写成这样
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;.test&#34;</span>).<span style="color:#a6e22e">find</span>(<span style="color:#e6db74">&#34;.child&#34;</span>).<span style="color:#a6e22e">addClass</span>(<span style="color:#e6db74">&#34;red&#34;</span>);
+</code></pre></div><ul>
+<li>jQuery还提供了.end()方法, 使获取的元素可以返回上级</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#75715e">//退回到选中所有的p元素的那一步
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;div&#39;</span>)
+　　　.<span style="color:#a6e22e">find</span>(<span style="color:#e6db74">&#39;p&#39;</span>)
+　　　.<span style="color:#a6e22e">eq</span>(<span style="color:#ae81ff">1</span>)
+　　　.<span style="color:#a6e22e">html</span>(<span style="color:#e6db74">&#39;Hello&#39;</span>)
+　　　.<span style="color:#a6e22e">end</span>()
+</code></pre></div><h2 id="3-jquery">3. jQuery如何创建元素</h2>
+<p>jQuery创建元素, 把新元素直接穿入jQuery的构造函数中</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#75715e">//创建一个div包含span的元素
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;&lt;div&gt;&lt;span&gt;1&lt;/span&gt;&lt;/div&gt;&#34;</span>)
+<span style="color:#75715e">//创建一个class为new的li元素
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;&lt;li class=&#34;new&#34;&gt;new list item&lt;/li&gt;&#39;</span>)
+<span style="color:#75715e">//将li元素添加为ul元素的子元素
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;ul&#39;</span>).<span style="color:#a6e22e">append</span>(<span style="color:#e6db74">&#39;&lt;li&gt;list item&lt;/li&gt;&#39;</span>);
+</code></pre></div><h2 id="4-jquery">4. jQuery如何移动元素</h2>
+<p>jQuery在移动元素上提供了两种方法,一种是直接移动该元素到指定位置, 二种是移动其他元素,让目标元素到达目的地.
+假定我们选中了一个div元素，需要把它移动到p元素后面。</p>
+<ul>
+<li>1.使用.insertAfter()，把div元素移动p元素后面：</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;div&#39;</span>).<span style="color:#a6e22e">insertAfter</span>(<span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;p&#39;</span>));
+</code></pre></div><ul>
+<li>2..after()，把p元素添加到div元素前面</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;p&#39;</span>).<span style="color:#a6e22e">after</span>(<span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;div&#39;</span>));
+</code></pre></div><p>两者的区别是.insertAfter()返回div元素，.after()返回p元素.
+使用这种模式的操作方法，一共有四对：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript">.<span style="color:#a6e22e">insertAfter</span>()<span style="color:#a6e22e">和</span>.<span style="color:#a6e22e">after</span>()<span style="color:#960050;background-color:#1e0010">：</span>    <span style="color:#a6e22e">在现存元素的外部</span><span style="color:#960050;background-color:#1e0010">，</span><span style="color:#a6e22e">从后面插入元素</span>
+.<span style="color:#a6e22e">insertBefore</span>()<span style="color:#a6e22e">和</span>.<span style="color:#a6e22e">before</span>()<span style="color:#960050;background-color:#1e0010">：</span>  <span style="color:#a6e22e">在现存元素的外部</span><span style="color:#960050;background-color:#1e0010">，</span><span style="color:#a6e22e">从前面插入元素</span>
+.<span style="color:#a6e22e">appendTo</span>()<span style="color:#a6e22e">和</span>.<span style="color:#a6e22e">append</span>()<span style="color:#960050;background-color:#1e0010">：</span>      <span style="color:#a6e22e">在现存元素的内部</span><span style="color:#960050;background-color:#1e0010">，</span><span style="color:#a6e22e">从后面插入元素</span>
+.<span style="color:#a6e22e">prependTo</span>()<span style="color:#a6e22e">和</span>.<span style="color:#a6e22e">prepend</span>()<span style="color:#960050;background-color:#1e0010">：</span>    <span style="color:#a6e22e">在现存元素的内部</span><span style="color:#960050;background-color:#1e0010">，</span><span style="color:#a6e22e">从前面插入元素</span>
+</code></pre></div><h2 id="5-jquery-">5. jQuery 如何修改元素的属性</h2>
+<ul>
+<li>1.text()
+设置或返回所选元素的文本内容</li>
+<li>2.html()
+设置或返回所选元素的内容（包括 HTML 标记)</li>
+<li>3.val()
+设置或返回表单字段的值</li>
+<li>4.width()
+取出或设置某个元素的宽度</li>
+<li>5.height()
+取出或设置某个元素的高度</li>
+</ul>
+<p>以上5个函数说明很清楚了 赋值(括号内不为空为赋值）或者取值（括号内为空为取值).
+如果结果集包含多个元素，那么赋值的时候，将对其中所有的元素赋值；取值的时候，则是只取出第一个元素的值（.text()例外，它取出所有元素的text内容）。</p>
+<ul>
+<li>6.attr()
+方法用于获取或修改属性值，但是跟上面三个函数有所不同</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#75715e">//取值
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;#test&#34;</span>).<span style="color:#a6e22e">attr</span>(<span style="color:#e6db74">&#34;href&#34;</span>)
+<span style="color:#75715e">//设值
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#34;#test&#34;</span>).<span style="color:#a6e22e">attr</span>(<span style="color:#e6db74">&#34;href&#34;</span>,<span style="color:#e6db74">&#34;https://www.baidu.com&#34;</span>)
+</code></pre></div><ul class="pa0">
+  
+</ul>
+<div class="mt6">
+      
+      
+      </div>
+    </section>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://maqunchao.xyz/" >
+    &copy; 2020 Mark的博客
+  </a>
+    <div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>
