@@ -32,7 +32,7 @@ for(var i = 0; i&lt;6; i&#43;&#43;){ setTimeout(()=&gt;{ console.log(i) },0)  �
 setTimeout(someTask,100); add();  上面的setTimeout，指定100毫秒以后运行一个任务。但是，如果后面立即运行的任务（当前脚本的同步任务））非常耗时，过了100毫秒还无法结束，那么被推迟运行的someTask就只有等着，等到前面的add运行结束，才轮到它执行。
 setTimeout(function () { func1(); }, 0) func2();  setTimeout的作用是将代码推迟到指定时间执行，如果指定时间为0，即setTimeout(f,0),那么会立刻执行吗？ 答案是不会,setTimeout运行机制说过，必须要等到当前脚本的同步任务和“任务队列”中已有的事 件，全部处理完以后，才会执行setTimeout指定的任务。也就是说，setTimeout的真正作用是，在“任务队列”的现有事件的后面再添加一个 事件，规定在指定时间执行某段代码。setTimeout添加的事件，会在下一次Event Loop执行。所以即使第二个参数设置为0, 其作用也是尽可能早的执行指定任务." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://maqunchao.xyz/posts/js%E5%87%BD%E6%95%B0%E7%9A%84%E6%89%A7%E8%A1%8C%E6%97%B6%E6%9C%BA/" />
+<meta property="og:url" content="https://maqunchao.github.io/posts/js%E5%87%BD%E6%95%B0%E7%9A%84%E6%89%A7%E8%A1%8C%E6%97%B6%E6%9C%BA/" />
 <meta property="article:published_time" content="2020-01-05T00:15:34+08:00" />
 <meta property="article:modified_time" content="2020-01-05T00:15:34+08:00" />
 <meta itemprop="name" content="JS函数的执行时机">
@@ -70,7 +70,7 @@ setTimeout(function () { func1(); }, 0) func2();  setTimeout的作用是将代�
     <div class="bg-black">
       <nav class="pv3 ph3 ph4-ns" role="navigation">
   <div class="flex-l justify-between items-center center">
-    <a href="http://maqunchao.xyz/" class="f3 fw2 hover-white no-underline white-90 dib">
+    <a href="https://maqunchao.github.io/" class="f3 fw2 hover-white no-underline white-90 dib">
       Mark的博客
     </a>
     <div class="flex-l items-center">
@@ -234,8 +234,8 @@ setTimeout(function(j){
     </main>
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between">
-  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://maqunchao.xyz/" >
-    &copy; 2020 Mark的博客
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://maqunchao.github.io/" >
+    &copy; 2021 Mark的博客
   </a>
     <div>
 

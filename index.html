@@ -33,7 +33,7 @@
     <meta property="og:title" content="Mark的博客" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://maqunchao.xyz/" />
+<meta property="og:url" content="https://maqunchao.github.io/" />
 
 <meta property="og:updated_time" content="2020-01-05T00:15:34+08:00" />
 <meta itemprop="name" content="Mark的博客">
@@ -53,7 +53,7 @@
     <div class="pb3-m pb6-l bg-black">
       <nav class="pv3 ph3 ph4-ns" role="navigation">
   <div class="flex-l justify-between items-center center">
-    <a href="http://maqunchao.xyz/" class="f3 fw2 hover-white no-underline white-90 dib">
+    <a href="https://maqunchao.github.io/" class="f3 fw2 hover-white no-underline white-90 dib">
       Mark的博客
     </a>
     <div class="flex-l items-center">
@@ -123,7 +123,7 @@
       
       <div class="blah w-100">
         <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="http://maqunchao.xyz/posts/js%E5%87%BD%E6%95%B0%E7%9A%84%E6%89%A7%E8%A1%8C%E6%97%B6%E6%9C%BA/" class="color-inherit dim link">
+          <a href="https://maqunchao.github.io/posts/js%E5%87%BD%E6%95%B0%E7%9A%84%E6%89%A7%E8%A1%8C%E6%97%B6%E6%9C%BA/" class="color-inherit dim link">
             JS函数的执行时机
             </a>
         </h1>
@@ -134,7 +134,7 @@ for(var i = 0; i&lt;6; i++){ setTimeout(()=&gt;{ console.log(i) },0)  因为 变
 setTimeout(someTask,100); add();  上面的setTimeout，指定100毫秒以后运行一个任务。但是，如果后面立即运行的任务（当前脚本的同步任务））非常耗时，过了100毫秒还无法结束，那么被推迟运行的someTask就只有等着，等到前面的add运行结束，才轮到它执行。
 setTimeout(function () { func1(); }, 0) func2();  setTimeout的作用是将代码推迟到指定时间执行，如果指定时间为0，即setTimeout(f,0),那么会立刻执行吗？ 答案是不会,setTimeout运行机制说过，必须要等到当前脚本的同步任务和“任务队列”中已有的事 件，全部处理完以后，才会执行setTimeout指定的任务。也就是说，setTimeout的真正作用是，在“任务队列”的现有事件的后面再添加一个 事件，规定在指定时间执行某段代码。setTimeout添加的事件，会在下一次Event Loop执行。所以即使第二个参数设置为0, 其作用也是尽可能早的执行指定任务.
         </div>
-          <a href="http://maqunchao.xyz/posts/js%E5%87%BD%E6%95%B0%E7%9A%84%E6%89%A7%E8%A1%8C%E6%97%B6%E6%9C%BA/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+          <a href="https://maqunchao.github.io/posts/js%E5%87%BD%E6%95%B0%E7%9A%84%E6%89%A7%E8%A1%8C%E6%97%B6%E6%9C%BA/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
         
       </div>
     </div>
@@ -151,7 +151,7 @@ setTimeout(function () { func1(); }, 0) func2();  setTimeout的作用是将代�
       
       <div class="blah w-100">
         <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="http://maqunchao.xyz/posts/js%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/" class="color-inherit dim link">
+          <a href="https://maqunchao.github.io/posts/js%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/" class="color-inherit dim link">
             JS对象基本语法
             </a>
         </h1>
@@ -159,7 +159,7 @@ setTimeout(function () { func1(); }, 0) func2();  setTimeout的作用是将代�
           JS对象基本语法 声明对象的两种语法 let obj = {'name':'mark', 'age':26} let obj1 = new Object({'name':'mark', 'gender':'man'})   键名是字符串, 不是标识符, 可以包含任意字符 键名的引号可省略, 省略后只能写标识符 键名的引号省略后, 任然是字符串
 let obj = { 1:'a', 2.6:'b', 1e2:'c', .234:true, 0XFF:true } //属性名都会自动变成字符串 Object.keys(obj) //得到所以key, [&quot;1&quot;, &quot;100&quot;, &quot;255&quot;, &quot;0.234&quot;, &quot;0.26&quot; ]   查看属性两种方法与变量做属性名  中括号语法: obj[&lsquo;key&rsquo;] 点语法: obj.key, key认为是字符串 优先使用中括号语法  使用变量做属性名 let p1 = 'name' let obj = {p1:'mark'}; 属性名是 'p1'; let obj1 = {[p1]:'frank'}; 属性名是 'name';   不加[]的属性名会自动变成字符串 加了[]则会当成变量求值 值如果不是字符串, 则会自动变成字符串
         </div>
-          <a href="http://maqunchao.xyz/posts/js%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+          <a href="https://maqunchao.github.io/posts/js%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
         
       </div>
     </div>
@@ -176,7 +176,7 @@ let obj = { 1:'a', 2.6:'b', 1e2:'c', .234:true, 0XFF:true } //属性名都会自
       
       <div class="blah w-100">
         <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="http://maqunchao.xyz/posts/js%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E4%BB%8B%E7%BB%8D/" class="color-inherit dim link">
+          <a href="https://maqunchao.github.io/posts/js%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E4%BB%8B%E7%BB%8D/" class="color-inherit dim link">
             JS基本语法介绍
             </a>
         </h1>
@@ -184,7 +184,7 @@ let obj = { 1:'a', 2.6:'b', 1e2:'c', .234:true, 0XFF:true } //属性名都会自
           JS基本语法介绍 表达式和语句  1 + 2 表达式的值是3， add（1， 2）表达式的值为函数的返回值， console.log表达式的值为函数本身, console.log(3)表达式的值其实是log的值, 是undefined. var a = 1; 这是一个语句 两者区别 :表达式一般是有值,语句可能有或者没有 语句一般会改变环境(声明, 赋值), 凡是 JavaScript 语言中预期为值的地方，都可以使用表达式。比如，赋值语句的等号右边，预期是一个值，因此可以放置各种表达式. 语句以分号结尾，一个分号就表示一个语句结束。多个语句可以写在一行内 表达式不需要分号结尾。一旦在表达式后面添加分号，则 JavaScript 引擎就将表达式视为语句，这样会产生一些没有任何意义的语句。   标识符  标识符（identifier）指的是用来识别各种值的合法名称。最常见的标识符就是变量名，以及后面要提到的函数名。JavaScript 语言的标识符对大小写敏感，所以a和A是两个不同的标识符 标识符有一套命名规则，不符合规则的就是非法标识符。 第一个字符，可以是任意 Unicode 字母（包括英文字母和其他语言的字母），以及美元符号（$）和下划线（_） 第二个字符及后面的字符，除了 Unicode 字母、美元符号和下划线，还可以用数字0-9。 标识符 第一个字符不能是数字, 也不能包含*号, +号, -减号(连词号) 中文是合法标识符, 可以作为变量名   if语句 语法  if(表达式){语句1} else(语句2) {}在语句只有一句的时候可以省略, 但是如果想执行多个语句, 必须在if条件后面加上{}  推荐写法
 if(表达式){ 语句 } else if(表达式){ 语句 } else{ 语句 }  while循环语句, for循环语句 While语句包括一个循环条件和一段代码块，只要条件为真，就不断循环执行代码块。 * while(表达式){语句} * 表达式为真, 执行语句, 执行完再去判断表达式的真假
         </div>
-          <a href="http://maqunchao.xyz/posts/js%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E4%BB%8B%E7%BB%8D/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+          <a href="https://maqunchao.github.io/posts/js%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E4%BB%8B%E7%BB%8D/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
         
       </div>
     </div>
@@ -201,25 +201,25 @@ if(表达式){ 语句 } else if(表达式){ 语句 } else{ 语句 }  while循环
         
         
           <h2 class="f5 fw4 mb4 dib mr3">
-            <a href="http://maqunchao.xyz/posts/javascript%E7%9A%84%E8%AF%9E%E7%94%9F/" class="link black dim">
+            <a href="https://maqunchao.github.io/posts/javascript%E7%9A%84%E8%AF%9E%E7%94%9F/" class="link black dim">
               JavaScript 的诞生
             </a>
           </h2>
         
           <h2 class="f5 fw4 mb4 dib mr3">
-            <a href="http://maqunchao.xyz/posts/%E6%B5%85%E6%9E%90url/" class="link black dim">
+            <a href="https://maqunchao.github.io/posts/%E6%B5%85%E6%9E%90url/" class="link black dim">
               浅析URL
             </a>
           </h2>
         
           <h2 class="f5 fw4 mb4 dib mr3">
-            <a href="http://maqunchao.xyz/posts/css%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/" class="link black dim">
+            <a href="https://maqunchao.github.io/posts/css%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/" class="link black dim">
               CSS知识总结
             </a>
           </h2>
         
           <h2 class="f5 fw4 mb4 dib mr3">
-            <a href="http://maqunchao.xyz/posts/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/" class="link black dim">
+            <a href="https://maqunchao.github.io/posts/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/" class="link black dim">
               HTML常用标签
             </a>
           </h2>
@@ -227,7 +227,7 @@ if(表达式){ 语句 } else if(表达式){ 语句 } else{ 语句 }  while循环
 
         
         
-          <a href="http://maqunchao.xyz/posts/" class="link db f6 pa2 br3 bg-mid-gray white dim w4 tc">All Posts</a>
+          <a href="https://maqunchao.github.io/posts/" class="link db f6 pa2 br3 bg-mid-gray white dim w4 tc">All Posts</a>
         
         </section>
       
@@ -238,8 +238,8 @@ if(表达式){ 语句 } else if(表达式){ 语句 } else{ 语句 }  while循环
     </main>
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between">
-  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://maqunchao.xyz/" >
-    &copy; 2020 Mark的博客
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://maqunchao.github.io/" >
+    &copy; 2021 Mark的博客
   </a>
     <div>
 

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Mark的博客</title>
-    <link>http://maqunchao.xyz/posts/</link>
+    <link>https://maqunchao.github.io/posts/</link>
     <description>Recent content in Posts on Mark的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
     <lastBuildDate>Sun, 05 Jan 2020 00:15:34 +0800</lastBuildDate>
     
-	<atom:link href="http://maqunchao.xyz/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://maqunchao.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>JS函数的执行时机</title>
-      <link>http://maqunchao.xyz/posts/js%E5%87%BD%E6%95%B0%E7%9A%84%E6%89%A7%E8%A1%8C%E6%97%B6%E6%9C%BA/</link>
+      <link>https://maqunchao.github.io/posts/js%E5%87%BD%E6%95%B0%E7%9A%84%E6%89%A7%E8%A1%8C%E6%97%B6%E6%9C%BA/</link>
       <pubDate>Sun, 05 Jan 2020 00:15:34 +0800</pubDate>
       
-      <guid>http://maqunchao.xyz/posts/js%E5%87%BD%E6%95%B0%E7%9A%84%E6%89%A7%E8%A1%8C%E6%97%B6%E6%9C%BA/</guid>
+      <guid>https://maqunchao.github.io/posts/js%E5%87%BD%E6%95%B0%E7%9A%84%E6%89%A7%E8%A1%8C%E6%97%B6%E6%9C%BA/</guid>
       <description>JS函数的执行时机 1. 解释为什么下面代码为打印6个6 let i = 0 for(i = 0; i&amp;lt;6; i++){ setTimeout(()=&amp;gt;{ console.log(i) },0) }   首先在for循环外用let 声明变量i = 0, 开始执行for循环, 此时会先执行for循环,同时设置了6次setTimeout函数(相当于定了6个闹钟); setTimeout()会过一会执行, 然后跳过setTimeout(); 然后执行完for循环后, 此时已经执行了6次i++, i的值已经变成了6; 然后马上执行setTimeout函数,所以6次的setTimeout中的函数每次都会打印i的值是6; 同时类似于下面的函数也是打印6次6
 for(var i = 0; i&amp;lt;6; i++){ setTimeout(()=&amp;gt;{ console.log(i) },0)  因为 变量i是var命令声明的, 在全局范围都有效,全局只有一个变量i。每一次循环，变量i的值都会发生改变,6次for循环执行完, i也变成6了, 然后马上执行setTimeout函数,所以6次的setTimeout中的函数每次都会打印i的值是6;
   setTimeout运行机制  javascript提供定时执行代码的功能，叫做定时器（timer），主要由setTimeout()和setInterval()这两个函数来完成。它们向任务队列添加定时任务; setTimeout和setInterval的运行机制是，将指定的代码移出本次执行，等到下一轮Event Loop(事件循环)时，再检查是否到了指定时间。如果到了，就执行对应的代码；如果不到，就等到再下一轮Event Loop时重新判断。这意味着，setTimeout指定的代码，必须等到本次执行的所有代码都执行完，才会执行 每一轮Event Loop时，都会将“任务队列”中需要执行的任务，一次执行完。setTimeout和setInterval都是把任务添加到“任务队列”的尾部。因 此，它们实际上要等到当前脚本的所有同步任务执行完，然后再等到本次Event Loop的“任务队列”的所有任务执行完，才会开始执行。由于前面的任务到底需要多少时间执行完，是不确定的，所以没有办法保证，setTimeout和 setInterval指定的任务，一定会按照预定时间执行
@@ -26,30 +26,30 @@ setTimeout(function () { func1(); }, 0) func2();  setTimeout的作用是将代�
     
     <item>
       <title>JS对象基本语法</title>
-      <link>http://maqunchao.xyz/posts/js%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</link>
+      <link>https://maqunchao.github.io/posts/js%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</link>
       <pubDate>Sun, 29 Dec 2019 00:15:34 +0800</pubDate>
       
-      <guid>http://maqunchao.xyz/posts/js%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</guid>
+      <guid>https://maqunchao.github.io/posts/js%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</guid>
       <description>JS对象基本语法 声明对象的两种语法 let obj = {&#39;name&#39;:&#39;mark&#39;, &#39;age&#39;:26} let obj1 = new Object({&#39;name&#39;:&#39;mark&#39;, &#39;gender&#39;:&#39;man&#39;})   键名是字符串, 不是标识符, 可以包含任意字符 键名的引号可省略, 省略后只能写标识符 键名的引号省略后, 任然是字符串
 let obj = { 1:&#39;a&#39;, 2.6:&#39;b&#39;, 1e2:&#39;c&#39;, .234:true, 0XFF:true } //属性名都会自动变成字符串 Object.keys(obj) //得到所以key, [&amp;quot;1&amp;quot;, &amp;quot;100&amp;quot;, &amp;quot;255&amp;quot;, &amp;quot;0.234&amp;quot;, &amp;quot;0.26&amp;quot; ]   查看属性两种方法与变量做属性名  中括号语法: obj[&amp;lsquo;key&amp;rsquo;] 点语法: obj.key, key认为是字符串 优先使用中括号语法  使用变量做属性名 let p1 = &#39;name&#39; let obj = {p1:&#39;mark&#39;}; 属性名是 &#39;p1&#39;; let obj1 = {[p1]:&#39;frank&#39;}; 属性名是 &#39;name&#39;;   不加[]的属性名会自动变成字符串 加了[]则会当成变量求值 值如果不是字符串, 则会自动变成字符串</description>
     </item>
     
     <item>
       <title>JS基本语法介绍</title>
-      <link>http://maqunchao.xyz/posts/js%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E4%BB%8B%E7%BB%8D/</link>
+      <link>https://maqunchao.github.io/posts/js%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E4%BB%8B%E7%BB%8D/</link>
       <pubDate>Mon, 23 Dec 2019 00:15:34 +0800</pubDate>
       
-      <guid>http://maqunchao.xyz/posts/js%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E4%BB%8B%E7%BB%8D/</guid>
+      <guid>https://maqunchao.github.io/posts/js%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E4%BB%8B%E7%BB%8D/</guid>
       <description>JS基本语法介绍 表达式和语句  1 + 2 表达式的值是3， add（1， 2）表达式的值为函数的返回值， console.log表达式的值为函数本身, console.log(3)表达式的值其实是log的值, 是undefined. var a = 1; 这是一个语句 两者区别 :表达式一般是有值,语句可能有或者没有 语句一般会改变环境(声明, 赋值), 凡是 JavaScript 语言中预期为值的地方，都可以使用表达式。比如，赋值语句的等号右边，预期是一个值，因此可以放置各种表达式. 语句以分号结尾，一个分号就表示一个语句结束。多个语句可以写在一行内 表达式不需要分号结尾。一旦在表达式后面添加分号，则 JavaScript 引擎就将表达式视为语句，这样会产生一些没有任何意义的语句。   标识符  标识符（identifier）指的是用来识别各种值的合法名称。最常见的标识符就是变量名，以及后面要提到的函数名。JavaScript 语言的标识符对大小写敏感，所以a和A是两个不同的标识符 标识符有一套命名规则，不符合规则的就是非法标识符。 第一个字符，可以是任意 Unicode 字母（包括英文字母和其他语言的字母），以及美元符号（$）和下划线（_） 第二个字符及后面的字符，除了 Unicode 字母、美元符号和下划线，还可以用数字0-9。 标识符 第一个字符不能是数字, 也不能包含*号, +号, -减号(连词号) 中文是合法标识符, 可以作为变量名   if语句 语法  if(表达式){语句1} else(语句2) {}在语句只有一句的时候可以省略, 但是如果想执行多个语句, 必须在if条件后面加上{}  推荐写法
 if(表达式){ 语句 } else if(表达式){ 语句 } else{ 语句 }  while循环语句, for循环语句 While语句包括一个循环条件和一段代码块，只要条件为真，就不断循环执行代码块。 * while(表达式){语句} * 表达式为真, 执行语句, 执行完再去判断表达式的真假</description>
     </item>
     
     <item>
       <title>JavaScript 的诞生</title>
-      <link>http://maqunchao.xyz/posts/javascript%E7%9A%84%E8%AF%9E%E7%94%9F/</link>
+      <link>https://maqunchao.github.io/posts/javascript%E7%9A%84%E8%AF%9E%E7%94%9F/</link>
       <pubDate>Sat, 21 Dec 2019 00:15:34 +0800</pubDate>
       
-      <guid>http://maqunchao.xyz/posts/javascript%E7%9A%84%E8%AF%9E%E7%94%9F/</guid>
+      <guid>https://maqunchao.github.io/posts/javascript%E7%9A%84%E8%AF%9E%E7%94%9F/</guid>
       <description> 浏览器的诞生 1990年底，欧洲核能研究组织（CERN）科学家Tim Berners-Lee，在全世界最大的电脑网络——互联网的基础上，发明了万维网（World Wide Web），从此可以在网上浏览网页文件。最早的网页只能在操作系统的终端里浏览，也就是说只能使用命令行操作，网页都是在字符窗口中显示，这当然非常不方便。
 1992年底，美国国家超级电脑应用中心（NCSA）开始开发一个独立的浏览器，叫做Mosaic。这是人类历史上第一个浏览器，从此网页可以在图形界面的窗口浏览。
 1994年10月，NCSA的一个主要程序员Marc Andreessen联合风险投资家Jim Clark，成立了Mosaic通信公司（Mosaic Communications），不久后改名为Netscape。这家公司的方向，就是在Mosaic的基础上，开发面向普通用户的新一代的浏览器Netscape Navigator。
@@ -63,10 +63,10 @@ JavaScript的十个设计缺陷  不适合开发大型程序 非常小的标准�
     
     <item>
       <title>浅析URL</title>
-      <link>http://maqunchao.xyz/posts/%E6%B5%85%E6%9E%90url/</link>
+      <link>https://maqunchao.github.io/posts/%E6%B5%85%E6%9E%90url/</link>
       <pubDate>Sun, 15 Dec 2019 00:15:34 +0800</pubDate>
       
-      <guid>http://maqunchao.xyz/posts/%E6%B5%85%E6%9E%90url/</guid>
+      <guid>https://maqunchao.github.io/posts/%E6%B5%85%E6%9E%90url/</guid>
       <description>浅析URL url包含部分  以下为例子
 https://baike.baidu.com/item/CSS/5457?fr=aladdin#7  传输协议：http，https
  域名：baike.baidu.com
@@ -88,19 +88,19 @@ https://baike.baidu.com/item/CSS/5457?fr=aladdin#7  传输协议：http，https
     
     <item>
       <title>CSS知识总结</title>
-      <link>http://maqunchao.xyz/posts/css%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/</link>
+      <link>https://maqunchao.github.io/posts/css%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/</link>
       <pubDate>Sat, 14 Dec 2019 00:15:34 +0800</pubDate>
       
-      <guid>http://maqunchao.xyz/posts/css%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/</guid>
+      <guid>https://maqunchao.github.io/posts/css%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/</guid>
       <description>CSS知识总结 浏览器渲染原理  浏览器将获取的HTML文档解析成DOM树。 根据CSS，构成层叠样式表模型CSSOM(CSS Object Model),或者说构建css树。 将DOM和CSSOM合并为渲染树(rendering tree)。 渲染树的每个元素包含的内容都是计算过的，它被称之为布局layout(文档流、盒模型、计算大小和位置)。 painting绘制(把边框颜色、文字颜色、阴影等画出来)。 Compose合成(根据层叠关系展示画面)  CSS 动画的两种做法（transition 和 animation） transition 过渡动画 transition：属性名 时长 过渡方式 延迟。 transition：left 200ms linear。 还可以用逗号分隔两个不同属性： transition：left 200ms，top 300ms。 也可以用all来代表所有属性： transition：all 1s； 过渡方式： linear | ease(默认) | ease-in | ease-out | ease-in-out | cubic-bezier | step-start | step-end | steps 注意： 并不是所有属性都可以过渡 display：none --&amp;gt; block 就不能过渡 使用visibility:hidden -&amp;gt; visible 或者opacity来过渡,过渡后宽高仍然存在, 需要手动删除样式  animation animation：时长|过渡方式|延迟|次数|方向|填充模式|是否暂停|动画名 时长：1S或者1000ms 过渡方式：同transition取值相同，如：linear 次数：1或者2.5或者infinite 方向：reverse|alternate|alternate-reverse 填充模式：none|forwards|backwards|both 是否暂停：paused|running  CSS盒模型  centent-box和border-box 内容盒模型的width = contentmaqunchao.</description>
     </item>
     
     <item>
       <title>HTML常用标签</title>
-      <link>http://maqunchao.xyz/posts/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</link>
+      <link>https://maqunchao.github.io/posts/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</link>
       <pubDate>Fri, 29 Nov 2019 13:48:51 +0800</pubDate>
       
-      <guid>http://maqunchao.xyz/posts/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</guid>
+      <guid>https://maqunchao.github.io/posts/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</guid>
       <description>HTML常用标签 a标签包含href, target, download, rel=noopener属性  href(hypertext reference)属性:   href后面的url,以http/https开头的，则点击a标签后,会链接该url的页面 href后是#, 点击后回到页面顶部
 &amp;lt;a href=&amp;quot;#&amp;quot;&amp;gt;点击回到顶部&amp;lt;/a&amp;gt;  如果href后面是//baidu.com, 浏览器先去http://www.baidu.com寻找, 找不到再去https://www.baidu.com/寻找
 &amp;lt;a href=&amp;quot;//qq.com&amp;quot;&amp;gt;QQ&amp;lt;/a&amp;gt;  href后面可以跟文件路径, 如果我们http-server开启本地服务的方式打开文件, 则会根据本地服务的协议,决定使用http/https打开该文件,  如果直接双击打开,则使用file://协议打开该文件
@@ -114,19 +114,19 @@ https://baike.baidu.com/item/CSS/5457?fr=aladdin#7  传输协议：http，https
     
     <item>
       <title>HTML入门笔记</title>
-      <link>http://maqunchao.xyz/posts/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0/</link>
+      <link>https://maqunchao.github.io/posts/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0/</link>
       <pubDate>Wed, 27 Nov 2019 06:15:34 +0800</pubDate>
       
-      <guid>http://maqunchao.xyz/posts/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0/</guid>
+      <guid>https://maqunchao.github.io/posts/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0/</guid>
       <description>历史简介  1990年, Tim Berners-Lee发明了HTML, 自己编写了一个浏览器和服务器, 然后通过自己的浏览器访问了自己写的服务器.  HTML 起手式 &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;!-- 文档类型 --&amp;gt; &amp;lt;html lang=&amp;quot;zh-CN&amp;quot;&amp;gt; &amp;lt;!-- html标签, 改成中文 --&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot; /&amp;gt; &amp;lt;!-- 文件的字符编码 --&amp;gt; &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1.0&amp;quot; /&amp;gt; &amp;lt;!-- 禁用缩放, 兼容手机 --&amp;gt; &amp;lt;meta http-equiv=&amp;quot;X-UA-Compatible&amp;quot; content=&amp;quot;ie=edge&amp;quot; /&amp;gt; &amp;lt;!-- 告诉IE浏览器, 使用最新版本 --&amp;gt; &amp;lt;title&amp;gt;Document&amp;lt;/title&amp;gt; &amp;lt;!-- 网页标题 --&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt;&amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt;  常用的表示章节的标签  h1 ~ h6, 标题标签， 呈现六种不同级别的标题，由大到小 section, 章节标签， 表示一个包含在HTML文档中的独立部分 article, 表示文章 p，段落标签 header， 头部 footer，脚部，一般表示根元素的页脚 main， 主要内容 aside， 旁支内容 div， 块级元素, 可用来划分   全局属性  class, 给标签分类或者标记</description>
     </item>
     
     <item>
       <title>Hugo配合GitHub搭建博客</title>
-      <link>http://maqunchao.xyz/posts/%E7%AC%AC2%E7%AF%87blog/</link>
+      <link>https://maqunchao.github.io/posts/%E7%AC%AC2%E7%AF%87blog/</link>
       <pubDate>Mon, 18 Nov 2019 06:15:34 +0800</pubDate>
       
-      <guid>http://maqunchao.xyz/posts/%E7%AC%AC2%E7%AF%87blog/</guid>
+      <guid>https://maqunchao.github.io/posts/%E7%AC%AC2%E7%AF%87blog/</guid>
       <description>Hugo配合GitHub搭建博客 下载hugo  首先安装hugo 地址 配置环境变量,将存放hugo.exe的文件目录,示例:D:\SoftWare\hugo, 编辑到Path中,点击确定 验证hugo是否配置成功, 打开终端,执行hugo version, 成功如下:
 hugo version Hugo Static Site Generator v0.59.1-D5DAB232 windows/amd64 BuildDate: 2019-10-31T15:22:43Z  创建GitHub仓库 github&amp;ndash;&amp;gt;右上角的new repository, 名称:你的github用户名.github.io; (记住仓库名称, 最好用英文)
  在本地硬盘, 创建一个文件夹, 选中文件夹,执行
@@ -138,10 +138,10 @@ hugo new site xxxx(GitHub仓库名称)  创建完成后, 本地文件生成一�
     
     <item>
       <title>git基本操作</title>
-      <link>http://maqunchao.xyz/posts/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/</link>
+      <link>https://maqunchao.github.io/posts/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/</link>
       <pubDate>Mon, 18 Nov 2019 00:15:34 +0800</pubDate>
       
-      <guid>http://maqunchao.xyz/posts/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/</guid>
+      <guid>https://maqunchao.github.io/posts/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/</guid>
       <description>git基本使用  git init ; 初始化 创建一个.git目录 当本地仓库 git add 文件路径; 选择变化的文件进行提交 .gitignore; 描述那些文件是不需要提交的 git commit -v; 提交已经添加的文件, 并打开编辑器编写日志; 也可git commit -m 字符串; 在命令行中说明理由并提交, 如果字符串中有空格需要用引号括起来 git log; 打印出已经提交的各个版本信息(带有版本号); git reset &amp;ndash;hard 版本号(git log查询出来的); 回退到某个版本 git reflog; 打印历史变更的所以版本,以及版本号 git branch x(分支名称); 基于当前commit创建一个新的分支,我在那个分支提交,代码就在那个分支 git checkout x(分支名称); 用于切换分支 合并分支:首先进入要保留的分支; 运行 git merge x(需要合并的名称) 进行合并, 合并完成后删除无用分支 git branch -d x(分支名称) git add . 提交当前目录所以文件 git branch; 可显示当前在那个分支 git status -sb; 显示冲突文件  git与github远程仓库配合使用 生成ssh key  运行ssh-keygen -t rsa -b 4096 -C 自己的邮箱 cat ~/.</description>
     </item>
     
