@@ -1,98 +1,97 @@
 <!DOCTYPE html>
 <html lang="zh-Hans">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    
-    <title>Mark的博客  | JS对象基本语法</title>
-    <meta name="viewport" content="width=device-width,minimum-scale=1">
-<<<<<<< HEAD
-    <meta name="generator" content="Hugo 0.59.1" />
-=======
-    <meta name="generator" content="Hugo 0.60.0" />
->>>>>>> 998cf8cea2f8eb124027309c509d0843cb7e733c
-    
-    
-      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
-    
 
-    
-    
-      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
-    
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    
+  <title>Mark的博客 | JS对象基本语法</title>
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+  <meta name="generator" content="Hugo 0.59.1" />
 
-    
-      
-    
 
-    
-    
-    <meta property="og:title" content="JS对象基本语法" />
-<<<<<<< HEAD
-<meta property="og:description" content="JS对象基本语法 声明对象的两种语法 let obj = {&#39;name&#39;:&#39;mark&#39;, &#39;age&#39;:26} let obj1 = new Object({&#39;name&#39;:&#39;mark&#39;, &#39;gender&#39;:&#39;man&#39;})   键名是字符串, 不是标识符, 可以包含任意字符 键名的引号可省略, 省略后只能写标识符 键名的引号省略后, 任然是字符串
+  <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
+
+
+
+  <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+
+
+
+
+
+
+
+
+
+
+  <meta property="og:title" content="JS对象基本语法" />
+  <<<<<<< HEAD <meta property="og:description"
+    content="JS对象基本语法 声明对象的两种语法 let obj = {&#39;name&#39;:&#39;mark&#39;, &#39;age&#39;:26} let obj1 = new Object({&#39;name&#39;:&#39;mark&#39;, &#39;gender&#39;:&#39;man&#39;})   键名是字符串, 不是标识符, 可以包含任意字符 键名的引号可省略, 省略后只能写标识符 键名的引号省略后, 任然是字符串
 let obj = { 1:&#39;a&#39;, 2.6:&#39;b&#39;, 1e2:&#39;c&#39;, .234:true, 0XFF:true } //属性名都会自动变成字符串 Object.keys(obj) //得到所以key, [&quot;1&quot;, &quot;100&quot;, &quot;255&quot;, &quot;0.234&quot;, &quot;0.26&quot; ]   查看属性两种方法与变量做属性名  中括号语法: obj[&lsquo;key&rsquo;] 点语法: obj.key, key认为是字符串 优先使用中括号语法  使用变量做属性名 let p1 = &#39;name&#39; let obj = {p1:&#39;mark&#39;}; 属性名是 &#39;p1&#39;; let obj1 = {[p1]:&#39;frank&#39;}; 属性名是 &#39;name&#39;;   不加[]的属性名会自动变成字符串 加了[]则会当成变量求值 值如果不是字符串, 则会自动变成字符串" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://maqunchao.github.io/posts/js%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/" />
-<meta property="article:published_time" content="2019-12-29T00:15:34+08:00" />
-<meta property="article:modified_time" content="2019-12-29T00:15:34+08:00" />
-<meta itemprop="name" content="JS对象基本语法">
-<meta itemprop="description" content="JS对象基本语法 声明对象的两种语法 let obj = {&#39;name&#39;:&#39;mark&#39;, &#39;age&#39;:26} let obj1 = new Object({&#39;name&#39;:&#39;mark&#39;, &#39;gender&#39;:&#39;man&#39;})   键名是字符串, 不是标识符, 可以包含任意字符 键名的引号可省略, 省略后只能写标识符 键名的引号省略后, 任然是字符串
+  <meta property="og:type" content="article" />
+  <meta property="og:url"
+    content="https://maqunchao.github.io/posts/js%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/" />
+  <meta property="article:published_time" content="2019-12-29T00:15:34+08:00" />
+  <meta property="article:modified_time" content="2019-12-29T00:15:34+08:00" />
+  <meta itemprop="name" content="JS对象基本语法">
+  <meta itemprop="description"
+    content="JS对象基本语法 声明对象的两种语法 let obj = {&#39;name&#39;:&#39;mark&#39;, &#39;age&#39;:26} let obj1 = new Object({&#39;name&#39;:&#39;mark&#39;, &#39;gender&#39;:&#39;man&#39;})   键名是字符串, 不是标识符, 可以包含任意字符 键名的引号可省略, 省略后只能写标识符 键名的引号省略后, 任然是字符串
 let obj = { 1:&#39;a&#39;, 2.6:&#39;b&#39;, 1e2:&#39;c&#39;, .234:true, 0XFF:true } //属性名都会自动变成字符串 Object.keys(obj) //得到所以key, [&quot;1&quot;, &quot;100&quot;, &quot;255&quot;, &quot;0.234&quot;, &quot;0.26&quot; ]   查看属性两种方法与变量做属性名  中括号语法: obj[&lsquo;key&rsquo;] 点语法: obj.key, key认为是字符串 优先使用中括号语法  使用变量做属性名 let p1 = &#39;name&#39; let obj = {p1:&#39;mark&#39;}; 属性名是 &#39;p1&#39;; let obj1 = {[p1]:&#39;frank&#39;}; 属性名是 &#39;name&#39;;   不加[]的属性名会自动变成字符串 加了[]则会当成变量求值 值如果不是字符串, 则会自动变成字符串">
 
 
-=======
-<meta property="og:description" content="JS对象基本语法 声明对象的两种语法 let obj = {&#39;name&#39;:&#39;mark&#39;, &#39;age&#39;:26} let obj1 = new Object({&#39;name&#39;:&#39;mark&#39;, &#39;gender&#39;:&#39;man&#39;})  键名是字符串, 不是标识符, 可以包含任意字符 键名的引号可省略, 省略后只能写标识符 键名的引号省略后, 任然是字符串  let obj = { 1:&#39;a&#39;, 2.6:&#39;b&#39;, 1e2:&#39;c&#39;, .234:true, 0XFF:true } //属性名都会自动变成字符串 Object.keys(obj) //得到所以key, [&quot;1&quot;, &quot;100&quot;, &quot;255&quot;, &quot;0.234&quot;, &quot;0.26&quot; ] 查看属性两种方法与变量做属性名  中括号语法: obj[&lsquo;key&rsquo;] 点语法: obj.key, key认为是字符串 优先使用中括号语法  使用变量做属性名 let p1 = &#39;name&#39; let obj = {p1:&#39;mark&#39;}; 属性名是 &#39;p1&#39;; let obj1 = {[p1]:&#39;frank&#39;}; 属性名是 &#39;name&#39;;  不加[]的属性名会自动变成字符串 加了[]则会当成变量求值 值如果不是字符串, 则会自动变成字符串  let list = [&#39;name&#39;, &#39;age&#39;, &#39;gender&#39;]; let person= {name:&#39;mark&#39;, age:18, gender:&#39;man&#39;}; for(let i = 0; i&lt;list." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="http://maqunchao.xyz/posts/js%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/" />
-<meta property="article:published_time" content="2019-12-29T00:15:34+08:00" />
-<meta property="article:modified_time" content="2019-12-29T00:15:34+08:00" />
-<meta itemprop="name" content="JS对象基本语法">
-<meta itemprop="description" content="JS对象基本语法 声明对象的两种语法 let obj = {&#39;name&#39;:&#39;mark&#39;, &#39;age&#39;:26} let obj1 = new Object({&#39;name&#39;:&#39;mark&#39;, &#39;gender&#39;:&#39;man&#39;})  键名是字符串, 不是标识符, 可以包含任意字符 键名的引号可省略, 省略后只能写标识符 键名的引号省略后, 任然是字符串  let obj = { 1:&#39;a&#39;, 2.6:&#39;b&#39;, 1e2:&#39;c&#39;, .234:true, 0XFF:true } //属性名都会自动变成字符串 Object.keys(obj) //得到所以key, [&quot;1&quot;, &quot;100&quot;, &quot;255&quot;, &quot;0.234&quot;, &quot;0.26&quot; ] 查看属性两种方法与变量做属性名  中括号语法: obj[&lsquo;key&rsquo;] 点语法: obj.key, key认为是字符串 优先使用中括号语法  使用变量做属性名 let p1 = &#39;name&#39; let obj = {p1:&#39;mark&#39;}; 属性名是 &#39;p1&#39;; let obj1 = {[p1]:&#39;frank&#39;}; 属性名是 &#39;name&#39;;  不加[]的属性名会自动变成字符串 加了[]则会当成变量求值 值如果不是字符串, 则会自动变成字符串  let list = [&#39;name&#39;, &#39;age&#39;, &#39;gender&#39;]; let person= {name:&#39;mark&#39;, age:18, gender:&#39;man&#39;}; for(let i = 0; i&lt;list.">
->>>>>>> 998cf8cea2f8eb124027309c509d0843cb7e733c
-<meta itemprop="datePublished" content="2019-12-29T00:15:34&#43;08:00" />
-<meta itemprop="dateModified" content="2019-12-29T00:15:34&#43;08:00" />
-<meta itemprop="wordCount" content="254">
+  =======
+  <meta property="og:description"
+    content="JS对象基本语法 声明对象的两种语法 let obj = {&#39;name&#39;:&#39;mark&#39;, &#39;age&#39;:26} let obj1 = new Object({&#39;name&#39;:&#39;mark&#39;, &#39;gender&#39;:&#39;man&#39;})  键名是字符串, 不是标识符, 可以包含任意字符 键名的引号可省略, 省略后只能写标识符 键名的引号省略后, 任然是字符串  let obj = { 1:&#39;a&#39;, 2.6:&#39;b&#39;, 1e2:&#39;c&#39;, .234:true, 0XFF:true } //属性名都会自动变成字符串 Object.keys(obj) //得到所以key, [&quot;1&quot;, &quot;100&quot;, &quot;255&quot;, &quot;0.234&quot;, &quot;0.26&quot; ] 查看属性两种方法与变量做属性名  中括号语法: obj[&lsquo;key&rsquo;] 点语法: obj.key, key认为是字符串 优先使用中括号语法  使用变量做属性名 let p1 = &#39;name&#39; let obj = {p1:&#39;mark&#39;}; 属性名是 &#39;p1&#39;; let obj1 = {[p1]:&#39;frank&#39;}; 属性名是 &#39;name&#39;;  不加[]的属性名会自动变成字符串 加了[]则会当成变量求值 值如果不是字符串, 则会自动变成字符串  let list = [&#39;name&#39;, &#39;age&#39;, &#39;gender&#39;]; let person= {name:&#39;mark&#39;, age:18, gender:&#39;man&#39;}; for(let i = 0; i&lt;list." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url"
+    content="http://maqunchao.xyz/posts/js%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/" />
+  <meta property="article:published_time" content="2019-12-29T00:15:34+08:00" />
+  <meta property="article:modified_time" content="2019-12-29T00:15:34+08:00" />
+  <meta itemprop="name" content="JS对象基本语法">
+  <meta itemprop="description"
+    content="JS对象基本语法 声明对象的两种语法 let obj = {&#39;name&#39;:&#39;mark&#39;, &#39;age&#39;:26} let obj1 = new Object({&#39;name&#39;:&#39;mark&#39;, &#39;gender&#39;:&#39;man&#39;})  键名是字符串, 不是标识符, 可以包含任意字符 键名的引号可省略, 省略后只能写标识符 键名的引号省略后, 任然是字符串  let obj = { 1:&#39;a&#39;, 2.6:&#39;b&#39;, 1e2:&#39;c&#39;, .234:true, 0XFF:true } //属性名都会自动变成字符串 Object.keys(obj) //得到所以key, [&quot;1&quot;, &quot;100&quot;, &quot;255&quot;, &quot;0.234&quot;, &quot;0.26&quot; ] 查看属性两种方法与变量做属性名  中括号语法: obj[&lsquo;key&rsquo;] 点语法: obj.key, key认为是字符串 优先使用中括号语法  使用变量做属性名 let p1 = &#39;name&#39; let obj = {p1:&#39;mark&#39;}; 属性名是 &#39;p1&#39;; let obj1 = {[p1]:&#39;frank&#39;}; 属性名是 &#39;name&#39;;  不加[]的属性名会自动变成字符串 加了[]则会当成变量求值 值如果不是字符串, 则会自动变成字符串  let list = [&#39;name&#39;, &#39;age&#39;, &#39;gender&#39;]; let person= {name:&#39;mark&#39;, age:18, gender:&#39;man&#39;}; for(let i = 0; i&lt;list.">
+  >>>>>>> 998cf8cea2f8eb124027309c509d0843cb7e733c
+  <meta itemprop="datePublished" content="2019-12-29T00:15:34&#43;08:00" />
+  <meta itemprop="dateModified" content="2019-12-29T00:15:34&#43;08:00" />
+  <meta itemprop="wordCount" content="254">
 
 
 
-<<<<<<< HEAD
-<meta itemprop="keywords" content="" />
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="JS对象基本语法"/>
-<meta name="twitter:description" content="JS对象基本语法 声明对象的两种语法 let obj = {&#39;name&#39;:&#39;mark&#39;, &#39;age&#39;:26} let obj1 = new Object({&#39;name&#39;:&#39;mark&#39;, &#39;gender&#39;:&#39;man&#39;})   键名是字符串, 不是标识符, 可以包含任意字符 键名的引号可省略, 省略后只能写标识符 键名的引号省略后, 任然是字符串
-let obj = { 1:&#39;a&#39;, 2.6:&#39;b&#39;, 1e2:&#39;c&#39;, .234:true, 0XFF:true } //属性名都会自动变成字符串 Object.keys(obj) //得到所以key, [&quot;1&quot;, &quot;100&quot;, &quot;255&quot;, &quot;0.234&quot;, &quot;0.26&quot; ]   查看属性两种方法与变量做属性名  中括号语法: obj[&lsquo;key&rsquo;] 点语法: obj.key, key认为是字符串 优先使用中括号语法  使用变量做属性名 let p1 = &#39;name&#39; let obj = {p1:&#39;mark&#39;}; 属性名是 &#39;p1&#39;; let obj1 = {[p1]:&#39;frank&#39;}; 属性名是 &#39;name&#39;;   不加[]的属性名会自动变成字符串 加了[]则会当成变量求值 值如果不是字符串, 则会自动变成字符串"/>
-=======
-<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="JS对象基本语法"/>
-<meta name="twitter:description" content="JS对象基本语法 声明对象的两种语法 let obj = {&#39;name&#39;:&#39;mark&#39;, &#39;age&#39;:26} let obj1 = new Object({&#39;name&#39;:&#39;mark&#39;, &#39;gender&#39;:&#39;man&#39;})  键名是字符串, 不是标识符, 可以包含任意字符 键名的引号可省略, 省略后只能写标识符 键名的引号省略后, 任然是字符串  let obj = { 1:&#39;a&#39;, 2.6:&#39;b&#39;, 1e2:&#39;c&#39;, .234:true, 0XFF:true } //属性名都会自动变成字符串 Object.keys(obj) //得到所以key, [&quot;1&quot;, &quot;100&quot;, &quot;255&quot;, &quot;0.234&quot;, &quot;0.26&quot; ] 查看属性两种方法与变量做属性名  中括号语法: obj[&lsquo;key&rsquo;] 点语法: obj.key, key认为是字符串 优先使用中括号语法  使用变量做属性名 let p1 = &#39;name&#39; let obj = {p1:&#39;mark&#39;}; 属性名是 &#39;p1&#39;; let obj1 = {[p1]:&#39;frank&#39;}; 属性名是 &#39;name&#39;;  不加[]的属性名会自动变成字符串 加了[]则会当成变量求值 值如果不是字符串, 则会自动变成字符串  let list = [&#39;name&#39;, &#39;age&#39;, &#39;gender&#39;]; let person= {name:&#39;mark&#39;, age:18, gender:&#39;man&#39;}; for(let i = 0; i&lt;list."/>
->>>>>>> 998cf8cea2f8eb124027309c509d0843cb7e733c
+  <<<<<<< HEAD <meta itemprop="keywords" content="" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="JS对象基本语法" />
+  <meta name="twitter:description"
+    content="JS对象基本语法 声明对象的两种语法 let obj = {&#39;name&#39;:&#39;mark&#39;, &#39;age&#39;:26} let obj1 = new Object({&#39;name&#39;:&#39;mark&#39;, &#39;gender&#39;:&#39;man&#39;})   键名是字符串, 不是标识符, 可以包含任意字符 键名的引号可省略, 省略后只能写标识符 键名的引号省略后, 任然是字符串
+let obj = { 1:&#39;a&#39;, 2.6:&#39;b&#39;, 1e2:&#39;c&#39;, .234:true, 0XFF:true } //属性名都会自动变成字符串 Object.keys(obj) //得到所以key, [&quot;1&quot;, &quot;100&quot;, &quot;255&quot;, &quot;0.234&quot;, &quot;0.26&quot; ]   查看属性两种方法与变量做属性名  中括号语法: obj[&lsquo;key&rsquo;] 点语法: obj.key, key认为是字符串 优先使用中括号语法  使用变量做属性名 let p1 = &#39;name&#39; let obj = {p1:&#39;mark&#39;}; 属性名是 &#39;p1&#39;; let obj1 = {[p1]:&#39;frank&#39;}; 属性名是 &#39;name&#39;;   不加[]的属性名会自动变成字符串 加了[]则会当成变量求值 值如果不是字符串, 则会自动变成字符串" />
+  =======
+  <meta itemprop="keywords" content="" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="JS对象基本语法" />
+  <meta name="twitter:description"
+    content="JS对象基本语法 声明对象的两种语法 let obj = {&#39;name&#39;:&#39;mark&#39;, &#39;age&#39;:26} let obj1 = new Object({&#39;name&#39;:&#39;mark&#39;, &#39;gender&#39;:&#39;man&#39;})  键名是字符串, 不是标识符, 可以包含任意字符 键名的引号可省略, 省略后只能写标识符 键名的引号省略后, 任然是字符串  let obj = { 1:&#39;a&#39;, 2.6:&#39;b&#39;, 1e2:&#39;c&#39;, .234:true, 0XFF:true } //属性名都会自动变成字符串 Object.keys(obj) //得到所以key, [&quot;1&quot;, &quot;100&quot;, &quot;255&quot;, &quot;0.234&quot;, &quot;0.26&quot; ] 查看属性两种方法与变量做属性名  中括号语法: obj[&lsquo;key&rsquo;] 点语法: obj.key, key认为是字符串 优先使用中括号语法  使用变量做属性名 let p1 = &#39;name&#39; let obj = {p1:&#39;mark&#39;}; 属性名是 &#39;p1&#39;; let obj1 = {[p1]:&#39;frank&#39;}; 属性名是 &#39;name&#39;;  不加[]的属性名会自动变成字符串 加了[]则会当成变量求值 值如果不是字符串, 则会自动变成字符串  let list = [&#39;name&#39;, &#39;age&#39;, &#39;gender&#39;]; let person= {name:&#39;mark&#39;, age:18, gender:&#39;man&#39;}; for(let i = 0; i&lt;list." />
+  >>>>>>> 998cf8cea2f8eb124027309c509d0843cb7e733c
 
-  </head>
+</head>
 
-  <body class="ma0 avenir bg-near-white">
+<body class="ma0 avenir bg-near-white">
 
-    
-   
-  
+
+
+
 
   <header>
     <div class="bg-black">
       <nav class="pv3 ph3 ph4-ns" role="navigation">
-  <div class="flex-l justify-between items-center center">
-<<<<<<< HEAD
-    <a href="https://maqunchao.github.io/" class="f3 fw2 hover-white no-underline white-90 dib">
-=======
-    <a href="http://maqunchao.xyz/" class="f3 fw2 hover-white no-underline white-90 dib">
->>>>>>> 998cf8cea2f8eb124027309c509d0843cb7e733c
-      Mark的博客
-    </a>
-    <div class="flex-l items-center">
-      
-
-      
-      
+        <div class="flex-l justify-between items-center center">
+          <<<<<<< HEAD <a href="https://maqunchao.github.io/" class="f3 fw2 hover-white no-underline white-90 dib">
+            =======
+            <a href="http://maqunchao.xyz/" class="f3 fw2 hover-white no-underline white-90 dib">
+              >>>>>>> 998cf8cea2f8eb124027309c509d0843cb7e733c
+              Mark的博客
+            </a>
+            <div class="flex-l items-center">
 
 
 
@@ -105,51 +104,56 @@ let obj = { 1:&#39;a&#39;, 2.6:&#39;b&#39;, 1e2:&#39;c&#39;, .234:true, 0XFF:tru
 
 
 
-    </div>
-  </div>
-</nav>
+
+
+
+
+            </div>
+        </div>
+      </nav>
 
     </div>
   </header>
 
 
 
-    <main class="pb7" role="main">
-      
-  
-  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+  <main class="pb7" role="main">
 
-    <header class="mt4 w-100">
-      <p class="f6 b helvetica tracked">
-          
-        POSTS
-      </p>
-      <h1 class="f1 athelas mb1">JS对象基本语法</h1>
-      
-      
-      <time class="f6 mv4 dib tracked" datetime="2019-12-29T00:15:34&#43;08:00">December 29, 2019</time>
-      
-      
-    </header>
 
-<<<<<<< HEAD
-    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
+    <article class="flex-l flex-wrap justify-between mw8 center ph3">
 
-<h1 id="js对象基本语法">JS对象基本语法</h1>
+      <header class="mt4 w-100">
+        <p class="f6 b helvetica tracked">
 
-<h2 id="声明对象的两种语法">声明对象的两种语法</h2>
+          POSTS
+        </p>
+        <h1 class="f1 athelas mb1">JS对象基本语法</h1>
 
-<pre><code>let obj = {'name':'mark', 'age':26}
+
+        <time class="f6 mv4 dib tracked" datetime="2019-12-29T00:15:34&#43;08:00">December 29, 2019</time>
+
+
+      </header>
+
+      <<<<<<< HEAD <section
+        class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
+
+        <h1 id="js对象基本语法">JS对象基本语法</h1>
+
+        <h2 id="声明对象的两种语法">声明对象的两种语法</h2>
+
+        <pre><code>let obj = {'name':'mark', 'age':26}
 let obj1 = new Object({'name':'mark', 'gender':'man'})
 </code></pre>
 
-<ul>
-<li>键名是字符串, 不是标识符, 可以包含任意字符</li>
-<li>键名的引号可省略, 省略后只能写标识符</li>
+        <ul>
+          <li>键名是字符串, 不是标识符, 可以包含任意字符</li>
+          <li>键名的引号可省略, 省略后只能写标识符</li>
 
-<li><p>键名的引号省略后, 任然是字符串</p>
+          <li>
+            <p>键名的引号省略后, 任然是字符串</p>
 
-<pre><code>let obj = {
+            <pre><code>let obj = {
 1:'a',
 2.6:'b',
 1e2:'c',
@@ -160,12 +164,13 @@ let obj1 = new Object({'name':'mark', 'gender':'man'})
 <h2 id="heading">声明对象的两种语法</h2>
 <pre><code>let obj = {'name':'mark', 'age':26}
 let obj1 = new Object({'name':'mark', 'gender':'man'})
-</code></pre><ul>
-<li>键名是字符串, 不是标识符, 可以包含任意字符</li>
-<li>键名的引号可省略, 省略后只能写标识符</li>
-<li>键名的引号省略后, 任然是字符串</li>
-</ul>
-<pre><code>let obj = {
+</code></pre>
+            <ul>
+              <li>键名是字符串, 不是标识符, 可以包含任意字符</li>
+              <li>键名的引号可省略, 省略后只能写标识符</li>
+              <li>键名的引号省略后, 任然是字符串</li>
+            </ul>
+            <pre><code>let obj = {
     1:'a',
     2.6:'b',
     1e2:'c',
@@ -177,46 +182,48 @@ let obj1 = new Object({'name':'mark', 'gender':'man'})
 Object.keys(obj)
 //得到所以key, [&quot;1&quot;, &quot;100&quot;, &quot;255&quot;, &quot;0.234&quot;, &quot;0.26&quot; ]
 <<<<<<< HEAD
-</code></pre></li>
-</ul>
+</code></pre>
+          </li>
+        </ul>
 
-<h2 id="查看属性两种方法与变量做属性名">查看属性两种方法与变量做属性名</h2>
+        <h2 id="查看属性两种方法与变量做属性名">查看属性两种方法与变量做属性名</h2>
 
-=======
-</code></pre><h2 id="heading1">查看属性两种方法与变量做属性名</h2>
->>>>>>> 998cf8cea2f8eb124027309c509d0843cb7e733c
-<ul>
-<li>中括号语法: obj[&lsquo;key&rsquo;]</li>
-<li>点语法: obj.key,  key认为是字符串</li>
-<li>优先使用中括号语法</li>
-</ul>
-<<<<<<< HEAD
+        =======
+        </code></pre>
+        <h2 id="heading1">查看属性两种方法与变量做属性名</h2>
+        >>>>>>> 998cf8cea2f8eb124027309c509d0843cb7e733c
+        <ul>
+          <li>中括号语法: obj[&lsquo;key&rsquo;]</li>
+          <li>点语法: obj.key, key认为是字符串</li>
+          <li>优先使用中括号语法</li>
+        </ul>
+        <<<<<<< HEAD <h3 id="使用变量做属性名">使用变量做属性名</h3>
 
-<h3 id="使用变量做属性名">使用变量做属性名</h3>
-
-<pre><code>let p1 = 'name'
+          <pre><code>let p1 = 'name'
 let obj = {p1:'mark'};  属性名是 'p1';
 let obj1 = {[p1]:'frank'}; 属性名是 'name';
 </code></pre>
 
-<ul>
-<li>不加[]的属性名会自动变成字符串</li>
-<li>加了[]则会当成变量求值</li>
+          <ul>
+            <li>不加[]的属性名会自动变成字符串</li>
+            <li>加了[]则会当成变量求值</li>
 
-<li><p>值如果不是字符串, 则会自动变成字符串</p>
+            <li>
+              <p>值如果不是字符串, 则会自动变成字符串</p>
 
-=======
-<h3 id="heading2">使用变量做属性名</h3>
-<pre><code>let p1 = 'name'
+              =======
+              <h3 id="heading2">使用变量做属性名</h3>
+              <pre><code>let p1 = 'name'
 let obj = {p1:'mark'};  属性名是 'p1';
 let obj1 = {[p1]:'frank'}; 属性名是 'name';
-</code></pre><ul>
-<li>不加[]的属性名会自动变成字符串</li>
-<li>加了[]则会当成变量求值</li>
-<li>值如果不是字符串, 则会自动变成字符串</li>
-</ul>
->>>>>>> 998cf8cea2f8eb124027309c509d0843cb7e733c
-<pre><code>let list = ['name', 'age', 'gender'];
+</code></pre>
+              <ul>
+                <li>不加[]的属性名会自动变成字符串</li>
+                <li>加了[]则会当成变量求值</li>
+                <li>值如果不是字符串, 则会自动变成字符串</li>
+              </ul>
+              >>>>>>> 998cf8cea2f8eb124027309c509d0843cb7e733c
+              <pre><code>let list = ['name', 'age', 'gender'];
 let person= {name:'mark', age:18, gender:'man'};
 for(let i = 0; i&lt;list.length; i++){
         
@@ -229,101 +236,121 @@ for(let i = 0; i&lt;list.length; i++){
     
 }
 
-</code></pre></li>
-</ul>
+</code></pre>
+            </li>
+          </ul>
 
-<h2 id="删除对象的属性">删除对象的属性</h2>
+          <h2 id="删除对象的属性">删除对象的属性</h2>
 
-<ul>
-<li>delete obj.xxx 或者 delete obj[&lsquo;xxx&rsquo;]
-即可删除 obj的xxx属性</li>
+          <ul>
+            <li>delete obj.xxx 或者 delete obj[&lsquo;xxx&rsquo;]
+              即可删除 obj的xxx属性</li>
 
-<li><p>判断不含属性名</p>
+            <li>
+              <p>判断不含属性名</p>
 
-<pre><code>'xxx' in obj === false
-</code></pre></li>
+              <pre><code>'xxx' in obj === false
+</code></pre>
+            </li>
 
-<li><p>含有属性名, 但是值为undefined</p>
+            <li>
+              <p>含有属性名, 但是值为undefined</p>
 
-<pre><code>'xxx' in obj &amp;&amp; obj.xxx === undefined
-</code></pre></li>
+              <pre><code>'xxx' in obj &amp;&amp; obj.xxx === undefined
+</code></pre>
+            </li>
 
-<li><p>obj.xxx === undefined, 不能判断 &lsquo;xxx&rsquo;是否为obj的属性, 因为obj.xxx的值可能就是undefined</p></li>
-</ul>
+            <li>
+              <p>obj.xxx === undefined, 不能判断 &lsquo;xxx&rsquo;是否为obj的属性, 因为obj.xxx的值可能就是undefined</p>
+            </li>
+          </ul>
 
-<h2 id="查看对象的属性">查看对象的属性</h2>
+          <h2 id="查看对象的属性">查看对象的属性</h2>
 
-<ul>
-<li><p>查看自身的所以属性</p>
+          <ul>
+            <li>
+              <p>查看自身的所以属性</p>
 
-<pre><code>Object.keys(obj); 
+              <pre><code>Object.keys(obj); 
 // 打印结果是一个数组, 包含了obj的自身属性
-</code></pre></li>
+</code></pre>
+            </li>
 
-<li><p>查看自身+共有属性</p>
+            <li>
+              <p>查看自身+共有属性</p>
 
-<pre><code>console.dir(obj)
+              <pre><code>console.dir(obj)
 或者用Object.keys打印obj.__proto__
-</code></pre></li>
+</code></pre>
+            </li>
 
-<li><p>判断一个属性是自身的还是共有的</p>
+            <li>
+              <p>判断一个属性是自身的还是共有的</p>
 
-<pre><code>obj.hasOwnProperty('xxx')
-</code></pre></li>
-</ul>
+              <pre><code>obj.hasOwnProperty('xxx')
+</code></pre>
+            </li>
+          </ul>
 
-<h2 id="修改或者增加对象的属性">修改或者增加对象的属性</h2>
+          <h2 id="修改或者增加对象的属性">修改或者增加对象的属性</h2>
 
-<h3 id="修改">修改</h3>
+          <h3 id="修改">修改</h3>
 
-<ul>
-<li><p>直接赋值</p>
+          <ul>
+            <li>
+              <p>直接赋值</p>
 
-=======
-    //console.log(person[list[i]]); 正常运行
-    
-    //点语法后面的 obj.key ,  key就是字符串&quot;key&quot;;
-    //下面代码会直接报错, 点语法 直接当成key是 &quot;list[i]&quot;处理
-    // console.log( person.list[i]相当于 person[&quot;list[i]&quot;]) ;
-    
-}
+              =======
+              //console.log(person[list[i]]); 正常运行
 
-</code></pre><h2 id="heading3">删除对象的属性</h2>
-<ul>
-<li>delete obj.xxx 或者 delete obj[&lsquo;xxx&rsquo;]
-即可删除 obj的xxx属性</li>
-<li>判断不含属性名</li>
-</ul>
-<pre><code> 'xxx' in obj === false
-</code></pre><ul>
-<li>含有属性名, 但是值为undefined</li>
-</ul>
-<pre><code> 'xxx' in obj &amp;&amp; obj.xxx === undefined
-</code></pre><ul>
-<li>obj.xxx === undefined, 不能判断 &lsquo;xxx'是否为obj的属性, 因为obj.xxx的值可能就是undefined</li>
-</ul>
-<h2 id="heading4">查看对象的属性</h2>
-<ul>
-<li>查看自身的所以属性</li>
-</ul>
-<pre><code>    Object.keys(obj); 
+              //点语法后面的 obj.key , key就是字符串&quot;key&quot;;
+              //下面代码会直接报错, 点语法 直接当成key是 &quot;list[i]&quot;处理
+              // console.log( person.list[i]相当于 person[&quot;list[i]&quot;]) ;
+
+              }
+
+              </code></pre>
+              <h2 id="heading3">删除对象的属性</h2>
+              <ul>
+                <li>delete obj.xxx 或者 delete obj[&lsquo;xxx&rsquo;]
+                  即可删除 obj的xxx属性</li>
+                <li>判断不含属性名</li>
+              </ul>
+              <pre><code> 'xxx' in obj === false
+</code></pre>
+              <ul>
+                <li>含有属性名, 但是值为undefined</li>
+              </ul>
+              <pre><code> 'xxx' in obj &amp;&amp; obj.xxx === undefined
+</code></pre>
+              <ul>
+                <li>obj.xxx === undefined, 不能判断 &lsquo;xxx'是否为obj的属性, 因为obj.xxx的值可能就是undefined</li>
+              </ul>
+              <h2 id="heading4">查看对象的属性</h2>
+              <ul>
+                <li>查看自身的所以属性</li>
+              </ul>
+              <pre><code>    Object.keys(obj); 
 // 打印结果是一个数组, 包含了obj的自身属性
-</code></pre><ul>
-<li>查看自身+共有属性</li>
-</ul>
-<pre><code>console.dir(obj)
+</code></pre>
+              <ul>
+                <li>查看自身+共有属性</li>
+              </ul>
+              <pre><code>console.dir(obj)
 或者用Object.keys打印obj.__proto__
-</code></pre><ul>
-<li>判断一个属性是自身的还是共有的</li>
-</ul>
-<pre><code>obj.hasOwnProperty('xxx')
-</code></pre><h2 id="heading5">修改或者增加对象的属性</h2>
-<h3 id="heading6">修改</h3>
-<ul>
-<li>直接赋值</li>
-</ul>
->>>>>>> 998cf8cea2f8eb124027309c509d0843cb7e733c
-<pre><code>let obj = {name:'mark'};  //name是字符串
+</code></pre>
+              <ul>
+                <li>判断一个属性是自身的还是共有的</li>
+              </ul>
+              <pre><code>obj.hasOwnProperty('xxx')
+</code></pre>
+              <h2 id="heading5">修改或者增加对象的属性</h2>
+              <h3 id="heading6">修改</h3>
+              <ul>
+                <li>直接赋值</li>
+              </ul>
+              >>>>>>> 998cf8cea2f8eb124027309c509d0843cb7e733c
+              <pre><code>let obj = {name:'mark'};  //name是字符串
 obj.name = 'mark';
 obj['name'] = 'mark';
 
@@ -333,73 +360,78 @@ obj[name]
 obj.key等价于 obj['key'],  可参考变量做属性名的例子
 
 <<<<<<< HEAD
-</code></pre></li>
+</code></pre>
+            </li>
 
-<li><p>批量赋值</p>
+            <li>
+              <p>批量赋值</p>
 
-<pre><code>Object.assign(obj, {age:18, gender:'man'});
-</code></pre></li>
-</ul>
+              <pre><code>Object.assign(obj, {age:18, gender:'man'});
+</code></pre>
+            </li>
+          </ul>
 
-<h3 id="修改或者增加共有属性">修改或者增加共有属性</h3>
+          <h3 id="修改或者增加共有属性">修改或者增加共有属性</h3>
 
-<h4 id="无法通过自身修改或增加共有属性">无法通过自身修改或增加共有属性</h4>
+          <h4 id="无法通过自身修改或增加共有属性">无法通过自身修改或增加共有属性</h4>
 
-=======
-</code></pre><ul>
-<li>批量赋值</li>
-</ul>
-<pre><code> Object.assign(obj, {age:18, gender:'man'});
-</code></pre><h3 id="heading7">修改或者增加共有属性</h3>
-<h4 id="heading8">无法通过自身修改或增加共有属性</h4>
->>>>>>> 998cf8cea2f8eb124027309c509d0843cb7e733c
-<ul>
-<li>let obj = {}, obj2 ={}// 共有toString</li>
-<li>obj.toString = &lsquo;xxx&rsquo; 只会在改obj自身的属性</li>
-<li>obj2.toString 还在原型上, 未改变</li>
-</ul>
-<<<<<<< HEAD
+          =======
+          </code></pre>
+          <ul>
+            <li>批量赋值</li>
+          </ul>
+          <pre><code> Object.assign(obj, {age:18, gender:'man'});
+</code></pre>
+          <h3 id="heading7">修改或者增加共有属性</h3>
+          <h4 id="heading8">无法通过自身修改或增加共有属性</h4>
+          >>>>>>> 998cf8cea2f8eb124027309c509d0843cb7e733c
+          <ul>
+            <li>let obj = {}, obj2 ={}// 共有toString</li>
+            <li>obj.toString = &lsquo;xxx&rsquo; 只会在改obj自身的属性</li>
+            <li>obj2.toString 还在原型上, 未改变</li>
+          </ul>
+          <<<<<<< HEAD <h4 id="强制修改或者增加原型上的属性">强制修改或者增加原型上的属性</h4>
 
-<h4 id="强制修改或者增加原型上的属性">强制修改或者增加原型上的属性</h4>
+            =======
+            <h4 id="heading9">强制修改或者增加原型上的属性</h4>
+            >>>>>>> 998cf8cea2f8eb124027309c509d0843cb7e733c
+            <ul>
+              <li>obj.<strong>proto</strong>.toString = &lsquo;xxx&rsquo;; //不推荐</li>
+              <li>Object.prototype.toString = &lsquo;xxx&rsquo;</li>
+              <li>一般不要修改原型</li>
+            </ul>
+            <<<<<<< HEAD <h4 id="修改隐藏属性">修改隐藏属性</h4>
 
-=======
-<h4 id="heading9">强制修改或者增加原型上的属性</h4>
->>>>>>> 998cf8cea2f8eb124027309c509d0843cb7e733c
-<ul>
-<li>obj.<strong>proto</strong>.toString = &lsquo;xxx&rsquo;; //不推荐</li>
-<li>Object.prototype.toString = &lsquo;xxx&rsquo;</li>
-<li>一般不要修改原型</li>
-</ul>
-<<<<<<< HEAD
+              <ul>
+                <li>
+                  <p>不推荐使用</p>
 
-<h4 id="修改隐藏属性">修改隐藏属性</h4>
-
-<ul>
-<li><p>不推荐使用</p>
-
-=======
-<h4 id="heading10">修改隐藏属性</h4>
-<ul>
-<li>不推荐使用</li>
-</ul>
->>>>>>> 998cf8cea2f8eb124027309c509d0843cb7e733c
-<pre><code>let obj = {name:'mark'}
+                  =======
+                  <h4 id="heading10">修改隐藏属性</h4>
+                  <ul>
+                    <li>不推荐使用</li>
+                  </ul>
+                  >>>>>>> 998cf8cea2f8eb124027309c509d0843cb7e733c
+                  <pre><code>let obj = {name:'mark'}
 let obj1 = {name:'jack'}
 
 let common = {apple:'iPhone'}
 obj.__proto__ = common
 obj1.__proto__ = common
 <<<<<<< HEAD
-</code></pre></li>
+</code></pre>
+                </li>
 
-<li><p>推荐使用 Object.create</p>
+                <li>
+                  <p>推荐使用 Object.create</p>
 
-=======
-</code></pre><ul>
-<li>推荐使用 Object.create</li>
-</ul>
->>>>>>> 998cf8cea2f8eb124027309c509d0843cb7e733c
-<pre><code>var obj = {name:'mark'};
+                  =======
+                  </code></pre>
+                  <ul>
+                    <li>推荐使用 Object.create</li>
+                  </ul>
+                  >>>>>>> 998cf8cea2f8eb124027309c509d0843cb7e733c
+                  <pre><code>var obj = {name:'mark'};
 var obj2 = new Object({name:'kack'});
 
 obj.__proto__ == obj2.__proto__
@@ -410,15 +442,19 @@ false
 obj.__proto__.__proto__ == obj2.__proto__
 true
 <<<<<<< HEAD
-</code></pre></li>
-</ul>
+</code></pre>
+                </li>
+              </ul>
 
-<h3 id="name-in-obj和obj-hasownproperty-name-的区别">&lsquo;name&rsquo; in obj和obj.hasOwnProperty(&lsquo;name&rsquo;) 的区别</h3>
+              <h3 id="name-in-obj和obj-hasownproperty-name-的区别">&lsquo;name&rsquo; in
+                obj和obj.hasOwnProperty(&lsquo;name&rsquo;) 的区别</h3>
 
-=======
-</code></pre><h3 id="name-in-objobjhasownpropertyname-">&lsquo;name&rsquo; in obj和obj.hasOwnProperty(&lsquo;name&rsquo;) 的区别</h3>
->>>>>>> 998cf8cea2f8eb124027309c509d0843cb7e733c
-<pre><code>'toString' in obj
+              =======
+              </code></pre>
+              <h3 id="name-in-objobjhasownpropertyname-">&lsquo;name&rsquo; in
+                obj和obj.hasOwnProperty(&lsquo;name&rsquo;) 的区别</h3>
+              >>>>>>> 998cf8cea2f8eb124027309c509d0843cb7e733c
+              <pre><code>'toString' in obj
 //不管自身属性和共有属性, 只要包含就是true
 // true
 obj.hasOwnProperty('toString')
@@ -427,43 +463,41 @@ obj.hasOwnProperty('toString')
 <<<<<<< HEAD
 </code></pre>
 
-<h2 id="原型就是对象-包含了共有属性">原型就是对象, 包含了共有属性</h2>
-=======
-</code></pre><h2 id="-">原型就是对象, 包含了共有属性</h2>
->>>>>>> 998cf8cea2f8eb124027309c509d0843cb7e733c
-<ul class="pa0">
-  
-</ul>
-<div class="mt6">
-      
-      
-      </div>
-    </section>
+              <h2 id="原型就是对象-包含了共有属性">原型就是对象, 包含了共有属性</h2>
+              =======
+              </code></pre>
+              <h2 id="-">原型就是对象, 包含了共有属性</h2>
+              >>>>>>> 998cf8cea2f8eb124027309c509d0843cb7e733c
+              <ul class="pa0">
 
-    <aside class="w-30-l mt6-l">
+              </ul>
+              <div class="mt6">
 
 
+              </div>
+              </section>
 
-
-</aside>
-
-  </article>
-
-    </main>
-    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
-  <div class="flex justify-between">
-<<<<<<< HEAD
-  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://maqunchao.github.io/" >
-    &copy; 2021 Mark的博客
-=======
-  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://maqunchao.xyz/" >
-    &copy; 2020 Mark的博客
->>>>>>> 998cf8cea2f8eb124027309c509d0843cb7e733c
-  </a>
-    <div>
+              <aside class="w-30-l mt6-l">
 
 
 
+
+              </aside>
+
+    </article>
+
+  </main>
+  <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+    <div class="flex justify-between">
+      <<<<<<< HEAD <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3"
+        href="https://maqunchao.github.io/">
+        &copy; 2021 Mark的博客
+        =======
+        <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://maqunchao.xyz/">
+          &copy; 2020 Mark的博客
+          >>>>>>> 998cf8cea2f8eb124027309c509d0843cb7e733c
+        </a>
+        <div>
 
 
 
@@ -472,14 +506,18 @@ obj.hasOwnProperty('toString')
 
 
 
-</div>
-  </div>
-</footer>
 
-    
+
+
+        </div>
+    </div>
+  </footer>
+
+
 
   <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
 
 
-  </body>
+</body>
+
 </html>

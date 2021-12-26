@@ -1,68 +1,69 @@
 <!DOCTYPE html>
 <html lang="zh-Hans">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    
-    <title>Mark的博客  | git基本操作</title>
-    <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.60.0" />
-    
-    
-      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
-    
 
-    
-    
-      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
-    
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    
+  <title>Mark的博客 | git基本操作</title>
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+  <meta name="generator" content="Hugo 0.60.0" />
 
-    
-      
-    
 
-    
-    
-    <meta property="og:title" content="git基本操作" />
-<meta property="og:description" content="git基本使用  git init ; 初始化 创建一个.git目录 当本地仓库 git add 文件路径; 选择变化的文件进行提交 .gitignore; 描述那些文件是不需要提交的 git commit -v; 提交已经添加的文件, 并打开编辑器编写日志; 也可git commit -m 字符串; 在命令行中说明理由并提交, 如果字符串中有空格需要用引号括起来 git log; 打印出已经提交的各个版本信息(带有版本号); git reset &ndash;hard 版本号(git log查询出来的); 回退到某个版本 git reflog; 打印历史变更的所以版本,以及版本号 git branch x(分支名称); 基于当前commit创建一个新的分支,我在那个分支提交,代码就在那个分支 git checkout x(分支名称); 用于切换分支 合并分支:首先进入要保留的分支; 运行 git merge x(需要合并的名称) 进行合并, 合并完成后删除无用分支 git branch -d x(分支名称) git add . 提交当前目录所以文件 git branch; 可显示当前在那个分支 git status -sb; 显示冲突文件  git与github远程仓库配合使用 生成ssh key  运行ssh-keygen -t rsa -b 4096 -C 自己的邮箱 cat ~/." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://maqunchao.github.io/posts/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/" />
-<meta property="article:published_time" content="2019-11-18T00:15:34+08:00" />
-<meta property="article:modified_time" content="2019-11-18T00:15:34+08:00" />
-<meta itemprop="name" content="git基本操作">
-<meta itemprop="description" content="git基本使用  git init ; 初始化 创建一个.git目录 当本地仓库 git add 文件路径; 选择变化的文件进行提交 .gitignore; 描述那些文件是不需要提交的 git commit -v; 提交已经添加的文件, 并打开编辑器编写日志; 也可git commit -m 字符串; 在命令行中说明理由并提交, 如果字符串中有空格需要用引号括起来 git log; 打印出已经提交的各个版本信息(带有版本号); git reset &ndash;hard 版本号(git log查询出来的); 回退到某个版本 git reflog; 打印历史变更的所以版本,以及版本号 git branch x(分支名称); 基于当前commit创建一个新的分支,我在那个分支提交,代码就在那个分支 git checkout x(分支名称); 用于切换分支 合并分支:首先进入要保留的分支; 运行 git merge x(需要合并的名称) 进行合并, 合并完成后删除无用分支 git branch -d x(分支名称) git add . 提交当前目录所以文件 git branch; 可显示当前在那个分支 git status -sb; 显示冲突文件  git与github远程仓库配合使用 生成ssh key  运行ssh-keygen -t rsa -b 4096 -C 自己的邮箱 cat ~/.">
-<meta itemprop="datePublished" content="2019-11-18T00:15:34&#43;08:00" />
-<meta itemprop="dateModified" content="2019-11-18T00:15:34&#43;08:00" />
-<meta itemprop="wordCount" content="105">
+  <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
 
 
-<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="git基本操作"/>
-<meta name="twitter:description" content="git基本使用  git init ; 初始化 创建一个.git目录 当本地仓库 git add 文件路径; 选择变化的文件进行提交 .gitignore; 描述那些文件是不需要提交的 git commit -v; 提交已经添加的文件, 并打开编辑器编写日志; 也可git commit -m 字符串; 在命令行中说明理由并提交, 如果字符串中有空格需要用引号括起来 git log; 打印出已经提交的各个版本信息(带有版本号); git reset &ndash;hard 版本号(git log查询出来的); 回退到某个版本 git reflog; 打印历史变更的所以版本,以及版本号 git branch x(分支名称); 基于当前commit创建一个新的分支,我在那个分支提交,代码就在那个分支 git checkout x(分支名称); 用于切换分支 合并分支:首先进入要保留的分支; 运行 git merge x(需要合并的名称) 进行合并, 合并完成后删除无用分支 git branch -d x(分支名称) git add . 提交当前目录所以文件 git branch; 可显示当前在那个分支 git status -sb; 显示冲突文件  git与github远程仓库配合使用 生成ssh key  运行ssh-keygen -t rsa -b 4096 -C 自己的邮箱 cat ~/."/>
 
-  </head>
+  <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
 
-  <body class="ma0 avenir bg-near-white">
 
-    
-   
-  
+
+
+
+
+
+
+
+
+  <meta property="og:title" content="git基本操作" />
+  <meta property="og:description"
+    content="git基本使用  git init ; 初始化 创建一个.git目录 当本地仓库 git add 文件路径; 选择变化的文件进行提交 .gitignore; 描述那些文件是不需要提交的 git commit -v; 提交已经添加的文件, 并打开编辑器编写日志; 也可git commit -m 字符串; 在命令行中说明理由并提交, 如果字符串中有空格需要用引号括起来 git log; 打印出已经提交的各个版本信息(带有版本号); git reset &ndash;hard 版本号(git log查询出来的); 回退到某个版本 git reflog; 打印历史变更的所以版本,以及版本号 git branch x(分支名称); 基于当前commit创建一个新的分支,我在那个分支提交,代码就在那个分支 git checkout x(分支名称); 用于切换分支 合并分支:首先进入要保留的分支; 运行 git merge x(需要合并的名称) 进行合并, 合并完成后删除无用分支 git branch -d x(分支名称) git add . 提交当前目录所以文件 git branch; 可显示当前在那个分支 git status -sb; 显示冲突文件  git与github远程仓库配合使用 生成ssh key  运行ssh-keygen -t rsa -b 4096 -C 自己的邮箱 cat ~/." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://maqunchao.github.io/posts/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/" />
+  <meta property="article:published_time" content="2019-11-18T00:15:34+08:00" />
+  <meta property="article:modified_time" content="2019-11-18T00:15:34+08:00" />
+  <meta itemprop="name" content="git基本操作">
+  <meta itemprop="description"
+    content="git基本使用  git init ; 初始化 创建一个.git目录 当本地仓库 git add 文件路径; 选择变化的文件进行提交 .gitignore; 描述那些文件是不需要提交的 git commit -v; 提交已经添加的文件, 并打开编辑器编写日志; 也可git commit -m 字符串; 在命令行中说明理由并提交, 如果字符串中有空格需要用引号括起来 git log; 打印出已经提交的各个版本信息(带有版本号); git reset &ndash;hard 版本号(git log查询出来的); 回退到某个版本 git reflog; 打印历史变更的所以版本,以及版本号 git branch x(分支名称); 基于当前commit创建一个新的分支,我在那个分支提交,代码就在那个分支 git checkout x(分支名称); 用于切换分支 合并分支:首先进入要保留的分支; 运行 git merge x(需要合并的名称) 进行合并, 合并完成后删除无用分支 git branch -d x(分支名称) git add . 提交当前目录所以文件 git branch; 可显示当前在那个分支 git status -sb; 显示冲突文件  git与github远程仓库配合使用 生成ssh key  运行ssh-keygen -t rsa -b 4096 -C 自己的邮箱 cat ~/.">
+  <meta itemprop="datePublished" content="2019-11-18T00:15:34&#43;08:00" />
+  <meta itemprop="dateModified" content="2019-11-18T00:15:34&#43;08:00" />
+  <meta itemprop="wordCount" content="105">
+
+
+
+  <meta itemprop="keywords" content="" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="git基本操作" />
+  <meta name="twitter:description"
+    content="git基本使用  git init ; 初始化 创建一个.git目录 当本地仓库 git add 文件路径; 选择变化的文件进行提交 .gitignore; 描述那些文件是不需要提交的 git commit -v; 提交已经添加的文件, 并打开编辑器编写日志; 也可git commit -m 字符串; 在命令行中说明理由并提交, 如果字符串中有空格需要用引号括起来 git log; 打印出已经提交的各个版本信息(带有版本号); git reset &ndash;hard 版本号(git log查询出来的); 回退到某个版本 git reflog; 打印历史变更的所以版本,以及版本号 git branch x(分支名称); 基于当前commit创建一个新的分支,我在那个分支提交,代码就在那个分支 git checkout x(分支名称); 用于切换分支 合并分支:首先进入要保留的分支; 运行 git merge x(需要合并的名称) 进行合并, 合并完成后删除无用分支 git branch -d x(分支名称) git add . 提交当前目录所以文件 git branch; 可显示当前在那个分支 git status -sb; 显示冲突文件  git与github远程仓库配合使用 生成ssh key  运行ssh-keygen -t rsa -b 4096 -C 自己的邮箱 cat ~/." />
+
+</head>
+
+<body class="ma0 avenir bg-near-white">
+
+
+
+
 
   <header>
     <div class="bg-black">
       <nav class="pv3 ph3 ph4-ns" role="navigation">
-  <div class="flex-l justify-between items-center center">
-    <a href="https://maqunchao.github.io/" class="f3 fw2 hover-white no-underline white-90 dib">
-      Mark的博客
-    </a>
-    <div class="flex-l items-center">
-      
-
-      
-      
+        <div class="flex-l justify-between items-center center">
+          <a href="https://maqunchao.github.io/" class="f3 fw2 hover-white no-underline white-90 dib">
+            Mark的博客
+          </a>
+          <div class="flex-l items-center">
 
 
 
@@ -75,110 +76,111 @@
 
 
 
-    </div>
-  </div>
-</nav>
+
+
+
+
+          </div>
+        </div>
+      </nav>
 
     </div>
   </header>
 
 
 
-    <main class="pb7" role="main">
-      
-  
-  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+  <main class="pb7" role="main">
 
-    <header class="mt4 w-100">
-      <p class="f6 b helvetica tracked">
-          
-        POSTS
-      </p>
-      <h1 class="f1 athelas mb1">git基本操作</h1>
-      
-      
-      <time class="f6 mv4 dib tracked" datetime="2019-11-18T00:15:34&#43;08:00">November 18, 2019</time>
-      
-      
-    </header>
 
-    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><h1 id="git">git基本使用</h1>
-<ol>
-<li>git init ; 初始化 创建一个.git目录 当本地仓库</li>
-<li>git add 文件路径; 选择变化的文件进行提交</li>
-<li>.gitignore; 描述那些文件是不需要提交的</li>
-<li>git commit -v; 提交已经添加的文件, 并打开编辑器编写日志; 也可git commit -m 字符串; 在命令行中说明理由并提交, 如果字符串中有空格需要用引号括起来</li>
-<li>git log; 打印出已经提交的各个版本信息(带有版本号);</li>
-<li>git reset &ndash;hard 版本号(git log查询出来的); 回退到某个版本</li>
-<li>git reflog; 打印历史变更的所以版本,以及版本号</li>
-<li>git branch x(分支名称); 基于当前commit创建一个新的分支,我在那个分支提交,代码就在那个分支</li>
-<li>git checkout x(分支名称); 用于切换分支</li>
-<li>合并分支:首先进入要保留的分支; 运行 git merge x(需要合并的名称) 进行合并, 合并完成后删除无用分支 git branch -d x(分支名称)</li>
-<li>git add . 提交当前目录所以文件</li>
-<li>git branch; 可显示当前在那个分支</li>
-<li>git status -sb; 显示冲突文件</li>
-</ol>
-<h1 id="gitgithub">git与github远程仓库配合使用</h1>
-<h2 id="ssh-key">生成ssh key</h2>
-<ol>
-<li>运行ssh-keygen -t rsa -b 4096 -C 自己的邮箱</li>
-<li>cat ~/.ssh/id_rsa.pub 获取公钥内容, 并粘贴到github上</li>
-<li>ssh -T <a href="mailto:git@github.com">git@github.com</a> 测试是否配对成功</li>
-<li>git remote add origin git@xxxxxxx; 在本地添加远程地址仓库</li>
-<li>git push -u origin master; 把本地master分支推送到远程origin的master分支</li>
-<li>在本地修改与远程代码无冲突的情况下，优先使用:pull-&gt;commit-&gt;push</li>
-<li>在本地修改与远程代码有冲突的情况下，优先使用：commit-&gt;pull-&gt;push</li>
-<li>出现冲突后,git-status -sb; 显示冲突文件,手动更改冲突文件,更改完成后,git add 冲突文件, git commit</li>
-</ol>
-<ul class="pa0">
-  
-</ul>
-<div class="mt6">
-      
-      
+    <article class="flex-l flex-wrap justify-between mw8 center ph3">
+
+      <header class="mt4 w-100">
+        <p class="f6 b helvetica tracked">
+
+          POSTS
+        </p>
+        <h1 class="f1 athelas mb1">git基本操作</h1>
+
+
+        <time class="f6 mv4 dib tracked" datetime="2019-11-18T00:15:34&#43;08:00">November 18, 2019</time>
+
+
+      </header>
+
+      <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
+        <h1 id="git">git基本使用</h1>
+        <ol>
+          <li>git init ; 初始化 创建一个.git目录 当本地仓库</li>
+          <li>git add 文件路径; 选择变化的文件进行提交</li>
+          <li>.gitignore; 描述那些文件是不需要提交的</li>
+          <li>git commit -v; 提交已经添加的文件, 并打开编辑器编写日志; 也可git commit -m 字符串; 在命令行中说明理由并提交, 如果字符串中有空格需要用引号括起来</li>
+          <li>git log; 打印出已经提交的各个版本信息(带有版本号);</li>
+          <li>git reset &ndash;hard 版本号(git log查询出来的); 回退到某个版本</li>
+          <li>git reflog; 打印历史变更的所以版本,以及版本号</li>
+          <li>git branch x(分支名称); 基于当前commit创建一个新的分支,我在那个分支提交,代码就在那个分支</li>
+          <li>git checkout x(分支名称); 用于切换分支</li>
+          <li>合并分支:首先进入要保留的分支; 运行 git merge x(需要合并的名称) 进行合并, 合并完成后删除无用分支 git branch -d x(分支名称)</li>
+          <li>git add . 提交当前目录所以文件</li>
+          <li>git branch; 可显示当前在那个分支</li>
+          <li>git status -sb; 显示冲突文件</li>
+        </ol>
+        <h1 id="gitgithub">git与github远程仓库配合使用</h1>
+        <h2 id="ssh-key">生成ssh key</h2>
+        <ol>
+          <li>运行ssh-keygen -t rsa -b 4096 -C 自己的邮箱</li>
+          <li>cat ~/.ssh/id_rsa.pub 获取公钥内容, 并粘贴到github上</li>
+          <li>ssh -T <a href="mailto:git@github.com">git@github.com</a> 测试是否配对成功</li>
+          <li>git remote add origin git@xxxxxxx; 在本地添加远程地址仓库</li>
+          <li>git push -u origin master; 把本地master分支推送到远程origin的master分支</li>
+          <li>在本地修改与远程代码无冲突的情况下，优先使用:pull-&gt;commit-&gt;push</li>
+          <li>在本地修改与远程代码有冲突的情况下，优先使用：commit-&gt;pull-&gt;push</li>
+          <li>出现冲突后,git-status -sb; 显示冲突文件,手动更改冲突文件,更改完成后,git add 冲突文件, git commit</li>
+        </ol>
+        <ul class="pa0">
+
+        </ul>
+        <div class="mt6">
+
+
+        </div>
+      </section>
+
+      <aside class="w-30-l mt6-l">
+
+
+
+
+      </aside>
+
+    </article>
+
+  </main>
+  <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+    <div class="flex justify-between">
+      <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://maqunchao.github.io/">
+        &copy; 2021 Mark的博客
+      </a>
+      <div>
+
+
+
+
+
+
+
+
+
+
+
       </div>
-    </section>
-
-    <aside class="w-30-l mt6-l">
-
+    </div>
+  </footer>
 
 
-
-</aside>
-
-  </article>
-
-    </main>
-    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
-  <div class="flex justify-between">
-<<<<<<< HEAD
-  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://maqunchao.github.io/" >
-    &copy; 2021 Mark的博客
-=======
-  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://maqunchao.xyz/" >
-    &copy; 2020 Mark的博客
->>>>>>> 998cf8cea2f8eb124027309c509d0843cb7e733c
-  </a>
-    <div>
-
-
-
-
-
-
-
-
-
-
-
-</div>
-  </div>
-</footer>
-
-    
 
   <script src="/dist/js/app.3fc0f988d21662902933.js"></script>
 
 
-  </body>
+</body>
+
 </html>
