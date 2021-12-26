@@ -6,7 +6,7 @@
     
     <title>Mark的博客 </title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.60.0" />
+    <meta name="generator" content="Hugo 0.59.1" />
     
     
       <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -33,16 +33,13 @@
     <meta property="og:title" content="Posts" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
-<<<<<<< HEAD
 <meta property="og:url" content="https://maqunchao.github.io/posts/" />
 
 <meta property="og:updated_time" content="2020-01-05T00:15:34+08:00" />
-=======
-<meta property="og:url" content="http://maqunchao.xyz/posts/" />
-<meta property="og:updated_time" content="2020-11-30T00:15:34+08:00" />
->>>>>>> 998cf8cea2f8eb124027309c509d0843cb7e733c
 <meta itemprop="name" content="Posts">
-<meta itemprop="description" content=""><meta name="twitter:card" content="summary"/>
+<meta itemprop="description" content="">
+
+<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Posts"/>
 <meta name="twitter:description" content=""/>
 
@@ -100,7 +97,6 @@
   <div class="bg-white mb3 pa4 gray overflow-hidden">
     <span class="f6 db">Posts</span>
     <h1 class="f3 near-black">
-<<<<<<< HEAD
       <a href="https://maqunchao.github.io/posts/js%E5%87%BD%E6%95%B0%E7%9A%84%E6%89%A7%E8%A1%8C%E6%97%B6%E6%9C%BA/" class="link black dim">
         JS函数的执行时机
       </a>
@@ -177,16 +173,26 @@ JavaScript的十个设计缺陷  不适合开发大型程序 非常小的标准�
     <h1 class="f3 near-black">
       <a href="https://maqunchao.github.io/posts/%E6%B5%85%E6%9E%90url/" class="link black dim">
         浅析URL
-=======
-      <a href="http://maqunchao.xyz/posts/jquery%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%8A%9F%E8%83%BD/" class="link black dim">
-        jQuery的基本功能
->>>>>>> 998cf8cea2f8eb124027309c509d0843cb7e733c
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      jQuery的基本功能 1. jQuery 如何获取元素 jQuery的基本设计思想和主要用法，就是获取某个网页元素，然后对其进行某种操作.
- 使用jQuery,一般就是将一个选择表达式，放进构造函数jQuery()（简写为$），然后得到被选中的元素。选择表达式可以是CSS选择器,也可以是jQuery特有的表达式  //css表达式 $(document) //选择整个文档对象 $(&#39;#myId&#39;) //选择ID为myId的网页元素 $(&#39;div.myClass&#39;) // 选择class为myClass的div元素 $(&#39;input[name=first]&#39;) // 选择name属性等于first的input元素  //jQuery特有的表达式 $(&#39;a:first&#39;) //选择网页中第一个a元素 $(&#39;tr:odd&#39;) //选择表格的奇数行 $(&#39;#myForm :input&#39;) // 选择表单中的input元素 $(&#39;div:visible&#39;) //选择可见的div元素 $(&#39;div:gt(2)&#39;) // 选择所有的div元素，除了前三个 $(&#39;div:animated&#39;) // 选择当前处于动画状态的div元素  2. jQuery的链式操作 链式操作就是最终选中网页元素以后，可以对它进行一系列操作，并且所有操作可以连接在一起，以链条的形式写出来.
- $('#xxx&rsquo;)返回的值,并不是元素,是一个api对象  //先找到div元素, 选择其中的h3元素, 选择第3个h3元素, 将这个h3元素的内容改为Hello. $(&#39;div&#39;).find(&#39;h3&#39;).eq(2).html(&#39;Hello&#39;); const api1 = $(&#34;.test&#34;); const api2 = api1.find(&#34;.child&#34;).addClass(&#34;red&#34;); //可写成这样 $(&#34;.test&#34;).find(&#34;.child&#34;).addClass(&#34;red&#34;);  jQuery还提供了.end()方法, 使获取的元素可以返回上级  //退回到选中所有的p元素的那一步 $(&#39;div&#39;) .find(&#39;p&#39;) .eq(1) .html(&#39;Hello&#39;) .end() 3. jQuery如何创建元素 jQuery创建元素, 把新元素直接穿入jQuery的构造函数中
+      浅析URL url包含部分  以下为例子
+https://baike.baidu.com/item/CSS/5457?fr=aladdin#7  传输协议：http，https
+ 域名：baike.baidu.com
+ 端口: http 大部分默认80, https默认443
+ 路径: /item/CSS/5457
+ 查询参数: ?fr=aladdin
+ 锚点: #7
+  一共有65535个端口（基本够用）
+ 要提供HTTP服务最好用80端口
+ 要提供HTTPS服务最好用443端口
+ 要提供FTP服务最好用21端口
+ 端口对应的服务列表
+ 0-1023号端口是留给系统用的，只有拥有了管理员权限之后才能使用，但一般不建议使用
+ 一个端口如果被占用，就只能用另一个端口,总之IP和端口缺一不可，IP定位一台设备，端口定位一个设备的服务
+  DNS作用, nslookup 命令怎么用 1.DNS：域名系统 过程：当你输入一个网址，你的chrome浏览器会向电信提供的DNS服务器询问这个网址对应的IP 电信会回答一个IP 然后chrome才会想对应IP的80/443端口发送请求 请求内容是查看这个网址的网页
+ nslookup可查询IP地址, 命令行输入 nslookup + 域名
+λ nslookup baidu.com 服务器: UnKnown Address: fe80::1 非权威应答: 名称: baidu.com Addresses: 220.181.38.148 39.156.69.79   IP 的作用是什么，ping 命令怎么用  IP：internet protocol IP主要约定两件事：一是如何定位一台设备；二是如何封装数据报文跟其他设备交流
     </div>
   </div>
 </div>
@@ -196,18 +202,12 @@ JavaScript的十个设计缺陷  不适合开发大型程序 非常小的标准�
   <div class="bg-white mb3 pa4 gray overflow-hidden">
     <span class="f6 db">Posts</span>
     <h1 class="f3 near-black">
-<<<<<<< HEAD
       <a href="https://maqunchao.github.io/posts/css%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/" class="link black dim">
         CSS知识总结
-=======
-      <a href="http://maqunchao.xyz/posts/js%E5%87%BD%E6%95%B0%E7%9A%84%E6%89%A7%E8%A1%8C%E6%97%B6%E6%9C%BA/" class="link black dim">
-        JS函数的执行时机
->>>>>>> 998cf8cea2f8eb124027309c509d0843cb7e733c
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      JS函数的执行时机 1. 解释为什么下面代码为打印6个6 let i = 0 for(i = 0; i&lt;6; i++){ setTimeout(()=&gt;{ console.log(i) },0) }  首先在for循环外用let 声明变量i = 0, 开始执行for循环, 此时会先执行for循环,同时设置了6次setTimeout函数(相当于定了6个闹钟); setTimeout()会过一会执行, 然后跳过setTimeout(); 然后执行完for循环后, 此时已经执行了6次i++, i的值已经变成了6; 然后马上执行setTimeout函数,所以6次的setTimeout中的函数每次都会打印i的值是6; 同时类似于下面的函数也是打印6次6  for(var i = 0; i&lt;6; i++){ setTimeout(()=&gt;{ console.log(i) },0)  因为 变量i是var命令声明的, 在全局范围都有效,全局只有一个变量i。每一次循环，变量i的值都会发生改变,6次for循环执行完, i也变成6了, 然后马上执行setTimeout函数,所以6次的setTimeout中的函数每次都会打印i的值是6;  setTimeout运行机制  javascript提供定时执行代码的功能，叫做定时器（timer），主要由setTimeout()和setInterval()这两个函数来完成。它们向任务队列添加定时任务; setTimeout和setInterval的运行机制是，将指定的代码移出本次执行，等到下一轮Event Loop(事件循环)时，再检查是否到了指定时间。如果到了，就执行对应的代码；如果不到，就等到再下一轮Event Loop时重新判断。这意味着，setTimeout指定的代码，必须等到本次执行的所有代码都执行完，才会执行 每一轮Event Loop时，都会将“任务队列”中需要执行的任务，一次执行完。setTimeout和setInterval都是把任务添加到“任务队列”的尾部。因 此，它们实际上要等到当前脚本的所有同步任务执行完，然后再等到本次Event Loop的“任务队列”的所有任务执行完，才会开始执行。由于前面的任务到底需要多少时间执行完，是不确定的，所以没有办法保证，setTimeout和 setInterval指定的任务，一定会按照预定时间执行  setTimeout(someTask,100); add(); 上面的setTimeout，指定100毫秒以后运行一个任务。但是，如果后面立即运行的任务（当前脚本的同步任务））非常耗时，过了100毫秒还无法结束，那么被推迟运行的someTask就只有等着，等到前面的add运行结束，才轮到它执行。
-setTimeout(function () { func1(); }, 0) func2();  setTimeout的作用是将代码推迟到指定时间执行，如果指定时间为0，即setTimeout(f,0),那么会立刻执行吗？ 答案是不会,setTimeout运行机制说过，必须要等到当前脚本的同步任务和“任务队列”中已有的事 件，全部处理完以后，才会执行setTimeout指定的任务。也就是说，setTimeout的真正作用是，在“任务队列”的现有事件的后面再添加一个 事件，规定在指定时间执行某段代码。setTimeout添加的事件，会在下一次Event Loop执行。所以即使第二个参数设置为0, 其作用也是尽可能早的执行指定任务.
+      CSS知识总结 浏览器渲染原理  浏览器将获取的HTML文档解析成DOM树。 根据CSS，构成层叠样式表模型CSSOM(CSS Object Model),或者说构建css树。 将DOM和CSSOM合并为渲染树(rendering tree)。 渲染树的每个元素包含的内容都是计算过的，它被称之为布局layout(文档流、盒模型、计算大小和位置)。 painting绘制(把边框颜色、文字颜色、阴影等画出来)。 Compose合成(根据层叠关系展示画面)  CSS 动画的两种做法（transition 和 animation） transition 过渡动画 transition：属性名 时长 过渡方式 延迟。 transition：left 200ms linear。 还可以用逗号分隔两个不同属性： transition：left 200ms，top 300ms。 也可以用all来代表所有属性： transition：all 1s； 过渡方式： linear | ease(默认) | ease-in | ease-out | ease-in-out | cubic-bezier | step-start | step-end | steps 注意： 并不是所有属性都可以过渡 display：none --&gt; block 就不能过渡 使用visibility:hidden -&gt; visible 或者opacity来过渡,过渡后宽高仍然存在, 需要手动删除样式  animation animation：时长|过渡方式|延迟|次数|方向|填充模式|是否暂停|动画名 时长：1S或者1000ms 过渡方式：同transition取值相同，如：linear 次数：1或者2.5或者infinite 方向：reverse|alternate|alternate-reverse 填充模式：none|forwards|backwards|both 是否暂停：paused|running  CSS盒模型  centent-box和border-box 内容盒模型的width = contentmaqunchao.
     </div>
   </div>
 </div>
@@ -217,17 +217,20 @@ setTimeout(function () { func1(); }, 0) func2();  setTimeout的作用是将代�
   <div class="bg-white mb3 pa4 gray overflow-hidden">
     <span class="f6 db">Posts</span>
     <h1 class="f3 near-black">
-<<<<<<< HEAD
       <a href="https://maqunchao.github.io/posts/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/" class="link black dim">
         HTML常用标签
-=======
-      <a href="http://maqunchao.xyz/posts/js%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/" class="link black dim">
-        JS对象基本语法
->>>>>>> 998cf8cea2f8eb124027309c509d0843cb7e733c
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      JS对象基本语法 声明对象的两种语法 let obj = {'name':'mark', 'age':26} let obj1 = new Object({'name':'mark', 'gender':'man'})  键名是字符串, 不是标识符, 可以包含任意字符 键名的引号可省略, 省略后只能写标识符 键名的引号省略后, 任然是字符串  let obj = { 1:'a', 2.6:'b', 1e2:'c', .234:true, 0XFF:true } //属性名都会自动变成字符串 Object.keys(obj) //得到所以key, [&quot;1&quot;, &quot;100&quot;, &quot;255&quot;, &quot;0.234&quot;, &quot;0.26&quot; ] 查看属性两种方法与变量做属性名  中括号语法: obj[&lsquo;key&rsquo;] 点语法: obj.key, key认为是字符串 优先使用中括号语法  使用变量做属性名 let p1 = 'name' let obj = {p1:'mark'}; 属性名是 'p1'; let obj1 = {[p1]:'frank'}; 属性名是 'name';  不加[]的属性名会自动变成字符串 加了[]则会当成变量求值 值如果不是字符串, 则会自动变成字符串  let list = ['name', 'age', 'gender']; let person= {name:'mark', age:18, gender:'man'}; for(let i = 0; i&lt;list.
+      HTML常用标签 a标签包含href, target, download, rel=noopener属性  href(hypertext reference)属性:   href后面的url,以http/https开头的，则点击a标签后,会链接该url的页面 href后是#, 点击后回到页面顶部
+&lt;a href=&quot;#&quot;&gt;点击回到顶部&lt;/a&gt;  如果href后面是//baidu.com, 浏览器先去http://www.baidu.com寻找, 找不到再去https://www.baidu.com/寻找
+&lt;a href=&quot;//qq.com&quot;&gt;QQ&lt;/a&gt;  href后面可以跟文件路径, 如果我们http-server开启本地服务的方式打开文件, 则会根据本地服务的协议,决定使用http/https打开该文件,  如果直接双击打开,则使用file://协议打开该文件
+  href做伪协议,
+&lt;a href=&quot;javascript:&quot;&gt;点击后不会跳转, 无反应&lt;/a&gt; 如果javascript:代码,执行该代码 &lt;a href=&quot;mailto:邮箱&quot;&gt;发邮件&lt;/a&gt; &lt;a href=&quot;tel:手机号&quot;&gt;打打电话&lt;/a&gt;  href来做锚点,跳转到当前页面中某标签的id为xxx的页面元素
+&lt;a href=&quot;#xxx&quot;&gt;xxx&lt;/a&gt;  target属性
+在新页面打开：&lt;a href=&quot;url/相对路径&quot; target=&quot;_blank&quot;&gt;xxx&lt;/a&gt; &lt;hr&gt; 在当前页面打开：&lt;a href=&quot;url/相对路径&quot; target=&quot;_self&quot;&gt;xxx&lt;/a&gt;&lt;hr&gt; 在父页面打开（有两个页面时）：&lt;a href=&quot;url/相对路径&quot; target=&quot;_parent&quot;&gt;xxx&lt;/a&gt;&lt;hr&gt; 在最顶层页面打开（有多于两个页面）：&lt;a href=&quot;url/相对路径&quot; target=&quot;_top&quot;&gt;xxx&lt;/a&gt;  download 属性
+ 下载页面, 不是所有浏览器都支持
+  iframe标签 iframe标签用于在一个页面当中嵌套页面,但目前已经很少用了，基本都是在一些旧项目才会看到。 可以a标签进行使用,如下, 点击a标签, 则会在iframe标签内打开指定的url页面
     </div>
   </div>
 </div>
@@ -237,18 +240,12 @@ setTimeout(function () { func1(); }, 0) func2();  setTimeout的作用是将代�
   <div class="bg-white mb3 pa4 gray overflow-hidden">
     <span class="f6 db">Posts</span>
     <h1 class="f3 near-black">
-<<<<<<< HEAD
       <a href="https://maqunchao.github.io/posts/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0/" class="link black dim">
         HTML入门笔记
-=======
-      <a href="http://maqunchao.xyz/posts/js%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E4%BB%8B%E7%BB%8D/" class="link black dim">
-        JS基本语法介绍
->>>>>>> 998cf8cea2f8eb124027309c509d0843cb7e733c
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      JS基本语法介绍 表达式和语句  1 + 2 表达式的值是3， add（1， 2）表达式的值为函数的返回值， console.log表达式的值为函数本身, console.log(3)表达式的值其实是log的值, 是undefined. var a = 1; 这是一个语句 两者区别 :表达式一般是有值,语句可能有或者没有 语句一般会改变环境(声明, 赋值), 凡是 JavaScript 语言中预期为值的地方，都可以使用表达式。比如，赋值语句的等号右边，预期是一个值，因此可以放置各种表达式. 语句以分号结尾，一个分号就表示一个语句结束。多个语句可以写在一行内 表达式不需要分号结尾。一旦在表达式后面添加分号，则 JavaScript 引擎就将表达式视为语句，这样会产生一些没有任何意义的语句。  标识符  标识符（identifier）指的是用来识别各种值的合法名称。最常见的标识符就是变量名，以及后面要提到的函数名。JavaScript 语言的标识符对大小写敏感，所以a和A是两个不同的标识符 标识符有一套命名规则，不符合规则的就是非法标识符。 第一个字符，可以是任意 Unicode 字母（包括英文字母和其他语言的字母），以及美元符号（$）和下划线（_） 第二个字符及后面的字符，除了 Unicode 字母、美元符号和下划线，还可以用数字0-9。 标识符 第一个字符不能是数字, 也不能包含*号, +号, -减号(连词号) 中文是合法标识符, 可以作为变量名  if语句 语法  if(表达式){语句1} else(语句2) {}在语句只有一句的时候可以省略, 但是如果想执行多个语句, 必须在if条件后面加上{}  推荐写法
-if(表达式){ 语句 } else if(表达式){ 语句 } else{ 语句 } while循环语句, for循环语句 While语句包括一个循环条件和一段代码块，只要条件为真，就不断循环执行代码块。
+      历史简介  1990年, Tim Berners-Lee发明了HTML, 自己编写了一个浏览器和服务器, 然后通过自己的浏览器访问了自己写的服务器.  HTML 起手式 &lt;!DOCTYPE html&gt; &lt;!-- 文档类型 --&gt; &lt;html lang=&quot;zh-CN&quot;&gt; &lt;!-- html标签, 改成中文 --&gt; &lt;head&gt; &lt;meta charset=&quot;UTF-8&quot; /&gt; &lt;!-- 文件的字符编码 --&gt; &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt; &lt;!-- 禁用缩放, 兼容手机 --&gt; &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot; /&gt; &lt;!-- 告诉IE浏览器, 使用最新版本 --&gt; &lt;title&gt;Document&lt;/title&gt; &lt;!-- 网页标题 --&gt; &lt;/head&gt; &lt;body&gt;&lt;/body&gt; &lt;/html&gt;  常用的表示章节的标签  h1 ~ h6, 标题标签， 呈现六种不同级别的标题，由大到小 section, 章节标签， 表示一个包含在HTML文档中的独立部分 article, 表示文章 p，段落标签 header， 头部 footer，脚部，一般表示根元素的页脚 main， 主要内容 aside， 旁支内容 div， 块级元素, 可用来划分   全局属性  class, 给标签分类或者标记
     </div>
   </div>
 </div>
@@ -258,24 +255,18 @@ if(表达式){ 语句 } else if(表达式){ 语句 } else{ 语句 } while循环�
   <div class="bg-white mb3 pa4 gray overflow-hidden">
     <span class="f6 db">Posts</span>
     <h1 class="f3 near-black">
-<<<<<<< HEAD
       <a href="https://maqunchao.github.io/posts/%E7%AC%AC2%E7%AF%87blog/" class="link black dim">
         Hugo配合GitHub搭建博客
-=======
-      <a href="http://maqunchao.xyz/posts/javascript%E7%9A%84%E8%AF%9E%E7%94%9F/" class="link black dim">
-        JavaScript 的诞生
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      浏览器的诞生 1990年底，欧洲核能研究组织（CERN）科学家Tim Berners-Lee，在全世界最大的电脑网络——互联网的基础上，发明了万维网（World Wide Web），从此可以在网上浏览网页文件。最早的网页只能在操作系统的终端里浏览，也就是说只能使用命令行操作，网页都是在字符窗口中显示，这当然非常不方便。
-1992年底，美国国家超级电脑应用中心（NCSA）开始开发一个独立的浏览器，叫做Mosaic。这是人类历史上第一个浏览器，从此网页可以在图形界面的窗口浏览。
-1994年10月，NCSA的一个主要程序员Marc Andreessen联合风险投资家Jim Clark，成立了Mosaic通信公司（Mosaic Communications），不久后改名为Netscape。这家公司的方向，就是在Mosaic的基础上，开发面向普通用户的新一代的浏览器Netscape Navigator。
-1994年12月，Navigator发布了1.0版，市场份额一举超过90%.
-JavaScript的诞生 1995年，Netscape公司雇佣了程序员Brendan Eich开发这种网页脚本语言。Brendan Eich有很强的函数式编程背景，希望以Scheme语言（函数式语言鼻祖LISP语言的一种方言）为蓝本，实现这种新语言。
-1995年5月，Brendan Eich只用了10天，就设计完成了这种语言的第一版。它是一个大杂烩，语法有多个来源：
- 基本语法：借鉴C语言和Java语言。 数据结构：借鉴Java语言，包括将值分成原始值和对象两大类。 函数的用法：借鉴Scheme语言和Awk语言，将函数当作第一等公民，并引入闭包。 原型继承模型：借鉴Self语言（Smalltalk的一种变种）。 正则表达式：借鉴Perl语言。 字符串和数组处理：借鉴Python语言。  ，Netscape管理层希望它外观看起来像Java，因此取名为JavaScript。但实际上它的语法风格与Self及Scheme较为接近.为了取得技术优势，微软推出了JScript，CEnvi推出ScriptEase，与JavaScript同样可在浏览器上运行。为了统一规格，因为JavaScript兼容于ECMA标准，因此也称为ECMAScript。
-JavaScript与ECMAScript的关系 ECMAScript是纸上的标准, JavaScript是浏览器的实现.纸上标准往往落后于浏览器,先实现,再写进标准.
-JavaScript的十个设计缺陷  不适合开发大型程序 非常小的标准库 null和undefined 全局变量难以控制 自动插入行尾分号 加号运算符 NaN 数组和对象的区分 == 和 === 基本类型的包装对象  
+      Hugo配合GitHub搭建博客 下载hugo  首先安装hugo 地址 配置环境变量,将存放hugo.exe的文件目录,示例:D:\SoftWare\hugo, 编辑到Path中,点击确定 验证hugo是否配置成功, 打开终端,执行hugo version, 成功如下:
+hugo version Hugo Static Site Generator v0.59.1-D5DAB232 windows/amd64 BuildDate: 2019-10-31T15:22:43Z  创建GitHub仓库 github&ndash;&gt;右上角的new repository, 名称:你的github用户名.github.io; (记住仓库名称, 最好用英文)
+ 在本地硬盘, 创建一个文件夹, 选中文件夹,执行
+hugo new site xxxx(GitHub仓库名称)  创建完成后, 本地文件生成一个 xxxx目录, 目录介绍: 创建完成之后的目录介绍： |- archetypes 存放default.md ,头文件格式 |-content content 目录存放博客文章（.markdown/.md文件） |-data 存放自定义模板，导入的toml文件（或json、yaml） |-layouts layouts目录存放网站的网站模板文件 |-static 存放js/css/img 等静态资源 |-config.toml config.toml 是网站的配置文件
+ 然后 cd xxxx(目录下)
+ 执行 git init; 初始化本地仓库
+ 添加一个默认的主题 命令行执行
     </div>
   </div>
 </div>
@@ -285,82 +276,12 @@ JavaScript的十个设计缺陷  不适合开发大型程序 非常小的标准�
   <div class="bg-white mb3 pa4 gray overflow-hidden">
     <span class="f6 db">Posts</span>
     <h1 class="f3 near-black">
-      <a href="http://maqunchao.xyz/posts/%E6%B5%85%E6%9E%90url/" class="link black dim">
-        浅析URL
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      浅析URL url包含部分  以下为例子  https://baike.baidu.com/item/CSS/5457?fr=aladdin#7  传输协议：http，https 域名：baike.baidu.com 端口: http 大部分默认80, https默认443 路径: /item/CSS/5457 查询参数: ?fr=aladdin 锚点: #7    一共有65535个端口（基本够用） 要提供HTTP服务最好用80端口 要提供HTTPS服务最好用443端口 要提供FTP服务最好用21端口 [端口对应的服务列表] (https://zh.wikipedia.org/wiki/TCP/UDP%E7%AB%AF%E5%8F%A3%E5%88%97%E8%A1%A8) 0-1023号端口是留给系统用的，只有拥有了管理员权限之后才能使用，但一般不建议使用 一个端口如果被占用，就只能用另一个端口,总之IP和端口缺一不可，IP定位一台设备，端口定位一个设备的服务  DNS作用, nslookup 命令怎么用 1.DNS：域名系统 过程：当你输入一个网址，你的chrome浏览器会向电信提供的DNS服务器询问这个网址对应的IP 电信会回答一个IP 然后chrome才会想对应IP的80/443端口发送请求 请求内容是查看这个网址的网页
- nslookup可查询IP地址, 命令行输入 nslookup + 域名  λ nslookup baidu.com 服务器: UnKnown Address: fe80::1 非权威应答: 名称: baidu.com Addresses: 220.181.38.148 39.156.69.79 IP 的作用是什么，ping 命令怎么用   IP：internet protocol
-  IP主要约定两件事：一是如何定位一台设备；二是如何封装数据报文跟其他设备交流
-  ping是一个十分强大的TCP/IP工具。它的作用主要为：
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Posts</span>
-    <h1 class="f3 near-black">
-      <a href="http://maqunchao.xyz/posts/css%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/" class="link black dim">
-        CSS知识总结
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      CSS知识总结 浏览器渲染原理  浏览器将获取的HTML文档解析成DOM树。 根据CSS，构成层叠样式表模型CSSOM(CSS Object Model),或者说构建css树。 将DOM和CSSOM合并为渲染树(rendering tree)。 渲染树的每个元素包含的内容都是计算过的，它被称之为布局layout(文档流、盒模型、计算大小和位置)。 painting绘制(把边框颜色、文字颜色、阴影等画出来)。 Compose合成(根据层叠关系展示画面)  CSS 动画的两种做法（transition 和 animation） transition 过渡动画 transition：属性名 时长 过渡方式 延迟。 transition：left 200ms linear。 还可以用逗号分隔两个不同属性： transition：left 200ms，top 300ms。 也可以用all来代表所有属性： transition：all 1s； 过渡方式： linear | ease(默认) | ease-in | ease-out | ease-in-out | cubic-bezier | step-start | step-end | steps 注意： 并不是所有属性都可以过渡 display：none --&gt; block 就不能过渡 使用visibility:hidden -&gt; visible 或者opacity来过渡,过渡后宽高仍然存在, 需要手动删除样式 animation animation：时长|过渡方式|延迟|次数|方向|填充模式|是否暂停|动画名 时长：1S或者1000ms 过渡方式：同transition取值相同，如：linear 次数：1或者2.5或者infinite 方向：reverse|alternate|alternate-reverse 填充模式：none|forwards|backwards|both 是否暂停：paused|running CSS盒模型  centent-box和border-box 内容盒模型的width = contentmaqunchao.
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Posts</span>
-    <h1 class="f3 near-black">
-      <a href="http://maqunchao.xyz/posts/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/" class="link black dim">
-        HTML常用标签
->>>>>>> 998cf8cea2f8eb124027309c509d0843cb7e733c
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      HTML常用标签 a标签包含href, target, download, rel=noopener属性  href(hypertext reference)属性:   href后面的url,以http/https开头的，则点击a标签后,会链接该url的页面 href后是#, 点击后回到页面顶部  &lt;a href=&#34;#&#34;&gt;点击回到顶部&lt;/a&gt;  如果href后面是//baidu.com, 浏览器先去http://www.baidu.com寻找, 找不到再去https://www.baidu.com/寻找  &lt;a href=&#34;//qq.com&#34;&gt;QQ&lt;/a&gt;  href后面可以跟文件路径, 如果我们http-server开启本地服务的方式打开文件, 则会根据本地服务的协议,决定使用http/https打开该文件, 如果直接双击打开,则使用file://协议打开该文件  href做伪协议,  &lt;a href=&#34;javascript:&#34;&gt;点击后不会跳转, 无反应&lt;/a&gt;如果javascript:代码,执行该代码 &lt;a href=&#34;mailto:邮箱&#34;&gt;发邮件&lt;/a&gt; &lt;a href=&#34;tel:手机号&#34;&gt;打打电话&lt;/a&gt;  href来做锚点,跳转到当前页面中某标签的id为xxx的页面元素  &lt;a href=&#34;#xxx&#34;&gt;xxx&lt;/a&gt;  target属性  在新页面打开：&lt;a href=&#34;url/相对路径&#34; target=&#34;_blank&#34;&gt;xxx&lt;/a&gt;&lt;hr&gt; 在当前页面打开：&lt;a href=&#34;url/相对路径&#34; target=&#34;_self&#34;&gt;xxx&lt;/a&gt;&lt;hr&gt; 在父页面打开（有两个页面时）：&lt;a href=&#34;url/相对路径&#34; target=&#34;_parent&#34;&gt;xxx&lt;/a&gt;&lt;hr&gt; 在最顶层页面打开（有多于两个页面）：&lt;a href=&#34;url/相对路径&#34; target=&#34;_top&#34;&gt;xxx&lt;/a&gt; download 属性   下载页面, 不是所有浏览器都支持  iframe标签 iframe标签用于在一个页面当中嵌套页面,但目前已经很少用了，基本都是在一些旧项目才会看到。 可以a标签进行使用,如下, 点击a标签, 则会在iframe标签内打开指定的url页面
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Posts</span>
-    <h1 class="f3 near-black">
-<<<<<<< HEAD
       <a href="https://maqunchao.github.io/posts/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/" class="link black dim">
         git基本操作
-=======
-      <a href="http://maqunchao.xyz/posts/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0/" class="link black dim">
-        HTML入门笔记
->>>>>>> 998cf8cea2f8eb124027309c509d0843cb7e733c
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      历史简介  1990年, Tim Berners-Lee发明了HTML, 自己编写了一个浏览器和服务器, 然后通过自己的浏览器访问了自己写的服务器.  HTML 起手式 &lt;!DOCTYPE html&gt; &lt;!--文档类型 --&gt; &lt;html lang=&#34;zh-CN&#34;&gt; &lt;!--html标签, 改成中文 --&gt; &lt;head&gt; &lt;meta charset=&#34;UTF-8&#34; /&gt; &lt;!--文件的字符编码 --&gt; &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0&#34; /&gt; &lt;!--禁用缩放, 兼容手机 --&gt; &lt;meta http-equiv=&#34;X-UA-Compatible&#34; content=&#34;ie=edge&#34; /&gt; &lt;!--告诉IE浏览器, 使用最新版本 --&gt; &lt;title&gt;Document&lt;/title&gt; &lt;!--网页标题 --&gt; &lt;/head&gt; &lt;body&gt;&lt;/body&gt; &lt;/html&gt; 常用的表示章节的标签  h1 ~ h6, 标题标签， 呈现六种不同级别的标题，由大到小 section, 章节标签， 表示一个包含在HTML文档中的独立部分 article, 表示文章 p，段落标签 header， 头部 footer，脚部，一般表示根元素的页脚 main， 主要内容 aside， 旁支内容 div， 块级元素, 可用来划分  全局属性  class, 给标签分类或者标记  &lt;div class=&#34;middle open &#34;&gt; &lt;/div&gt; contenteditable, 表示元素是否被用户编辑  &lt;div contenteditable=&#34;true&#34;&gt; &lt;/div&gt; hiddle, 可用来隐藏页面元素 id, 定义了全局唯一的标识, 但页面如果存在多个一样的id,并不会报错, 谨慎使用 style, 行内样式优先级高于外联css样式, 低于JS设置 tabindex, 页面元素是否聚焦, 可使用Tab键进行选择切换  tabindex = 正值 表示该元素可以被选择，从小到大的进行选取。 tabindex = 0 表示该该元素最后被选取。 tabindex = 负值 表示该元素不会被选取，一般赋值'-1'.
-    </div>
-  </div>
-</div>
-</div>
-      
-        <div class="relative w-100 w-30-l mb4 bg-white"><div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Posts</span>
-    <h1 class="f3 near-black">
-      <a href="http://maqunchao.xyz/posts/%E7%AC%AC2%E7%AF%87blog/" class="link black dim">
-        Hugo配合GitHub搭建博客
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Hugo配合GitHub搭建博客 下载hugo  首先安装hugo 地址 配置环境变量,将存放hugo.exe的文件目录,示例:D:\SoftWare\hugo, 编辑到Path中,点击确定 验证hugo是否配置成功, 打开终端,执行hugo version, 成功如下:  hugo version Hugo Static Site Generator v0.59.1-D5DAB232 windows/amd64 BuildDate: 2019-10-31T15:22:43Z 创建GitHub仓库  github&ndash;&gt;右上角的new repository, 名称:你的github用户名.github.io; (记住仓库名称, 最好用英文) 在本地硬盘, 创建一个文件夹, 选中文件夹,执行  hugo new site xxxx(GitHub仓库名称) 创建完成后, 本地文件生成一个 xxxx目录, 目录介绍: 创建完成之后的目录介绍： |- archetypes 存放default.md ,头文件格式 |-content content 目录存放博客文章（.markdown/.md文件） |-data 存放自定义模板，导入的toml文件（或json、yaml） |-layouts layouts目录存放网站的网站模板文件 |-static 存放js/css/img 等静态资源 |-config.toml config.toml 是网站的配置文件
- 然后 cd xxxx(目录下) 执行 git init; 初始化本地仓库 添加一个默认的主题 命令行执行  git submodule add https://github.
+      git基本使用  git init ; 初始化 创建一个.git目录 当本地仓库 git add 文件路径; 选择变化的文件进行提交 .gitignore; 描述那些文件是不需要提交的 git commit -v; 提交已经添加的文件, 并打开编辑器编写日志; 也可git commit -m 字符串; 在命令行中说明理由并提交, 如果字符串中有空格需要用引号括起来 git log; 打印出已经提交的各个版本信息(带有版本号); git reset &ndash;hard 版本号(git log查询出来的); 回退到某个版本 git reflog; 打印历史变更的所以版本,以及版本号 git branch x(分支名称); 基于当前commit创建一个新的分支,我在那个分支提交,代码就在那个分支 git checkout x(分支名称); 用于切换分支 合并分支:首先进入要保留的分支; 运行 git merge x(需要合并的名称) 进行合并, 合并完成后删除无用分支 git branch -d x(分支名称) git add . 提交当前目录所以文件 git branch; 可显示当前在那个分支 git status -sb; 显示冲突文件  git与github远程仓库配合使用 生成ssh key  运行ssh-keygen -t rsa -b 4096 -C 自己的邮箱 cat ~/.
     </div>
   </div>
 </div>
@@ -368,62 +289,13 @@ JavaScript的十个设计缺陷  不适合开发大型程序 非常小的标准�
       
     </section>
 
-<ul class="pagination">
-    
-    <li class="page-item">
-        <a href="/posts/" class="page-link" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
-    </li>
-    
-    <li class="page-item disabled">
-    <a  class="page-link" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
-    </li>
-    
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    <li class="page-item active"><a class="page-link" href="/posts/">1</a></li>
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    <li class="page-item"><a class="page-link" href="/posts/page/2/">2</a></li>
-    
-    
-    <li class="page-item">
-    <a href="/posts/page/2/" class="page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
-    </li>
-    
-    <li class="page-item">
-        <a href="/posts/page/2/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
-    </li>
-    
-</ul>
-
 </article>
 
     </main>
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between">
-<<<<<<< HEAD
   <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://maqunchao.github.io/" >
     &copy; 2021 Mark的博客
-=======
-  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://maqunchao.xyz/" >
-    &copy; 2020 Mark的博客
->>>>>>> 998cf8cea2f8eb124027309c509d0843cb7e733c
   </a>
     <div>
 
